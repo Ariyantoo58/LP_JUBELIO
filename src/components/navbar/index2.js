@@ -134,7 +134,7 @@ function Navbar() {
 
                             }
 
-                            <Link href="/product/katalog">
+                            <Link href="/">
                                 <Image src={logo} alt="DeoApp" width={150} />
                             </Link>
                         </HStack>
@@ -155,7 +155,7 @@ function Navbar() {
                                                     Produk
                                                 </Button>
                                             </PopoverTrigger>
-                                            <PopoverContent>
+                                            <PopoverContent w={'200px'}>
                                                 <PopoverBody color={'black'}>
                                                     <Box px={'10px'} py={'10px'} borderBottom={'1px solid #f2f2f2'} >
                                                         <Box as={'button'} onClick={() => navigate('/product/platform')}>
@@ -221,7 +221,7 @@ function Navbar() {
                                                     Affiliasi
                                                 </Button>
                                             </PopoverTrigger>
-                                            <PopoverContent>
+                                            <PopoverContent w={'200px'}>
                                                 <PopoverBody color={'black'}>
                                                     <Box px={'10px'} py={'15px'} borderBottom={'1px solid #f2f2f2'}>
                                                         <Button onClick={() => navigate('/affiliasi/affiliasi')} bg={'transparent'}>Affiliasi</Button>
@@ -243,7 +243,7 @@ function Navbar() {
                                                     Dukungan
                                                 </Button>
                                             </PopoverTrigger>
-                                            <PopoverContent>
+                                            <PopoverContent w={'200px'}>
                                                 <PopoverBody>
                                                     <Box px={'10px'} py={'15px'} >
                                                         <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'}>Integrasi Api</Button>
@@ -260,15 +260,27 @@ function Navbar() {
                                 </HStack>
 
                                 <HStack spacing="7" >
-                                    <ButtonGroup>
-                                        <Button
-                                            variant="link"
-                                            rightIcon={<PopoverIcon />}
+                                    <Popover trigger="hover">
+                                        <PopoverTrigger>
+                                            <ButtonGroup>
+                                                <Button
+                                                    variant="link"
+                                                    rightIcon={<PopoverIcon />}
 
-                                        >
-                                            ID
-                                        </Button>
-                                    </ButtonGroup>
+                                                >
+                                                    ID
+                                                </Button>
+                                            </ButtonGroup>
+                                        </PopoverTrigger>
+                                        <PopoverContent w={"110px"}>
+                                            <PopoverBody>
+                                                <Box color={'black'} >
+                                                    <Button onClick={() => navigate('/product/gudang')} bg={'transparent'}>English</Button>
+                                                </Box>
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
+
                                 </HStack>
                             </Flex>
                         ) : (

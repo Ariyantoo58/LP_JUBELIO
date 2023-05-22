@@ -1,7 +1,7 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
 
-export default function Pos() {
+export default function Store() {
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
@@ -13,7 +13,7 @@ export default function Pos() {
                     <HStack w={'90%'} mx={'auto'} py={{ base: 0, lg: '30px' }}>
                         <Box>
                             <Image w={'400px'} src={'https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-pos-1536x1536.png'} />
-                            <Heading mb={'30px'}> Platform omnichannel jualan online dan offline terlengkap</Heading>
+                            <Heading mb={'30px'}> Jualan optimal pakai aplikasi POS gratis</Heading>
                             <Text mb={'30px'} >Senjata rahasia buat kembangkan bisnismu. Kontrol semua operasional dalam satu sistem terintegrasi.</Text>
                             <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
                         </Box>
