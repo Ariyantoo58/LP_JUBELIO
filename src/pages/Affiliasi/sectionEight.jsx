@@ -15,8 +15,8 @@ import {
 
 export default function SectionEight () {
     return (
-        <>
-        <Box display={'flex'} flexDirection={['column','row','row']} w={'97%'} m={'auto'} justifyContent={'center'} padding={'5%'}>
+        <Box bg="#f5faff">
+        <Box display={'flex'} flexDirection={['column','row','row']} w={'97%'} m={'auto'} justifyContent={'center'} padding={'2%'}>
           <Box p={4} w={['100%','50%','50%']} mt={['0', '0', '5%']} >
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
               <Heading fontSize={'3xl'}>Program Afiliasi Jubelio</Heading>
@@ -27,7 +27,7 @@ export default function SectionEight () {
           </Box>
           </Box>
 
-        <Box w={'90%'} m={'auto'} display={{lg: 'flex'}}>
+        <Box w={'90%'} m={'auto'} display={{lg: 'flex'}} paddingBottom={'3%'}>
             <Box w={['100%', '35%' ,'35%']} m='auto'>
                 <Text color={'grey'}>Nama</Text>
                 <Input mt={5} type='text'/>
@@ -52,6 +52,6 @@ export default function SectionEight () {
             </Box>
         </Box>
         
-        </>
+        </Box>
     )
 }

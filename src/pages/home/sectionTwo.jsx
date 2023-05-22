@@ -74,7 +74,7 @@ import {
   
  function SectionTwo() {
     return (
-        <Box display={{base: "contents", lg:"flex"}} w={'97%'} m={'auto'}>
+        <Box bg="#f5faff" display={{base: "contents", lg:"flex"}} w={'100%'} m={'auto'}>
             <Box p={4} w={["100%","100%",'50%']}>
                 <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                 <Heading fontSize={'3xl'}>Jadi yang terbaik bersama kami</Heading>

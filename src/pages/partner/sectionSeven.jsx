@@ -25,12 +25,13 @@ export default function SectionSeven () {
     const [changes, setChanges] = useState(false)
     const [changed, setChanged] = useState(false)
 return(
-    <>
+    <Box bg="#f5faff">
     <Box w={{ base: '100%', lg: '90%' }} m={'auto'}>
     <Box p={5}>
           <Container maxW={'7xl'} mt={1}>
             <Flex flexWrap="wrap" gridGap={6} justify="center">
               <Box 
+              bg="white"
               maxW={{ base: 'full', md: '800px', lg: '1100px' }}
               w={'full'}
               borderWidth="1px"
@@ -58,6 +59,7 @@ return(
               </Box>
 
               <Box 
+              bg="white"
               maxW={{ base: 'full', md: '800px', lg: '1100px' }}
               w={'full'}
               borderWidth="1px"
@@ -68,7 +70,7 @@ return(
                     <Text fontSize={'2xl'} fontWeight={'bold'} color={'#454545'} padding={'3%'}>
                         Shipment
                     </Text>
-                    <Flex flexWrap='wrap' gridGap={100} justify={'center'}>
+                    <Flex flexWrap='wrap' gridGap={100} justify={'center'} >
                         <Image w={['40%','10%','15%']} src="https://jubelio.com/wp-content/uploads/2023/03/Praktis-1-1.svg" />
                         <Image w={['40%','10%','15%']} src="https://jubelio.com/wp-content/uploads/2023/03/Keeppack-2-1.svg"/>
                         <Image w={['40%','10%','15%']} src="https://jubelio.com/wp-content/uploads/2023/03/Titipaja-1-1.svg"/>
@@ -85,6 +87,7 @@ return(
               </Box>
 
               <Box 
+              bg="white"
               maxW={{ base: 'full', md: '800px', lg: '1100px' }}
               w={'full'}
               borderWidth="1px"
@@ -104,6 +107,7 @@ return(
               </Box>
 
               <Box 
+              bg="white"
               maxW={{ base: 'full', md: '800px', lg: '1100px' }}
               w={'full'}
               borderWidth="1px"
@@ -145,7 +149,7 @@ return(
                     <Stack w={['100%','50%','50%']}>
                         {change ?
                          <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChange(false)}>
-                         <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                         <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -158,7 +162,7 @@ return(
                          
                      </Box> :  
                      <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChange(true)}>
-                     <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                     <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -168,7 +172,7 @@ return(
 
                     {changes ?
                          <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChanges(false)}>
-                         <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                         <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -181,7 +185,7 @@ return(
                          
                      </Box> :  
                      <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChanges(true)}>
-                     <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                     <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -191,7 +195,7 @@ return(
 
                     {changed ?
                          <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChanged(false)}>
-                         <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                         <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -204,7 +208,7 @@ return(
                          
                      </Box> :  
                      <Box as="span" flex='1' textAlign='left' fontSize={'20px'} borderRadius={'5%'} onClick={()=> setChanged(true)}>
-                     <Box bgColor={'#f5faff'} borderRadius={'2%'} padding ={'4%'}>
+                     <Box bgColor={'#d5e2e9'} borderRadius={'2%'} padding ={'4%'}>
                          Apa saja Syarat dan Ketentuan untuk jadi Jubelio Partner?
 
                          </Box>
@@ -223,6 +227,6 @@ return(
   
         </Box>
     </Box>
-    </>
+    </Box>
 )
 }

@@ -17,7 +17,7 @@ import {
 function SectionOne () {
     
     return(
-        <>
+        <Box bg="#f5faff">
         <Container maxW={'7xl'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} w={'90'} m={'auto'} padding={'3%'}>
       <Stack
         align={'center'}
@@ -67,7 +67,7 @@ function SectionOne () {
         <Image w={'80%'} m={'auto'} src='https://jubelio.com/wp-content/uploads/2023/05/cover-partner-1536x1536.png'/>
       </Stack>
     </Container>
-        </>
+        </Box>
     )
 }
 

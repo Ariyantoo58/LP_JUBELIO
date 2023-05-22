@@ -13,7 +13,7 @@ import {
 
 export default function IntegrasiAPI() {
     return (
-        <>
+        <Box bg="#f5faff">
         <Box w={'100%'} padding={'3%'}>
             <Stack>
                 <Image w={['100%','60%','65%']} m={'auto'} paddingTop={{base:'8%'}} src={'https://jubelio.com/wp-content/uploads/2023/05/cover-integrasi-api-1-768x277.png'}/>
@@ -61,6 +61,6 @@ export default function IntegrasiAPI() {
         </Box>
             
         </Box>
-        </>
+        </Box>
     )
 }

@@ -64,7 +64,7 @@ import {
   
   function SectionSix() {
     return (
-      <>  
+      <Box bg="#f5faff">  
         <Box p={5}>
           <Container maxW={'7xl'} mt={12}>
             <Flex flexWrap="wrap" gridGap={20} justify="center">
@@ -120,7 +120,7 @@ import {
           </Container>
   
         </Box>
-      </>
+      </Box>
     )
   }
   export default SectionSix
