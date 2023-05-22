@@ -15,8 +15,8 @@ import {
 
 export default function SectionFive () {
     return (
-        <>
-        <Box display={'flex'} flexDirection={['column','row','row']} w={'97%'} m={'auto'} justifyContent={'center'} padding={'5%'}>
+        <Box bg="#f5faff">
+        <Box display={'flex'} flexDirection={['column','row','row']} w={'97%'} m={'auto'} justifyContent={'center'} padding={'1%'}>
           <Box p={4} w={['100%','50%','50%']} mt={['0', '0', '5%']} >
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
               <Heading fontSize={'3xl'}>Program Afiliasi Jubelio</Heading>
@@ -41,7 +41,7 @@ export default function SectionFive () {
             </Box>
 
 
-            <Box w={['100%', '35%' ,'35%']} m='auto'>
+            <Box w={['100%', '35%' ,'35%']} m='auto' paddingBottom={'3%'}>
                 <Text color={'grey'} mt={6}>Email</Text>
                 <Input mt={5} type='text'/>
 
@@ -65,6 +65,6 @@ export default function SectionFive () {
             </Box>
         </Box>
         
-        </>
+        </Box>
     )
 }

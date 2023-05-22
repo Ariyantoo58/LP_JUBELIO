@@ -55,8 +55,8 @@ const Card = ({ heading, description, image, href }) => {
 
 function SectionFive() {
   return (
-    <>
-      <Box w={{ base: '100%', lg: '60%' }} m={'auto'}>
+    <Box bg="#f5faff">
+      <Box w={{ base: '100%', lg: '60%' }} m={'auto'} paddingTop={'2%'}>
         <Box p={4} w={'100%'}>
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
             <Heading fontSize={'3xl'}>Lebih dari sekadar omnichannel, Jubelio adalah ekosistem</Heading>
@@ -104,7 +104,7 @@ function SectionFive() {
         </Container>
 
       </Box>
-    </>
+    </Box>
   )
 }
 export default SectionFive

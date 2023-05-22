@@ -13,8 +13,8 @@ import {
 
 export default function SectionSix () {
  return (
-    <>
-    <Box w={{ base: '100%', lg: '60%' }} m={'auto'} paddingTop={'5%'}>
+    <Box bg="#f5faff">
+    <Box w={{ base: '100%', lg: '60%' }} m={'auto'} paddingTop={'4%'} paddingBottom={'4%'}>
         <Box p={4} w={'100%'}>
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
             <Heading fontSize={'3xl'}>Partner Kami</Heading>
@@ -27,6 +27,6 @@ export default function SectionSix () {
 
         </Box>
       </Box>
-    </>
+    </Box>
  )
 }

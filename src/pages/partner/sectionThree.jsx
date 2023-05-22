@@ -9,7 +9,7 @@ import {
 
 function SectionThree () {
 return (
-    <>
+    <Box bg="#d5e2e9">
     <Box  w={{base: '100%', lg:'60%'}} m={'auto'} padding={'3%'}>
         <Box p={4} w={'100%'}>
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
@@ -39,7 +39,7 @@ return (
         </Box>
     </Box>
           
-    </>
+    </Box>
 )
 }
 export default SectionThree
