@@ -186,19 +186,19 @@ function Navbar() {
                                                         </Box>
                                                     </Box>
                                                     <Box px={'10px'} py={'10px'} borderBottom={'1px solid #f2f2f2'}>
-                                                        <Box as={'button'}>
+                                                        <Box as={'button'} onClick={() => navigate('/product/store')}>
                                                             <Image w={'120px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-10.svg'} />
                                                         </Box>
 
                                                     </Box>
                                                     <Box px={'10px'} py={'10px'} borderBottom={'1px solid #f2f2f2'}>
-                                                        <Box as={'button'}>
+                                                        <Box as={'button'} onClick={() => navigate('/product/chat')}>
                                                             <Image w={'120px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-12.svg'} />
                                                         </Box>
 
                                                     </Box>
                                                     <Box px={'10px'} py={'10px'} >
-                                                        <Box as={'button'}>
+                                                        <Box as={'button'} onClick={() => navigate('/product/shipment')}>
                                                             <Image w={'120px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-13.svg'} />
                                                         </Box>
 

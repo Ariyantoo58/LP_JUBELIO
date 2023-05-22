@@ -32,12 +32,9 @@ export default function Drawers() {
                             <Box px={'10px'} py={'10px'} >
                                 <Link>{x}</Link>
                             </Box>
-
                         ))}
                     </Box>
-
                 </Box>
-
 
             ))}
 

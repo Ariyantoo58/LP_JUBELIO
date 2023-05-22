@@ -17,6 +17,9 @@ import Signin from "../pages/signin";
 import Signup from "../pages/signup";
 import Platform from "../pages/produk/platform";
 import Pos from "../pages/produk/pos";
+import Store from "../pages/produk/store";
+import Chat from "../pages/produk/chat";
+import Shipment from "../pages/produk/shipment";
 
 export default function RouteApp() {
     return (
@@ -38,6 +41,9 @@ export default function RouteApp() {
             <Route path="/product/pembukuan" element={<Pembukuan />} />
             <Route path="/product/platform" element={<Platform />} />
             <Route path="/product/pos" element={<Pos />} />
+            <Route path="/product/store" element={<Store />} />
+            <Route path="/product/chat" element={<Chat />} />
+            <Route path="/product/shipment" element={<Shipment />} />
 
         </Routes>
     );
