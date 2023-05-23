@@ -79,88 +79,54 @@ const features = [
 
 function SectionTwo() {
   return (
-    <Box bg="#f5faff" display={{ base: "contents", lg: "flex" }} w={'100%'} m={'auto'}>
-      <Box p={4} w={["100%", "100%", '50%']}>
-        <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-          <Heading fontSize={'3xl'}>Keunggulan Deoapp</Heading>
-          {/* <Text color={'gray.600'} fontSize={'xl'}>
+    <Box bg="#f5faff">
+      <Box w={'90%'} m={'auto'} display={{ base: "contents", lg: "flex" }}>
+        <Box p={4} w={["100%", "90%", '50%']}>
+          <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+            <Heading fontSize={'3xl'}>Keunggulan Deoapp</Heading>
+            {/* <Text color={'gray.600'} fontSize={'xl'}>
             Ribuan toko sudah pakai dan omzet jualan naik hingga 60% cuma dalam 3 bulan aja!
           </Text> */}
-        </Stack>
+          </Stack>
 
-        <Container maxW={'6xl'} mt={10} color={'black'}>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 1 }} spacing={4}>
-            {features.map((feature) => (
-              <HStack key={feature.id} align={'top'}>
-                <Box color={'green.400'} px={2}>
-                  <Icon as={CheckIcon} fontSize={'25px'} color={'green'} />
-                </Box>
-                <VStack align={'start'}>
-                  <Text fontWeight={600}>{feature.title}</Text>
-                  <Text color={'gray.600'}>{feature.text}</Text>
-                </VStack>
-              </HStack>
-            ))}
-          </SimpleGrid>
-        </Container>
+          <Container maxW={'6xl'} mt={10} color={'black'}>
+            <SimpleGrid columns={{ base: 1, md: 2, lg: 1 }} spacing={4}>
+              {features.map((feature) => (
+                <HStack key={feature.id} align={'top'}>
+                  <Box color={'green.400'} px={2}>
+                    <Icon as={CheckIcon} fontSize={'25px'} color={'green'} />
+                  </Box>
+                  <VStack align={'start'}>
+                    <Text fontWeight={600}>{feature.title}</Text>
+                    <Text color={'gray.600'}>{feature.text}</Text>
+                  </VStack>
+                </HStack>
+              ))}
+            </SimpleGrid>
+          </Container>
+        </Box>
+
+        <Box p={5} w={["100%", "100%", '50%']}>
+
+          <Container maxW={'7xl'} mt={12}>
+            <Flex flexWrap="wrap" gridGap={6} justify="center">
+              <Box w='230px'>
+                <Image h='100%' src={'https://dmt5ct25cwczv.cloudfront.net/images/blog-post/2020/11/Difference-between-UI,-UX,-&-Usability-5b1a1afc-ac2e-4d75-9178-59103f0b7ea9-desktop.png'} />
+              </Box>
+              <Box w='230px'>
+                <Image src={'https://kerjoo.com/blog/content/images/wordpress/2021/06/sibuk-dan-produktif-3-1024x675.jpg'} />
+              </Box>
+              <Box w='230px'>
+                <Image h='100%' src={'https://kledo.com/blog/wp-content/uploads/2022/09/pengusaha-sukses-dua.jpg'} />
+              </Box>
+              <Box w='230px'>
+                <Image src={'https://media.istockphoto.com/id/1307155382/id/vektor/ilustrasi-dukungan-pelanggan-datar-organik-ilustrasi-vektor.jpg?s=170667a&w=0&k=20&c=FtTwDepeEdKO1A5glt3yu8hpe4QRg5zkxnlD9bgBAWw='} />
+              </Box>
+            </Flex>
+          </Container>
+
+        </Box>
       </Box>
-
-      <Box p={5} w={["100%", "100%", '50%']}>
-
-        <Container maxW={'7xl'} mt={12}>
-          <Flex flexWrap="wrap" gridGap={6} justify="center">
-            <Box w='250px'>
-              <Image h='165px' src={'https://dmt5ct25cwczv.cloudfront.net/images/blog-post/2020/11/Difference-between-UI,-UX,-&-Usability-5b1a1afc-ac2e-4d75-9178-59103f0b7ea9-desktop.png'} />
-            </Box>
-            <Box w='250px'>
-              <Image src={'https://kerjoo.com/blog/content/images/wordpress/2021/06/sibuk-dan-produktif-3-1024x675.jpg'} />
-            </Box>
-            <Box w='250px'>
-              <Image h='165px' src={'https://kledo.com/blog/wp-content/uploads/2022/09/pengusaha-sukses-dua.jpg'} />
-            </Box>
-            <Box w='250px'>
-              <Image src={'https://media.istockphoto.com/id/1307155382/id/vektor/ilustrasi-dukungan-pelanggan-datar-organik-ilustrasi-vektor.jpg?s=170667a&w=0&k=20&c=FtTwDepeEdKO1A5glt3yu8hpe4QRg5zkxnlD9bgBAWw='} />
-            </Box>
-
-
-
-            {/* <Card
-              heading={'KATALOG'}
-              icon={<Icon as={FcPicture} w={10} h={10} />}
-              description={
-                'Upload produk, harga, dan promosi ke berbagai channel penjualan sekaligus.'
-              }
-              href={'#'}
-            />
-            <Card
-              heading={'PERSEDIAAN'}
-              icon={<Icon as={FcPuzzle} w={10} h={10} />}
-              description={
-                'Sinkronisasi stok di banyak toko dan gudang'
-              }
-              href={'#'}
-            />
-            <Card
-              heading={'GUDANG'}
-              icon={<Icon as={FcFactory} w={10} h={10} />}
-              description={
-                'Proses pesanan dan pengelolaan gudang yang akurat'
-              }
-              href={'#'}
-            />
-            <Card
-              heading={'PEMBUKUAN'}
-              icon={<Icon as={FcCalculator} w={10} h={10} />}
-              description={
-                'Rekonsiliasi pelunasan dan pembukuan dengan mudah'
-              }
-              href={'#'}
-            /> */}
-          </Flex>
-        </Container>
-
-      </Box>
-
     </Box>
   );
 }

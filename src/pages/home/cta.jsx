@@ -40,7 +40,7 @@ function CallToAction() {
   };
 
   return (
-    <Box h={'117vh'} bgSize={'auto'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
+    <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
       <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
         <Stack
           w={'95%'}
