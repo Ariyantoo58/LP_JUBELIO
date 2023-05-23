@@ -145,9 +145,9 @@ export const Portofolio = () => {
         <Heading>Client Kami</Heading>
       </Center>
       {load ?
-        <Flex gap={20} justifyContent={'center'} >
+        <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.slice(0, 3).map((item, index) => (
-            <Box w={'20%'} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '20%' }} key={index} boxShadow={'md'}>
               <Center >
                 <Image src={item.image} />
               </Center>
@@ -161,7 +161,7 @@ export const Portofolio = () => {
         </Flex> :
         <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.map((item, index) => (
-            <Box w={'20%'} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '20%' }} key={index} boxShadow={'md'}>
               <Center >
                 <Image src={item.image} />
               </Center>

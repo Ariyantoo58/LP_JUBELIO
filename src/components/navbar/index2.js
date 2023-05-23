@@ -96,7 +96,7 @@ function Navbar() {
                                 <>
                                     <IconButton
                                         variant="ghost"
-                                        icon={<FiMenu color="black" fontSize="1.6rem" />}
+                                        icon={<FiMenu color="white" fontSize="1.6rem" />}
                                         aria-label="Open Menu"
                                         _hover={{ bg: "transparent" }}
                                         onClick={onOpen}
@@ -107,18 +107,11 @@ function Navbar() {
                                             <DrawerCloseButton color={'white'} />
                                             <DrawerHeader borderBottomWidth='1px' >
                                                 <Flex justifyContent={'space-around'} py={'10px'}>
-                                                    <ButtonGroup>
-                                                        <TfiWorld color="white" />
-                                                        <Button
-                                                            variant="link"
-                                                            rightIcon={<PopoverIcon />}
-                                                            ml={'20px'}
-                                                            color={'white'}
-
-                                                        >
-                                                            Bahasa Indonesia
-                                                        </Button>
-                                                    </ButtonGroup>
+                                                    <Box>
+                                                        <Link href="/">
+                                                            <Image src={"https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e709f9ccfe095e9a58460.png"} alt="DeoApp" width={150} />
+                                                        </Link>
+                                                    </Box>
 
                                                 </Flex>
                                             </DrawerHeader>
@@ -128,8 +121,6 @@ function Navbar() {
                                         </DrawerContent>
                                     </Drawer>
                                 </>
-
-
                             }
 
                             <Link href="/">
