@@ -16,10 +16,10 @@ import Partner from "../pages/partner";
 import Signin from "../pages/signin";
 import Signup from "../pages/signup";
 import Platform from "../pages/produk/platform";
-import Pos from "../pages/produk/pos";
-import Store from "../pages/produk/store";
-import Chat from "../pages/produk/chat";
-import Shipment from "../pages/produk/shipment";
+import Pos from "../pages/produk/Pos";
+import Store from "../pages/produk/Store";
+import Chat from "../pages/produk/Chat";
+import Shipment from "../pages/produk/Shipment";
 
 export default function RouteApp() {
     return (
