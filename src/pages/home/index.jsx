@@ -3,7 +3,6 @@ import SectionOne from "./sectionOne";
 import SectionTwo from "./sectionTwo";
 import SectionThree from "./sectionThree";
 import SectionFour from "./sectionFour";
-import SectionFive from "./sectionFive";
 import { Portofolio } from "./sectionFive";
 
 function IndexHome() {
@@ -14,7 +13,6 @@ function IndexHome() {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
-            <SectionFive />
             <Portofolio />
         </>
     )
