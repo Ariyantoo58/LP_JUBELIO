@@ -79,7 +79,7 @@ function Pricing () {
                     5TB Lorem, ipsum dolor.
                   </ListItem>
                 </List>
-                <Box w="80%" pt={7}>
+             <Box w="80%" pt={7}>
                   <Button w="full" colorScheme='#14C38E' variant="outline">
                     Start trial
                   </Button>

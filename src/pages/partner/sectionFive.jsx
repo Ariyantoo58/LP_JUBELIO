@@ -65,7 +65,7 @@ import {
   function SectionFive() {
     return (
       <>  
-        <Box p={10}>
+        <Box p={5}>
           <Container maxW={'7xl'} mt={12}>
             <Flex flexWrap="wrap" gridGap={20} justify="center">
               <Card

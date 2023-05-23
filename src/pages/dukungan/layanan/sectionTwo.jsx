@@ -67,37 +67,7 @@ return(
                 </Flex>
               </Flex>
 
-              <Flex 
-              h={80}
-              maxW={{ base: 'full', md: '800px', lg: '1100px' }}
-              w={'full'}
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-              boxShadow= {'rgba(0, 0, 0, 0.24) 0px 3px 8px;'}
-              display='flex'
-              >
-                <Flex w='50%' bg="#E4D0D0"
-                alignItems='center'
-                justifyContent='center'>
-                    <Image 
-                    w='45%'
-                    src={'https://jubelio.com/wp-content/uploads/2023/04/image-customerservice-1.svg'}/>
-                </Flex>
-                <Flex w='50%'borderLeft={'1px solid #E4D0D0'} >
-                <Box w='50%' m='auto'>
-                        <Text
-                        fontSize="15pt" fontWeight="bold" textAlign='left'>
-                        Customer Service
-                        </Text>
-                        <Text color='grey' textAlign='left' mt={5}>
-                        Live chat Jubelio siap membantu kamu dalam mengatasi semua masalah penggunaan (hari besar dan event marketplace juga stand by)
-                        </Text>
-
-                    </Box>
-                </Flex>
-                
-              </Flex>
+              
 
               <Flex 
               h={80}

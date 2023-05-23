@@ -233,7 +233,7 @@ function Navbar() {
                                                         <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'}>Integrasi Api</Button>
                                                     </Box>
                                                     <Box px={'10px'} py={'15px'} >
-                                                        <Button onClick={() => navigate('/affiliasi/layanan')} bg={'transparent'}>Layanan Purna Jual</Button>
+                                                        <Button onClick={() => navigate('/dukungan/layanan')} bg={'transparent'}>Layanan Purna Jual</Button>
                                                     </Box>
                                                 </PopoverBody>
                                             </PopoverContent>
