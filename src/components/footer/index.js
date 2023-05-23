@@ -8,6 +8,7 @@ import {
   Image,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMailBulk, FaMailchimp, FaPhone, FaTwitter } from 'react-icons/fa';
 
 
 
@@ -22,51 +23,39 @@ const ListHeader = ({ children }) => {
 function Footer() {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg={'#21215e'}
+      color={'white'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
+          templateColumns={{ sm: '1fr 1fr', md: '3fr 1fr 3fr 1fr ' }}
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-              <Image w={'45%'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png' />
+              <Image w={'75%'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e709f9ccfe095e9a58460.png' />
             </Box>
             <Text fontSize={'sm'}>
               © 2023 Deoapp. All rights reserved
             </Text>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Product</ListHeader>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
             <Link href={'#'}>About</Link>
-            <Link href={'#'}>Press</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact</Link>
-            <Link href={'#'}>Partners</Link>
+            <Link href={'#'}>Contact Us</Link>
+            <Link href={'#'}>Service</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Status</Link>
+            <ListHeader>Contact Us</ListHeader>
+            <Link href={'#'} display={'flex'}> <FaPhone/> +1 (917)-300-0893</Link>
+            <Link href={'#'} display={'flex'}> <FaMailBulk/> info@deoapp.com</Link>
+            <Link href={'#'} display={'flex'}> <FaLocationArrow/> Jl. Puri Utama No.7, RT.004/RW.008, Petir, Kec. Cipondoh, Kota Tangerang, Banten 15147Jl. Puri Utama No.7, RT.004/RW.008, Petir, Kec. Cipondoh, Kota Tangerang, Banten 15147</Link>
+            
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Dribbble</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href={'#'}>LinkedIn</Link>
+            <ListHeader>Social Media Links</ListHeader>
+            <Link href={'#'} display={'flex'}> <FaFacebook/> deoappcom</Link>
+            <Link href={'#'} display={'flex'}> <FaTwitter/> deoappcom </Link>
+            <Link href={'#'} display={'flex'}> <FaInstagram/> deoappcom</Link>
+            <Link href={'#'} display={'flex'}> <FaLinkedin/> deoappcom </Link>
           </Stack>
         </SimpleGrid>
       </Container>
