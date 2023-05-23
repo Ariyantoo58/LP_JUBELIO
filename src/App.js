@@ -1,18 +1,14 @@
 
 import RouteApp from './Routes/RoutesApp';
-import { Box, ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 import Footer from './components/footer';
-// import Navbar from './components/navbar';
-import Navbar from './components/navbar/index2';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <ChakraProvider>
       <Navbar />
-      <Box mt={'80px'}>
-        <RouteApp />
-      </Box>
-
+      <RouteApp />
       <Footer />
     </ChakraProvider>
   );

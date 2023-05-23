@@ -100,7 +100,7 @@ const SignUpForm = () => (
     <Stack spacing="8">
       <Stack spacing="6" align="center">
         <Center>
-          <Image src={logo} alt="LifetimeDesign" width={50} />
+          <Image src={logo} alt="LifetimeDesign" width={120} />
         </Center>
         <Stack spacing="3" textAlign="center">
           <Heading size="xs">Create an account</Heading>

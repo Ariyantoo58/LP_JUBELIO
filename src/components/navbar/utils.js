@@ -1,9 +1,26 @@
+const platform = 'https://jubelio.com/wp-content/uploads/2023/03/Jubelio-Omnichannel-1.svg'
+const pos = "https://jubelio.com/wp-content/uploads/2023/03/Frame-11.svg"
+const store = "https://jubelio.com/wp-content/uploads/2023/03/Frame-10.svg"
+const chat = "https://jubelio.com/wp-content/uploads/2023/03/Frame-12.svg"
+const shipment = "https://jubelio.com/wp-content/uploads/2023/03/Frame-13.svg"
+
 export const Menus = [
     {
         title: "Produk",
         resource: [
-            "katalog", "Persediaan", "Pesanan", "Gudang (WMS)", "Intelegensi Bisnis", "Pembukuan"
+            platform,
+            "katalog",
+            "Persediaan",
+            "Pesanan",
+            "Gudang (WMS)",
+            "Intelegensi Bisnis",
+            "Pembukuan",
+            pos,
+            store,
+            chat,
+            shipment,
         ]
+
     },
     {
         title: "Harga",
@@ -20,7 +37,7 @@ export const Menus = [
     {
         title: "Dukungan",
         resource: [
-            "Layanan Purna ", "Ambassador",
+            "Layanan Purna Jual ", "Integrasi Api", "Kelas Online"
         ]
     },
 ]
