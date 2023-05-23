@@ -10,11 +10,10 @@ import {
     Icon,
     IconButton,
     createIcon,
-    IconProps,
-    useColorModeValue,
   } from '@chakra-ui/react';
+import image from '../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png'
 
-function CallToAction () {
+function SectionOne () {
     const PlayIcon = createIcon({
         displayName: 'PlayIcon',
         viewBox: '0 0 58 58',
@@ -40,7 +39,7 @@ function CallToAction () {
       };
     
     return(
-        <Box bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" paddingBottom={'7%'}>
+        <Box h={'122.5vh'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
         <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
       <Stack
         w={'95%'}
@@ -57,7 +56,7 @@ function CallToAction () {
             fontWeight={500}
             paddingBottom={10}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-            <Text fontSize={['30px','30px','40px']} as={'span'} color={'white'}>
+            <Text fontSize={'40px'} as={'span'} color={'white'}>
             Capai Era Kesuksesanmu dengan DeoApp: Platform Kekinian untuk Bos Kreatif, Influencer, dan Profesional Top di Indonesia! 
             </Text>
           </Heading>
@@ -89,11 +88,11 @@ function CallToAction () {
         </Stack>        
       </Stack>
       <Stack w={'100%'}>
-        <Image w={'100%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png'/>
+        <Image w={'100%'} m={'auto'} src={image}/>
       </Stack>
     </Container>
         </Box>
     )
 }
 
-export default CallToAction
+export default SectionOne
