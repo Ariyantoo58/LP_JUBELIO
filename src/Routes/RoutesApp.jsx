@@ -20,6 +20,7 @@ import Pos from "../pages/produk/pos";
 import Store from "../pages/produk/store";
 import Chat from "../pages/produk/chat";
 import Shipment from "../pages/produk/shipment";
+import Layanan from "../pages/dukungan/layanan";
 
 export default function RouteApp() {
     return (
@@ -33,6 +34,7 @@ export default function RouteApp() {
             <Route path="/partner" element={<Partner />} />
             <Route path="/affiliasi/ambassador" element={<Ambassador />} />
             <Route path="/dukungan/integrasiapi" element={<IntegrasiAPI />} />
+            <Route path="/dukungan/layanan" element={<Layanan />} />
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
             <Route path="/product/persediaan" element={<Persediaan />} />
             <Route path="/product/pesanan" element={<Pesanan />} />

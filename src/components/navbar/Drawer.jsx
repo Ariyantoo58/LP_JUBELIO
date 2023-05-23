@@ -20,6 +20,22 @@ export default function Drawers() {
         if (item == "katalog") {
             navigate('/product/katalog')
         }
+        if (item == platform) {
+            navigate('/product/platform')
+        }
+        if (item == pos) {
+            navigate('/product/pos')
+        }
+        if (item == store) {
+            navigate('/product/store')
+        }
+        if (item == shipment) {
+            navigate('/product/shipment')
+        }
+        if (item == chat) {
+            navigate('/product/chat')
+        }
+
         if (item == "Persediaan") {
             navigate('/product/persediaan')
         }
@@ -89,7 +105,7 @@ export default function Drawers() {
                                     {(item.resource !== undefined ? item.resource : []).map((x, i) => (
                                         <>
                                             {x == platform || x == pos || x == store || x == chat || x == shipment ?
-                                                <Box py={'10px'} as={'button'} >
+                                                <Box py={'10px'} as={'button'} onClick={() => handleChange(x)} >
                                                     <Image w={'120px'} src={x} />
                                                 </Box> : <Box py={'10px'} onClick={() => handleChange(x)} >
                                                     <Link>{x}</Link>
