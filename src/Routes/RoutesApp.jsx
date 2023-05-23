@@ -16,10 +16,18 @@ import Partner from "../pages/partner";
 import Signin from "../pages/signin";
 import Signup from "../pages/signup";
 import Platform from "../pages/produk/platform";
+<<<<<<< HEAD
 import Pos from "../pages/produk/Pos";
 import Store from "../pages/produk/Store";
 import Chat from "../pages/produk/Chat";
 import Shipment from "../pages/produk/Shipment";
+=======
+import Pos from "../pages/produk/pos";
+import Store from "../pages/produk/store";
+import Chat from "../pages/produk/chat";
+import Shipment from "../pages/produk/shipment";
+import Layanan from "../pages/dukungan/layanan";
+>>>>>>> 58a5f0faa83fbcb1e81cd114b3fd8e174f761f96
 
 export default function RouteApp() {
     return (
@@ -33,6 +41,7 @@ export default function RouteApp() {
             <Route path="/partner" element={<Partner />} />
             <Route path="/affiliasi/ambassador" element={<Ambassador />} />
             <Route path="/dukungan/integrasiapi" element={<IntegrasiAPI />} />
+            <Route path="/dukungan/layanan" element={<Layanan />} />
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
             <Route path="/product/persediaan" element={<Persediaan />} />
             <Route path="/product/pesanan" element={<Pesanan />} />

@@ -229,6 +229,7 @@ function Navbar() {
                                                     <Box px={'10px'} py={'15px'} >
                                                         <Button onClick={() => navigate('/affiliasi/ambassador')} bg={'transparent'}>Ambassador</Button>
                                                     </Box>
+
                                                 </PopoverBody>
                                             </PopoverContent>
                                         </Popover>
@@ -247,6 +248,9 @@ function Navbar() {
                                                 <PopoverBody>
                                                     <Box px={'10px'} py={'15px'} >
                                                         <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'}>Integrasi Api</Button>
+                                                    </Box>
+                                                    <Box px={'10px'} py={'15px'} >
+                                                        <Button onClick={() => navigate('/affiliasi/layanan')} bg={'transparent'}>Layanan Purna Jual</Button>
                                                     </Box>
                                                 </PopoverBody>
                                             </PopoverContent>

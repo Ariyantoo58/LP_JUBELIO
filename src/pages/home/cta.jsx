@@ -41,7 +41,7 @@ function CallToAction () {
     
     return(
         <Box bg="#f5faff">
-        <Container maxW={'7xl'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} w={'90'} m={'auto'}>
+        <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'}>
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -87,7 +87,7 @@ function CallToAction () {
         </Stack>        
       </Stack>
       <Stack>
-        <Image w={'80%'} m={'auto'} src='https://jubelio.com/wp-content/uploads/2023/05/cover-homepage-1536x1536.png'/>
+        <Image w={'90%'} m={'auto'} src='https://jubelio.com/wp-content/uploads/2023/05/cover-homepage-1536x1536.png'/>
       </Stack>
     </Container>
         </Box>
