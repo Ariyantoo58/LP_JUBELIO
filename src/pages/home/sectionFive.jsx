@@ -4,20 +4,12 @@ import {
   Container,
   Flex,
   Heading,
-  Icon,
   Stack,
   Text,
   Image,
-  useColorModeValue,
+  Center,
+  VStack,
 } from '@chakra-ui/react';
-
-import {
-  FcBusiness,
-  FcCalculator,
-  FcFactory,
-  FcPicture,
-  FcPuzzle,
-} from 'react-icons/fc';
 
 const CardProps = {
   heading: '',
@@ -40,8 +32,8 @@ const Card = ({ heading, description, image, href }) => {
           <Image src={image} />
         </Box>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'} h={'20vh'}>
+          <Heading size="md" >{heading}</Heading>
+          <Text mt={1} fontSize={'sm'} h={'20vh'} noOfLines={1}>
             {description}
           </Text>
         </Box>
@@ -59,10 +51,10 @@ function SectionFive() {
       <Box w={{ base: '100%', lg: '60%' }} m={'auto'} paddingTop={'2%'}>
         <Box p={4} w={'100%'}>
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading fontSize={'3xl'}>Lebih dari sekadar omnichannel, Jubelio adalah ekosistem</Heading>
-            <Text color={'gray.600'} fontSize={'md'}>
+            <Heading fontSize={'3xl'}>Client Kami</Heading>
+            {/* <Text color={'gray.600'} fontSize={'md'}>
               Sistemm terlengkap yang dukung penuh semua kebutuhan bisnismu. Tersedia tanpa tambahan biaya.
-            </Text>
+            </Text> */}
           </Stack>
 
         </Box>
@@ -73,9 +65,10 @@ function SectionFive() {
           <Flex flexWrap="wrap" gridGap={6} justify="center">
             <Card
               description={
-                'Buat toko online dalam hitungan menit dengan desain premium.'
+                'seperti aplikasi web untuk digunakan organisasi berdasarkan model SCRUM dengan papan kanban sebagai fitur utama Dan Platform Ini Juga berfungsi untuk melakukan absensi karyawan yang telah dilengkapi dengan fitur yang lengkap'
               }
               href={'#'}
+
               image="https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png"
             />
             <Card
@@ -108,3 +101,50 @@ function SectionFive() {
   )
 }
 export default SectionFive
+
+
+
+export const Portofolio = () => {
+  const menu = [
+    {
+      title: "project",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418d71fecb0dd9f219c8910.png",
+      description: 'Project Management seperti aplikasi web untuk digunakan organisasi berdasarkan model SCRUM dengan papan kanban sebagai fitur utama Dan Platform Ini Juga berfungsi untuk melakukan absensi karyawan yang telah dilengkapi dengan fitur yang lengkap',
+    },
+    {
+      title: "entreperenurs",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418dc20ecb0ddd4cb9c8e01.png",
+      description: 'Pengusaha adalah individu yang menciptakan, mengatur, dan mengelola bisnis atau perusahaan, mengambil risiko keuangan dalam mengejar keuntungan. Mereka sering dikaitkan dengan inovasi dan bersedia mengambil peluang bisnis baru atau memperkenalkan produk, layanan, atau model bisnis baru. Pengusaha dapat ditemukan di berbagai bidang, termasuk teknologi, keuangan, ritel, dan manufaktur, dan merupakan komponen penting dari ekonomi yang dinamis.',
+    },
+    {
+      title: "algotrading",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/641881311639e0243b7ed7ee.png",
+      description: 'Perdagangan algoritmik (juga disebut perdagangan otomatis, perdagangan kotak hitam, atau perdagangan algo) menggunakan program komputer yang mengikuti serangkaian instruksi (algoritma) yang ditentukan untuk melakukan perdagangan. Perdagangan, secara teori, dapat menghasilkan keuntungan dengan kecepatan dan frekuensi yang tidak mungkin dilakukan oleh seorang pedagang manusia.',
+    },
+  ]
+  return (
+    <VStack w={'90%'} mx={'auto'} >
+      <Center py={'30px'}>
+        <Heading>Client Kami</Heading>
+      </Center>
+      <Flex gap={20} justifyContent={'center'} >
+        {menu.map((item, index) => (
+          <Box w={'20%'} key={index} boxShadow={'md'}>
+            <Center >
+              <Image src={item.image} />
+            </Center>
+            <Box p={'10px'}>
+              <Heading py={'15px'} size={'lg'}>{item.title}</Heading>
+              <Text noOfLines={10}>{item.description}</Text>
+            </Box>
+          </Box>
+
+        ))}
+      </Flex>
+      <Box py={'30px'}>
+        <Button fontSize={'20px'}>Load More...</Button>
+      </Box>
+
+    </VStack>
+  )
+}

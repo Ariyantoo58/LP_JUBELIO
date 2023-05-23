@@ -4,6 +4,7 @@ import SectionTwo from "./sectionTwo";
 import SectionThree from "./sectionThree";
 import SectionFour from "./sectionFour";
 import SectionFive from "./sectionFive";
+import { Portofolio } from "./sectionFive";
 
 function IndexHome() {
     return (
@@ -14,6 +15,7 @@ function IndexHome() {
             <SectionThree />
             <SectionFour />
             <SectionFive />
+            <Portofolio />
         </>
     )
 }
