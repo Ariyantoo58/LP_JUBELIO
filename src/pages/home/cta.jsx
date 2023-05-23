@@ -40,54 +40,56 @@ function CallToAction () {
       };
     
     return(
-        <Box bg="#f5faff">
-        <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'}>
+        <Box h={'122.5vh'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
+        <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
       <Stack
+        w={'95%'}
         align={'center'}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 20, md: 20 }}
         direction={{ base: 'column', md: 'row' }}>
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} spacing={{ base: 5, md: 2 }}>
+          <Text color={'white'} fontFamily={'sans-serif'}>
+            Buat kamu para pejuang kesuksesan!
+          </Text>
           <Heading
-            lineHeight={1.1}
-            fontWeight={600}
+            lineHeight={1}
+            fontWeight={500}
+            paddingBottom={10}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-            <br />
-            <Text fontSize={'40px'} as={'span'} >
-            Platform omnichannel jualan online dan offline terlengkap
+            <Text fontSize={'40px'} as={'span'} color={'white'}>
+            Capai Era Kesuksesanmu dengan DeoApp: Platform Kekinian untuk Bos Kreatif, Influencer, dan Profesional Top di Indonesia! 
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-          Senjata rahasia buat kembangkan bisnismu. Kontrol semua operasional dalam satu sistem terintegrasi.
+          
+          <Text color={'white'}>
+            DeoApp hadir dengan segudang fitur kece yang akan bikin bisnis dan kariermu naik level! Siap-siap terbang menuju puncak kejayaan! 🚀
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: 'column', sm: 'row' }}>
             <Button
-              rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
-              px={6}
+              mt={5}
+              rounded={'base'}
+              flexDirection={'column'}
+              px={18}
+              py={9}
               colorScheme={'red'}
               bg={'#14C38E'}
               _hover={{ bg: '#00FFAB' }}>
-              Get started
+                <Text fontSize={'15pt'} fontWeight={'bold'}>
+                Konsultasi LANGSUNG Yuk!
+
+                </Text>
+              <Text fontSize={'10pt'}>
+                Via Whatsapp dengan Tim Deoapp
+              </Text>
             </Button>
-            <Button
-            as={'a'}
-            display={{ base: 'inline-flex', md: 'inline-flex', lg:'none' }}
-            fontSize={'sm'}
-            fontWeight={400}
-            variant={'link'}
-            href={'#'}
-            >
-            Demo
-          </Button>
           </Stack>
         </Stack>        
       </Stack>
-      <Stack>
-        <Image w={'90%'} m={'auto'} src='https://jubelio.com/wp-content/uploads/2023/05/cover-homepage-1536x1536.png'/>
+      <Stack w={'100%'}>
+        <Image w={'100%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png'/>
       </Stack>
     </Container>
         </Box>
