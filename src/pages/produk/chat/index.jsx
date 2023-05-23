@@ -1,7 +1,7 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
 
-export default function Pesanan() {
+export default function Chat() {
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
@@ -12,26 +12,25 @@ export default function Pesanan() {
                 <Box bg={"#F5FAFF"} >
                     <HStack w={'90%'} mx={'auto'} py={{ base: 0, lg: '30px' }}>
                         <Box>
-                            <Heading color={'blue'} mb={'20px'}>PESANAN</Heading>
-                            <Heading mb={'30px'}>Proses sederhana dalam satu sistem</Heading>
-                            <Text mb={'30px'} >Kelola sekaligus ratusan hingga ribuan pesanan dari berbagai channel jualanmu lewat satu dashboard.</Text>
+                            <Image w={'300px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-7.svg'} />
+                            <Heading mb={'30px'} mt={'2%'}> Balas pesan cepat pelanggan makin percaya</Heading>
+                            <Text mb={'30px'} >Interaksi tanpa jeda di semua channel jualan lewat satu platform.</Text>
                             <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
                         </Box>
                         <Center>
-                            <Image w={'1000px'} h={'600px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-pesanan-1536x1536.png"} />
+                            <Image w={'1000px'} h={'600px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-chat-1536x1536.png"} />
                         </Center>
-
                     </HStack>
                 </Box> :
                 <Box bg={"#F5FAFF"} >
                     <Box w={'90%'} mx={'auto'}>
                         <Center>
-                            <Image w={'350px'} h={'300px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-pesanan-1536x1536.png"} />
+                            <Image w={'350px'} h={'300px'} src={"https://jubelio.com/wp-content/uploads/2023/03/chat-tanpajubelio.gif"} />
                         </Center>
                         <Box pb={'50px'}>
-                            <Heading color={'blue'} mb={'20px'}>PESANAN</Heading>
-                            <Heading mb={'30px'}>Proses sederhana dalam satu sistem</Heading>
-                            <Text mb={'30px'} >Kelola sekaligus ratusan hingga ribuan pesanan dari berbagai channel jualanmu lewat satu dashboard.</Text>
+                            <Image w={'400px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-4.svg'} />
+                            <Heading mb={'30px'}>Platform omnichannel jualan online dan offline terlengkap</Heading>
+                            <Text mb={'30px'} >Senjata rahasia buat kembangkan bisnismu. Kontrol semua operasional dalam satu sistem terintegrasi..</Text>
                             <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
                         </Box>
 
@@ -44,8 +43,8 @@ export default function Pesanan() {
                 <Box w={'90%'} mx={'auto'}>
                     <Center >
                         <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Dengan dan Tanpa Jubelio Dalam Bisnismu</Heading>
-                            <Text >Lihat bagaimana Jubelio memudahkan pengelolaan persediaan produkmu.</Text>
+                            <Heading >Apa untungnya pakai Jubelio Chat?</Heading>
+                            <Text >Lihat bagaimana kami mudahkan interaksimu dengan pelanggan.</Text>
                             <Center bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
                                 <Button mr={'20px'} bg={'blue'} color={'white'}>
                                     Tanpa Jubelio
@@ -58,21 +57,21 @@ export default function Pesanan() {
                     </Center>
                     <HStack mt={'40px'}>
                         <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/persediaan-tanpa-jubelio-hesti-1.gif"} />
+                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/chat-tanpajubelio.gif"} />
 
                         </Center>
                         <Box>
                             <HStack spacing={'15px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih harus update manual stok kamu dari berbagai saluran penjualan?</Text>
+                                <Text>Harus login satu persatu ke semua Marketplace untuk membalas chat pelanggan?</Text>
                             </HStack>
                             <HStack spacing={'15px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih perlu banyak karyawan dan sering salah dalam mengelola stok?</Text>
+                                <Text>Sering telat membalas chat pelanggan karena harus memantau banyak tab browser?</Text>
                             </HStack>
                             <HStack spacing={'15px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih belum bisa memperkirakan ketersediaan stok kamu kedepannya?</Text>
+                                <Text>Load yang tidak seimbang antara satu admin dengan admin yang lainnya?</Text>
                             </HStack>
 
                         </Box>
@@ -81,8 +80,8 @@ export default function Pesanan() {
                 <Box w={'90%'} mx={'auto'} mb={'50px'}>
                     <Center >
                         <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Dengan dan Tanpa Jubelio Dalam Bisnismu</Heading>
-                            <Text >Lihat bagaimana Jubelio memudahkan pengelolaan persediaan produkmu.</Text>
+                            <Heading >Apa untungnya pakai Jubelio Chat?</Heading>
+                            <Text >Lihat bagaimana kami mudahkan interaksimu dengan pelanggan.</Text>
                             <VStack bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
                                 <Button w={'90%'} bg={'blue'} color={'white'}>
                                     Tanpa Jubelio
@@ -95,7 +94,7 @@ export default function Pesanan() {
                     </Center>
                     <VStack mt={'40px'}>
                         <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/persediaan-tanpa-jubelio-hesti-1.gif"} />
+                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/chat-tanpajubelio.gif"} />
 
                         </Center>
                         <Box>
@@ -148,7 +147,7 @@ const FiturUnggulan = () => {
         <Box p={'10px'} w={'90%'} mx={'auto'}>
             <Box>
                 <VStack spacing={'20px'} mt={'30px'}>
-                    <Heading>Fitur unggulan manajemen persediaan</Heading>
+                    <Heading>Fitur unggulan Jubelio Chat</Heading>
                     <Text>Jelajahi fiturnya yang bisa kamu manfaatkan buat bisnis.</Text>
                 </VStack>
             </Box>

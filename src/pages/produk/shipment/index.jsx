@@ -1,7 +1,7 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
 
-export default function Pesanan() {
+export default function Shipment() {
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
@@ -12,27 +12,26 @@ export default function Pesanan() {
                 <Box bg={"#F5FAFF"} >
                     <HStack w={'90%'} mx={'auto'} py={{ base: 0, lg: '30px' }}>
                         <Box>
-                            <Heading color={'blue'} mb={'20px'}>PESANAN</Heading>
-                            <Heading mb={'30px'}>Proses sederhana dalam satu sistem</Heading>
-                            <Text mb={'30px'} >Kelola sekaligus ratusan hingga ribuan pesanan dari berbagai channel jualanmu lewat satu dashboard.</Text>
-                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
+                            <Image w={'300px'} mb={'30px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-9.svg'} />
+                            <Heading mb={'30px'}> Kirim pesanan dengan ragam ekspedisi pilihan</Heading>
+                            <Text mb={'30px'} >Atur pengiriman lebih cepat dan mudah terintegrasi dalam satu platform.</Text>
+                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Hubungi Kami</Button>
                         </Box>
                         <Center>
-                            <Image w={'1000px'} h={'600px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-pesanan-1536x1536.png"} />
+                            <Image w={'1000px'} h={'600px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-shipment-1536x1536.png"} />
                         </Center>
-
                     </HStack>
                 </Box> :
                 <Box bg={"#F5FAFF"} >
                     <Box w={'90%'} mx={'auto'}>
                         <Center>
-                            <Image w={'350px'} h={'300px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-pesanan-1536x1536.png"} />
+                            <Image w={'350px'} h={'300px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-shipment-1536x1536.png"} />
                         </Center>
                         <Box pb={'50px'}>
-                            <Heading color={'blue'} mb={'20px'}>PESANAN</Heading>
-                            <Heading mb={'30px'}>Proses sederhana dalam satu sistem</Heading>
-                            <Text mb={'30px'} >Kelola sekaligus ratusan hingga ribuan pesanan dari berbagai channel jualanmu lewat satu dashboard.</Text>
-                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
+                            <Image w={'400px'} src={'https://jubelio.com/wp-content/uploads/2023/03/Frame-9.svg'} />
+                            <Heading mb={'30px'}>Kirim pesanan dengan ragam ekspedisi pilihan</Heading>
+                            <Text mb={'30px'} >Interaksi tanpa jeda di semua channel jualan lewat satu platform.</Text>
+                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Hubungi Kami</Button>
                         </Box>
 
 
