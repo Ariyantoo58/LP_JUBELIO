@@ -1,10 +1,8 @@
 import {
   Box,
   Button,
-  Container,
   Flex,
   Heading,
-  Stack,
   Text,
   Image,
   Center,
@@ -12,131 +10,59 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
-const CardProps = {
-  heading: '',
-  description: '',
-  icon: null,
-  href: ''
-};
-
-const Card = ({ heading, description, image, href }) => {
-  return (
-    <Box
-      maxW={{ base: 'full', md: '275px', lg: '250px' }}
-      w={'full'}
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
-      p={10}>
-      <Stack align={'start'} spacing={2}>
-        <Box>
-          <Image src={image} />
-        </Box>
-        <Box mt={2}>
-          <Heading size="md" >{heading}</Heading>
-          <Text mt={1} fontSize={'sm'} h={'20vh'} noOfLines={1}>
-            {description}
-          </Text>
-        </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-          Cek Fitur
-        </Button>
-      </Stack>
-    </Box>
-  )
-}
-
-function SectionFive() {
-  return (
-    <Box bg="#f5faff">
-      <Box w={{ base: '100%', lg: '60%' }} m={'auto'} paddingTop={'2%'}>
-        <Box p={4} w={'100%'}>
-          <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading fontSize={'3xl'}>Client Kami</Heading>
-            {/* <Text color={'gray.600'} fontSize={'md'}>
-              Sistemm terlengkap yang dukung penuh semua kebutuhan bisnismu. Tersedia tanpa tambahan biaya.
-            </Text> */}
-          </Stack>
-
-        </Box>
-      </Box>
-
-      <Box p={5}>
-        <Container maxW={'7xl'} mt={12}>
-          <Flex flexWrap="wrap" gridGap={6} justify="center">
-            <Card
-              description={
-                'seperti aplikasi web untuk digunakan organisasi berdasarkan model SCRUM dengan papan kanban sebagai fitur utama Dan Platform Ini Juga berfungsi untuk melakukan absensi karyawan yang telah dilengkapi dengan fitur yang lengkap'
-              }
-              href={'#'}
-
-              image="https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png"
-            />
-            <Card
-              description={
-                'Integrasikan toko offline dengan aplikasi kasir buat mudahkan operasional.'
-              }
-
-              href={'#'}
-              image="https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png"
-            />
-            <Card
-              description={
-                'Interaksi langsung dengan pelanggan dari berbagai channel lewat satu platform.'
-              }
-              href={'#'}
-              image="https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png"
-            />
-            <Card
-              description={
-                'Kirim pesanan mudah dengan pilihan kurir yang terintegrasi.'
-              }
-              href={'#'}
-              image="https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png"
-            />
-          </Flex>
-        </Container>
-
-      </Box>
-    </Box>
-  )
-}
-export default SectionFive
-
-
 
 export const Portofolio = () => {
   const [load, setLoad] = useState(true)
   const menu = [
     {
-      title: "project",
+      title: "Project",
       image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418d71fecb0dd9f219c8910.png",
       description: 'Project Management seperti aplikasi web untuk digunakan organisasi berdasarkan model SCRUM dengan papan kanban sebagai fitur utama Dan Platform Ini Juga berfungsi untuk melakukan absensi karyawan yang telah dilengkapi dengan fitur yang lengkap',
     },
     {
-      title: "entreperenurs",
+      title: "Entreperenurs",
       image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418dc20ecb0ddd4cb9c8e01.png",
       description: 'Pengusaha adalah individu yang menciptakan, mengatur, dan mengelola bisnis atau perusahaan, mengambil risiko keuangan dalam mengejar keuntungan. Mereka sering dikaitkan dengan inovasi dan bersedia mengambil peluang bisnis baru atau memperkenalkan produk, layanan, atau model bisnis baru. Pengusaha dapat ditemukan di berbagai bidang, termasuk teknologi, keuangan, ritel, dan manufaktur, dan merupakan komponen penting dari ekonomi yang dinamis.',
     },
     {
-      title: "algotrading",
+      title: "Algotrading",
       image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/641881311639e0243b7ed7ee.png",
       description: 'Perdagangan algoritmik (juga disebut perdagangan otomatis, perdagangan kotak hitam, atau perdagangan algo) menggunakan program komputer yang mengikuti serangkaian instruksi (algoritma) yang ditentukan untuk melakukan perdagangan. Perdagangan, secara teori, dapat menghasilkan keuntungan dengan kecepatan dan frekuensi yang tidak mungkin dilakukan oleh seorang pedagang manusia.',
     },
     {
-      title: "project",
-      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418d71fecb0dd9f219c8910.png",
-      description: 'Project Management seperti aplikasi web untuk digunakan organisasi berdasarkan model SCRUM dengan papan kanban sebagai fitur utama Dan Platform Ini Juga berfungsi untuk melakukan absensi karyawan yang telah dilengkapi dengan fitur yang lengkap',
+      title: "Affiliate",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/642136ce04a5d522b8b6e916.png",
+      description: 'Afiliasi adalah orang, perusahaan, atau organisasi yang secara resmi terhubung atau terkait dengan entitas lain (biasanya perusahaan atau organisasi yang lebih besar) dalam hubungan yang saling menguntungkan. Afiliasi ini sering melibatkan promosi, pemasaran, atau penjualan produk atau layanan dari entitas yang lebih besar dengan imbalan komisi atau kompensasi lainnya. Dalam konteks pemasaran online, afiliasi adalah seseorang yang mempromosikan produk atau layanan melalui program afiliasi, mendapatkan komisi atas setiap penjualan atau konversi yang dihasilkan.',
     },
     {
-      title: "entreperenurs",
-      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418dc20ecb0ddd4cb9c8e01.png",
-      description: 'Pengusaha adalah individu yang menciptakan, mengatur, dan mengelola bisnis atau perusahaan, mengambil risiko keuangan dalam mengejar keuntungan. Mereka sering dikaitkan dengan inovasi dan bersedia mengambil peluang bisnis baru atau memperkenalkan produk, layanan, atau model bisnis baru. Pengusaha dapat ditemukan di berbagai bidang, termasuk teknologi, keuangan, ritel, dan manufaktur, dan merupakan komponen penting dari ekonomi yang dinamis.',
+      title: "Brainology",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/64188605ecb0dd69a09c2db7.png",
+      description: 'Brainology adalah aplikasi seluler yang bertujuan untuk meningkatkan keterampilan kognitif, memori, dan kemampuan pemecahan masalah pengguna. Aplikasi ini menggunakan teknik dan permainan yang terbukti secara ilmiah untuk melatih otak dan meningkatkan ketangkasan mental. Di blog ini, kita akan membahas fitur dan manfaat dari aplikasi Brainology.',
     },
     {
-      title: "algotrading",
-      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/641881311639e0243b7ed7ee.png",
-      description: 'Perdagangan algoritmik (juga disebut perdagangan otomatis, perdagangan kotak hitam, atau perdagangan algo) menggunakan program komputer yang mengikuti serangkaian instruksi (algoritma) yang ditentukan untuk melakukan perdagangan. Perdagangan, secara teori, dapat menghasilkan keuntungan dengan kecepatan dan frekuensi yang tidak mungkin dilakukan oleh seorang pedagang manusia.',
+      title: "Dropship",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6421381004a5d56114b6e95c.jpeg ",
+      description: 'Bukan hanya para blogger yang tertarik pada hal yang luar biasa, begitu pula dengan orang-orang yang membaca blog.',
+    },
+    {
+      title: "Intrapreneur",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418dd43ecb0dd02629c8ead.png",
+      description: 'Intrapreneur adalah sebuah platform yang berfungsi sebagai titik pertemuan antara karyawan yang sedang mencari pekerjaan dengan perusahaan yang membutuhkan karyawan.Platform ini dilengkapi dengan berbagai jenis pembelajaran video, kualifikasi, pelatihan, dan lainnya.Intrapreneurship adalah konsep yang mengacu pada kegiatan kewirausahaan dalam sebuah organisasi yang sudah mapan.Intrapreneur adalah individu yang bekerja di dalam perusahaan namun berperilaku seperti seorang entrepreneur, mengambil risiko yang terukur dan mengembangkan ide- ide dan inovasi baru untuk keuntungan organisas',
+    },
+    {
+      title: "Kitchen",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/64210ba904a5d56591b6ce09.jpeg",
+      description: 'Smart Kitchen System adalah sebuah aplikasi yang memanfaatkan teknologi untuk membantu pengguna dalam mengelola kegiatan memasak dan memilih menu sehat dan bergizi. Dalam artikel ini, kita akan menggali lebih dalam mengenai fitur-fitur dan manfaat dari aplikasi inovatif ini.',
+    },
+    {
+      title: "Cloud Kitchen",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418da3bd1f785c87a6ae699.jpeg",
+      description: 'Cloud Khitchen adalah sebuah platform online yang dirancang khusus untuk membantu para pengusaha kuliner memasarkan bisnis mereka, sekaligus membantu konsumen menemukan resep-resep baru dan ide-ide memasak. Dengan fitur-fitur inovatif dan ramah pengguna, Khitchen dapat membantu Anda meningkatkan produktivitas dan kreativitas di dapur.',
+    },
+    {
+      title: "Trading Syariah",
+      image: "https://storage.googleapis.com/msgsndr/g5ixcUwLF94aB6ka3IVG/media/6418df4319849c91a198bd65.png",
+      description: 'Jika Anda adalah seorang investor Muslim yang mencari pilihan investasi yang etis, perdagangan sesuai prinsip syariah merupakan cara yang sangat baik untuk menginvestasikan uang Anda dengan cara halal. Perdagangan sesuai prinsip syariah mengikuti prinsip-prinsip hukum Islam, yang melarang riba (bunga), gharar (ketidakpastian), dan maysir (perjudian). Prinsip-prinsip ini memastikan bahwa investasi Anda bersifat etis dan sesuai dengan keyakinan Anda.',
     },
   ]
   return (
@@ -147,7 +73,7 @@ export const Portofolio = () => {
       {load ?
         <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.slice(0, 3).map((item, index) => (
-            <Box w={{ base: "70%", lg: '20%' }} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow={'md'}>
               <Center >
                 <Image src={item.image} />
               </Center>
@@ -161,7 +87,7 @@ export const Portofolio = () => {
         </Flex> :
         <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.map((item, index) => (
-            <Box w={{ base: "70%", lg: '20%' }} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow={'md'}>
               <Center >
                 <Image src={item.image} />
               </Center>
@@ -177,8 +103,8 @@ export const Portofolio = () => {
 
       <Box py={'30px'}>
         {load ?
-          <Button fontSize={'20px'} bg={'transparent'} _hover={{ bg: "transparent", boxShadow: "lg" }} onClick={() => setLoad(false)}>Load More</Button> :
-          <Button fontSize={'20px'} bg={'transparent'} onClick={() => setLoad(true)}>Brief</Button>
+          <Button fontSize={'20px'} bg={'transparent'} _hover={{ bg: "transparent", boxShadow: "lg" }} onClick={() => setLoad(false)}>Lebih Banyak</Button> :
+          <Button fontSize={'20px'} bg={'transparent'} _hover={{ bg: "transparent", boxShadow: "lg" }} onClick={() => setLoad(true)}>Lebih Sedikit</Button>
         }
 
       </Box>

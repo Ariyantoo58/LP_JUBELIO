@@ -9,6 +9,7 @@ import {
   Text,
   Image,
   useColorModeValue,
+  Center,
 } from '@chakra-ui/react';
 import {
   FcBusiness,
@@ -48,9 +49,9 @@ const Card = ({ heading, description, image, bgcolor }) => {
       overflow="hidden"
       p={5}>
       <Stack align={'start'} spacing={2}>
-      <Box w='30%'>
-        <Image src={image}/>
-      </Box>
+        <Box w='30%'>
+          <Image src={image} />
+        </Box>
         <Box mt={1}>
           <Heading size="md" h={'5vh'}>{heading}</Heading>
           <Text fontSize={'sm'} h={'10vh'} noOfLines={3}>
@@ -69,59 +70,59 @@ const Card = ({ heading, description, image, bgcolor }) => {
 
 function SectionOne() {
 
-    const [more, setMore] = useState(false)
-    const prod = [
-      {
-        title :'CRM',
-        icon :image1,
-        desc : 'Manajemen Pelanggan yang Terpercaya: Bangun hubungan yang kuat dengan pelanggan menggunakan sistem CRM kami. Pantau interaksi pelanggan, pelacakan pesanan, dan berikan layanan pelanggan yang personal. Dengan data pelanggan yang terpusat, kamu dapat memberikan pengalaman yang unik, meningkatkan retensi pelanggan, dan mendorong pertumbuhan bisnis.',
-        color : '#EDDFBB'
-      },
-      {
-        title :'Finance',
-        icon :image2,
-        desc : 'Sistem Keuangan yang Gak Bikin Pusing: Makin gampang dan rapih deh urusan keuanganmu! DeoApp bantu kamu lacak pendapatan, pengeluaran, dan laporan keuangan dengan mudah dan akurat. Ada grafik keren dan analisis pintar yang bisa bantu kamu ambil keputusan jitu buat bikin bisnismu makin maju!',
-        color : '#FADCDC'
-      },
-      {
-        title :'HR Management',
-        icon :image3,
-        desc : 'HR Management System SUPER Efisien: Biar timmu tetap on fire, DeoApp punya fitur HR yang bikin semuanya jadi simpel dan efisien. Jadwal, absensi, dan kinerja tim? Santai aja, semuanya bisa diatur dengan mudah. Dapet Analisis kinerja, dan project management yang oke banget buat raih tujuan bareng!',
-        color : '#E7F5B9'
-      },
-      {
-        title :'Marketing',
-        icon :image5,
-        desc : 'Sistem Pemasaran yang Efektif: DeoApp memberikanmu alat canggih untuk merancang dan meluncurkan kampanye pemasaran yang sukses. Dengan fitur segmentasi target audiens yang lengkap, analisis data yang mendalam, dan pelacakan konversi, kamu dapat mengoptimalkan strategi pemasaranmu untuk hasil yang maksimal. Buat brand awareness, tingkatkan penjualan, dan bangun loyalitas pelanggan.',
-        color : '#EAB3A7'
-      },
-      {
-        title :'Poin of Sale',
-        icon :image6,
-        desc : 'Point of Sale (POS) yang Praktis: Tambahkan kemudahan dalam bisnis ritelmu dengan fitur POS DeoApp. Kelola inventaris, proses transaksi pembayaran dengan cepat, dan pantau penjualan secara real-time. Dapatkan laporan penjualan terperinci dan analisis yang membantu kamu mengoptimalkan performa bisnis ritelmu.',
-        color : '#C9CBEF'
-      },
-      {
-        title :'Project Management',
-        icon :image7,
-        desc : '',
-        color : '#D8E1BC'
-      },
-      {
-        title :'Social Media Management',
-        icon :image8,
-        desc : 'Pengelolaan Media Sosial yang Terstruktur: Jadilah ahli media sosial dengan DeoApp. Kelola dan jadwalkan postingan dengan mudah, pantau performa konten dengan statistik yang lengkap, dan terhubung dengan pengikutmu. Buat kehadiranmu di dunia digital semakin berdampak dan sukses!',
-        color : '#FEECD6'
-      },
-    ]
-  
+  const [more, setMore] = useState(false)
+  const prod = [
+    {
+      title: 'CRM',
+      icon: image1,
+      desc: 'Manajemen Pelanggan yang Terpercaya: Bangun hubungan yang kuat dengan pelanggan menggunakan sistem CRM kami. Pantau interaksi pelanggan, pelacakan pesanan, dan berikan layanan pelanggan yang personal. Dengan data pelanggan yang terpusat, kamu dapat memberikan pengalaman yang unik, meningkatkan retensi pelanggan, dan mendorong pertumbuhan bisnis.',
+      color: '#EDDFBB'
+    },
+    {
+      title: 'Finance',
+      icon: image2,
+      desc: 'Sistem Keuangan yang Gak Bikin Pusing: Makin gampang dan rapih deh urusan keuanganmu! DeoApp bantu kamu lacak pendapatan, pengeluaran, dan laporan keuangan dengan mudah dan akurat. Ada grafik keren dan analisis pintar yang bisa bantu kamu ambil keputusan jitu buat bikin bisnismu makin maju!',
+      color: '#FADCDC'
+    },
+    {
+      title: 'HR Management',
+      icon: image3,
+      desc: 'HR Management System SUPER Efisien: Biar timmu tetap on fire, DeoApp punya fitur HR yang bikin semuanya jadi simpel dan efisien. Jadwal, absensi, dan kinerja tim? Santai aja, semuanya bisa diatur dengan mudah. Dapet Analisis kinerja, dan project management yang oke banget buat raih tujuan bareng!',
+      color: '#E7F5B9'
+    },
+    {
+      title: 'Marketing',
+      icon: image5,
+      desc: 'Sistem Pemasaran yang Efektif: DeoApp memberikanmu alat canggih untuk merancang dan meluncurkan kampanye pemasaran yang sukses. Dengan fitur segmentasi target audiens yang lengkap, analisis data yang mendalam, dan pelacakan konversi, kamu dapat mengoptimalkan strategi pemasaranmu untuk hasil yang maksimal. Buat brand awareness, tingkatkan penjualan, dan bangun loyalitas pelanggan.',
+      color: '#EAB3A7'
+    },
+    {
+      title: 'Poin of Sale',
+      icon: image6,
+      desc: 'Point of Sale (POS) yang Praktis: Tambahkan kemudahan dalam bisnis ritelmu dengan fitur POS DeoApp. Kelola inventaris, proses transaksi pembayaran dengan cepat, dan pantau penjualan secara real-time. Dapatkan laporan penjualan terperinci dan analisis yang membantu kamu mengoptimalkan performa bisnis ritelmu.',
+      color: '#C9CBEF'
+    },
+    {
+      title: 'Project Management',
+      icon: image7,
+      desc: '',
+      color: '#D8E1BC'
+    },
+    {
+      title: 'Social Media Management',
+      icon: image8,
+      desc: 'Pengelolaan Media Sosial yang Terstruktur: Jadilah ahli media sosial dengan DeoApp. Kelola dan jadwalkan postingan dengan mudah, pantau performa konten dengan statistik yang lengkap, dan terhubung dengan pengikutmu. Buat kehadiranmu di dunia digital semakin berdampak dan sukses!',
+      color: '#FEECD6'
+    },
+  ]
+
   return (
-    <>
-      <Box w={{ base: '100%', lg: '95%' }} m={'auto'}>
+    <Stack w={{ base: '100%', lg: '100%' }} m={'auto'}>
+      <Box >
         <Box w={'100%'}>
-          <Stack textAlign={'Left'} >
+          <Center >
             <Heading fontSize={'3xl'} mt={3} mb={3}>Deoapp Product</Heading>
-          </Stack>
+          </Center>
 
         </Box>
       </Box>
@@ -130,42 +131,42 @@ function SectionOne() {
         <Container maxW={'7xl'} mt={3}>
           <Flex flexWrap="wrap" gap={5} justify="left">
             {more ?
-            <>
-            {prod.map((produk, index) => (
-              <Card key={index}
-                heading={produk.title}
-                description={produk.desc}
-                image={produk.icon}
-                bgcolor={produk.color}
-              />
+              <>
+                {prod.map((produk, index) => (
+                  <Card key={index}
+                    heading={produk.title}
+                    description={produk.desc}
+                    image={produk.icon}
+                    bgcolor={produk.color}
+                  />
 
-            ))}
-            </> 
-            : 
-            <>
-            {prod.slice(0, 3).map((produk, index) => (
-              <Card key={index}
-                heading={produk.title}
-                description={produk.desc}
-                image={produk.icon}
-                bgcolor={produk.color}
-              />))}
-            </> }
-            
+                ))}
+              </>
+              :
+              <>
+                {prod.slice(0, 3).map((produk, index) => (
+                  <Card key={index}
+                    heading={produk.title}
+                    description={produk.desc}
+                    image={produk.icon}
+                    bgcolor={produk.color}
+                  />))}
+              </>}
+
           </Flex>
           <Stack align={'center'} mt={5} mb={5}>
             {more ?
-            <>
-            <Button onClick={() => setMore(false)}>Tutup</Button>
-            </> : <>
-            <Button onClick={() => setMore(true)}>Selengkapnya</Button>
-            </>
+              <>
+                <Button onClick={() => setMore(false)}>Tutup</Button>
+              </> : <>
+                <Button onClick={() => setMore(true)}>Selengkapnya</Button>
+              </>
             }
           </Stack >
         </Container>
 
       </Stack>
-    </>
+    </Stack>
   )
 }
 export default SectionOne

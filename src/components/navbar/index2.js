@@ -30,14 +30,17 @@ import {
     PopoverBody,
 } from '@chakra-ui/react'
 
-import image1 from '../../assets/deoapp/Logo Deoapp (Putih).png'
-import image2 from '../../assets/deoapp/Logo Deoapp (Putih) (1).png'
-import image3 from '../../assets/deoapp/Logo Deoapp (Putih) (2).png'
-import image4 from '../../assets/deoapp/Logo Deoapp (Putih) (3).png'
-import image5 from '../../assets/deoapp/Logo Deoapp (Putih) (4).png'
-import image6 from '../../assets/deoapp/Logo Deoapp (Putih) (5).png'
-import image7 from '../../assets/deoapp/Logo Deoapp (Putih) (6).png'
-import image8 from '../../assets/deoapp/Logo Deoapp (Putih) (7).png'
+// Deoapp assets
+
+import logo from '../../assets/deoapp/Logo Deoapp Putih.png'
+
+import image1 from '../../assets/logo Deoapp/Logo Deoapp 1 CRM.png'
+import image2 from '../../assets/logo Deoapp/Logo Deoapp 1 Finance.png'
+import image3 from '../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png'
+import image4 from '../../assets/logo Deoapp/Logo Deoapp 1 Marketer.png'
+import image6 from '../../assets/logo Deoapp/Logo Deoapp 1 POS.png'
+import image7 from '../../assets/logo Deoapp/Logo Deoapp 1 Project Management.png'
+import image8 from '../../assets/logo Deoapp/Logo Deoapp 1 social media.png'
 
 // ** React Icons
 import { FiMenu } from "react-icons/fi";
@@ -70,10 +73,6 @@ function Navbar() {
         >
             <Box as="nav" bg="bg-surface">
                 <Container
-                    py={{
-                        base: "3",
-                        lg: "6",
-                    }}
                     px={{
                         base: "5",
                         lg: "75",
@@ -119,7 +118,7 @@ function Navbar() {
                             }
 
                             <Link href="/">
-                                <Image src={"https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e709f9ccfe095e9a58460.png"} alt="DeoApp" width={150} />
+                                <Image src={logo} alt="DeoApp" width={170} />
                             </Link>
                         </HStack>
 
@@ -142,30 +141,27 @@ function Navbar() {
                                             </PopoverTrigger>
                                             <PopoverContent w={'200px'}>
                                                 <PopoverBody color={'black'} >
-                                                    <Box px={'10px'} py={'10px'} borderBottom={'1px solid #f2f2f2'} >
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')} _hover={{ boxShadow: "lg" }}>
-                                                            <Image w={'150px'} src={image1} />
+                                                    <Box px={'10px'} py={'10px'} >
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
+                                                            <Image w={'110px'} src={image1} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image2} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image2} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image3} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image3} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image4} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image4} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image5} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image6} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image6} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image7} />
                                                         </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image7} />
-                                                        </Box>
-                                                        <Box as={'button'} onClick={() => navigate('/product/platform')}>
-                                                            <Image w={'120px'} src={image8} />
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                            <Image w={'110px'} src={image8} />
                                                         </Box>
 
                                                     </Box>
@@ -235,13 +231,11 @@ function Navbar() {
                             </Flex>
                         ) : (
                             <></>
-
                         )}
                     </HStack>
                 </Container>
                 <Divider />
             </Box>
-
         </Box>
     );
 }
