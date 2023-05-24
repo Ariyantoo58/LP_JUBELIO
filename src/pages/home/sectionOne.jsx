@@ -127,8 +127,8 @@ function SectionOne() {
       </Box>
 
       <Stack align={'center'}>
-        <Container maxW={'10xl'} mt={3}>
-          <Flex flexWrap="wrap" gap={10} justify="left">
+        <Container maxW={'7xl'} mt={3}>
+          <Flex flexWrap="wrap" gap={5} justify="left">
             {more ?
             <>
             {prod.map((produk, index) => (
