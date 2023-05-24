@@ -8,10 +8,9 @@ function App() {
   return (
     <ChakraProvider>
       <Navbar />
-      <Box mt={{ base: '70px', lg: '95px' }}>
+      <Box mt={{ base: '95px', lg: '95px' }}>
         <RouteApp />
       </Box>
-
       <Footer />
     </ChakraProvider>
   );
