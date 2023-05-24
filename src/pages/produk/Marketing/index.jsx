@@ -1,10 +1,10 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
-import image1 from "../../../assets/logo Deoapp/Logo Deoapp Finance.png"
-import image2 from "../../../assets/thumbnail/finance-monitoring.png"
+import image1 from "../../../assets/logo Deoapp/Logo Deoapp Marketing.png"
+import image2 from "../../../assets/thumbnail/marketing-team-planning-strategy.png"
 import ButtonStart from "../../../components/Button";
 
-export default function Finance() {
+export default function Marketing() {
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
@@ -16,8 +16,8 @@ export default function Finance() {
                     <HStack w={'90%'} mx={'auto'}>
                         <Box>
                             <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'} color={'white'}>Headline Finance</Heading>
-                            <Text mb={'30px'} color={'white'} >Caption Finance</Text>
+                            <Heading mb={'30px'}>Headline Costumer Relationship Management</Heading>
+                            <Text mb={'30px'} >Caption CRM</Text>
                             <ButtonStart/>
                         </Box>
                         <Center>
@@ -33,8 +33,8 @@ export default function Finance() {
                         </Center>
                         <Box pb={'50px'}>
                             <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'}>Headline Finance</Heading>
-                            <Text mb={'30px'} >Caption Finance</Text>
+                            <Heading mb={'30px'} color={'white'}>Headline Costumer Relationship Management</Heading>
+                            <Text color={'white'} mb={'30px'} >Caption CRM</Text>
                             <ButtonStart/>
                         </Box>
 

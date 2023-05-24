@@ -12,13 +12,9 @@ import {
   } from '@chakra-ui/react';
   
   import {
-    FcBusiness,
-    FcCalculator,
     FcComments,
     FcFactory,
     FcMoneyTransfer,
-    FcPicture,
-    FcPuzzle,
     FcShipped,
   } from 'react-icons/fc';
   

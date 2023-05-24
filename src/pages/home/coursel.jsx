@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "../../../node_modules/slick-carousel/slick/slick.css";
 
-import { HStack, Image, Box, Heading, Text } from "@chakra-ui/react";
+import { HStack, Image, Box, Heading, Text, Center } from "@chakra-ui/react";
 import person from "../../assets/logo/person.png"
 import { AiFillStar } from "react-icons/ai";
 
@@ -35,6 +35,9 @@ export default class AutoPlayRight extends Component {
         };
         return (
             <Box w={'90%'} mx={'auto'} my={'40px'}>
+                <Center my={'40px'}>
+                    <Heading>Apa yang dikatakan klien tentang kami</Heading>
+                </Center>
                 <Slider {...settings} >
                     <Box px={'10px'}>
                         <Box h={'200px'} marginX={'10px'} p={'20px'} boxShadow={'lg'} border={'1px solid grey'} mx={'10px'} borderRadius={'10px'}>

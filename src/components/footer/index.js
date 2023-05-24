@@ -6,9 +6,9 @@ import {
   Stack,
   Text,
   Image,
-  useColorModeValue,
+  HStack,
 } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMailBulk, FaMailchimp, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMailBulk, FaMailchimp, FaMap, FaPhone, FaTwitter } from 'react-icons/fa';
 
 
 
@@ -24,7 +24,8 @@ function Footer() {
   return (
     <Box
       bg={'#21215e'}
-      color={'white'}>
+      color={'white'}
+      paddingLeft={{ base : '3%'}}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '3fr 1fr 3fr 1fr ' }}
@@ -43,19 +44,65 @@ function Footer() {
             <Link href={'#'}>Contact Us</Link>
             <Link href={'#'}>Service</Link>
           </Stack>
-          <Stack align={'flex-start'}>
+          <Stack align={'flex-start'} w={'100%'}>
             <ListHeader>Contact Us</ListHeader>
-            <Link href={'#'} display={'flex'}> <FaPhone/> +1 (917)-300-0893</Link>
-            <Link href={'#'} display={'flex'}> <FaMailBulk/> info@deoapp.com</Link>
-            <Link href={'#'} display={'flex'}> <FaLocationArrow/> Jl. Puri Utama No.7, RT.004/RW.008, Petir, Kec. Cipondoh, Kota Tangerang, Banten 15147Jl. Puri Utama No.7, RT.004/RW.008, Petir, Kec. Cipondoh, Kota Tangerang, Banten 15147</Link>
-            
+            <Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaPhone/>
+                <Text>
+                +1 (917)-300-0893
+                </Text>
+              </HStack>
+            </Link>
+            <Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaMailBulk/>
+                <Text>
+                info@deoapp.com
+                </Text>
+              </HStack>
+            </Link>
+            <Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaMap w={'50%'} justifyContent={'start'}/>
+                <Text w='100%'>
+                Metland Puri, Jl. Puri Utama No.7 Tangerang, Banten.
+                </Text>
+              </HStack>
+            </Link>
+             
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Social Media Links</ListHeader>
-            <Link href={'#'} display={'flex'}> <FaFacebook/> deoappcom</Link>
-            <Link href={'#'} display={'flex'}> <FaTwitter/> deoappcom </Link>
-            <Link href={'#'} display={'flex'}> <FaInstagram/> deoappcom</Link>
-            <Link href={'#'} display={'flex'}> <FaLinkedin/> deoappcom </Link>
+            <Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaFacebook/>
+                <Text>
+                deoappcom
+                </Text>
+              </HStack>
+            </Link><Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaTwitter/>
+                <Text>
+                deoappcom
+                </Text>
+              </HStack>
+            </Link><Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaInstagram/>
+                <Text>
+                deoappcom
+                </Text>
+              </HStack>
+            </Link><Link href={'#'} w='100%'>
+              <HStack display={'flex'} gap={'5%'}>
+                <FaLinkedin/>
+                <Text>
+                deoappcom
+                </Text>
+              </HStack>
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

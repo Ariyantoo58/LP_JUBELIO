@@ -7,6 +7,7 @@ import Rating from "./Rating";
 import { AutoPlayLeft } from "./coursel";
 import AutoPlayRight from "./coursel";
 
+import SectionSix from "./sectionSix";
 
 function IndexHome() {
     return (
@@ -18,6 +19,7 @@ function IndexHome() {
             <Portofolio />
             <AutoPlayRight />
             <AutoPlayLeft />
+            <SectionSix />
         </>
     )
 }
