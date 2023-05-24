@@ -1,22 +1,25 @@
 import {
-  Container,
   Stack,
-  Flex,
   Box,
   Heading,
   Text,
   Button,
   Image,
   Icon,
-  IconButton,
   createIcon,
-  IconProps,
-  useColorModeValue,
+  useBreakpointValue,
 } from '@chakra-ui/react';
 import ButtonStart from '../../components/Button';
 
 
 function CallToAction() {
+
+  const isDesktop = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
+
   const PlayIcon = createIcon({
     displayName: 'PlayIcon',
     viewBox: '0 0 58 58',
@@ -43,7 +46,10 @@ function CallToAction() {
 
   return (
     <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
-      <Container maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
+      {isDesktop ? <></> : <Stack w={'100%'}>
+        <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
+      </Stack>}
+      <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
         <Stack
           w={'95%'}
           align={'center'}
@@ -74,10 +80,10 @@ function CallToAction() {
             </Stack>
           </Stack>
         </Stack>
-        <Stack w={'100%'}>
-          <Image w={'100%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
-        </Stack>
-      </Container>
+        {isDesktop ? <Stack w={'100%'}>
+          <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
+        </Stack> : <></>}
+      </Box>
     </Box>
   )
 }

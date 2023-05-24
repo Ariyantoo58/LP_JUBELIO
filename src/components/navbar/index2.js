@@ -14,7 +14,6 @@ import {
     Link,
     Image,
     DrawerCloseButton,
-    Text
 } from "@chakra-ui/react";
 import {
     Drawer,
@@ -42,17 +41,13 @@ import image8 from '../../assets/deoapp/Logo Deoapp (Putih) (7).png'
 
 // ** React Icons
 import { FiMenu } from "react-icons/fi";
-import { TfiWorld } from "react-icons/tfi";
 
 // ** Image
-import person from '../../assets/logo/person.png'
 import { useState } from "react";
 import { PopoverIcon } from "./PopoverIcon";
-import { ResourcesSubmenu } from "./ResourcesSubMenu";
 import Drawers from "./Drawer";
 
 function Navbar() {
-    const [change, setChange] = useState()
     const navigate = useNavigate()
     const isDesktop = useBreakpointValue({
         base: false,
