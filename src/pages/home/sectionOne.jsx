@@ -31,13 +31,6 @@ import image7 from '../../assets/icons/project-management (2).png'
 import image8 from '../../assets/icons/social-management.png'
 import { useEffect, useState } from 'react';
 
-const CardProps = {
-  heading: '',
-  description: '',
-  icon: null,
-  href: ''
-};
-
 const Card = ({ heading, description, image, bgcolor }) => {
   return (
     <Stack
@@ -54,7 +47,7 @@ const Card = ({ heading, description, image, bgcolor }) => {
         </Box>
         <Box mt={1}>
           <Heading size="md" h={'5vh'}>{heading}</Heading>
-          <Text fontSize={'sm'} h={'10vh'} noOfLines={3}>
+          <Text fontSize={'sm'} h={'70%'} noOfLines={3}>
             {description}
           </Text>
         </Box>
@@ -65,8 +58,6 @@ const Card = ({ heading, description, image, bgcolor }) => {
     </Stack>
   )
 }
-
-
 
 function SectionOne() {
 

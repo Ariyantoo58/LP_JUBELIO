@@ -1,25 +1,14 @@
 import {
     Box,
-    Button,
     Container,
     Flex,
     Heading,
-    HStack,
     Stack,
     Text,
     Image,
-    useColorModeValue,
   } from '@chakra-ui/react';
-  import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-  } from '@chakra-ui/react'
 import { useState } from 'react';
   
-
 export default function SectionTwo () {
 return(
     <Box >
@@ -66,8 +55,6 @@ return(
                     src={'https://jubelio.com/wp-content/uploads/2023/04/image-onboarding-1.svg'}/>
                 </Flex>
               </Flex>
-
-              
 
               <Flex 
               h={80}

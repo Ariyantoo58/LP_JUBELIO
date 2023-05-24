@@ -9,11 +9,11 @@ export default function SectionSix () {
             <Stack mt={10} mb={10}>
                 <Heading>Kenapa Harus DeoApp?</Heading>
             </Stack>
-            <HStack display={'flex'} w={'90%'} m={'auto'}>
-                <Box w={'45%'}>
+            <HStack display={'flex'} flexDirection={{base:'column', lg:'row'}} w={{base: '100%',lg:'90%'}} m={'auto'}>
+                <Box w={{base: '100%',lg: '45%'}}>
                     <Image w={'80%'} src={gambar}/>
                 </Box>
-                <Box w={'55%'}>
+                <Box w={{base:'100%', lg:'55%'}}>
                     <HStack gap={2} mb={5}>
                         <Image w={'10%'} src={check}/>
                         <Stack w={'100%'}>
