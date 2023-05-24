@@ -38,7 +38,6 @@ export default function AutoPlayRight() {
     };
 
     const setResponsive = {
-        dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -149,7 +148,7 @@ export default function AutoPlayRight() {
                                 <Text>Wearing Klamby</Text>
                             </Box>
                         </HStack>
-                        <Text mt={'20px'} fontStyle={'italic'} >deoapp sangat membantu mengembangkan perusahaan saya dengan aplikasi yang disediakan oleh deoapp. </Text>
+                        <Text mt={'20px'} fontStyle={'italic'} >deoapp sangat membantu mengembangkan perusahaan saya dengan aplikasi yang disediakan. </Text>
                     </Box>
                 </Box>
                 <Box px={'10px'}>
@@ -202,7 +201,6 @@ export function AutoPlayLeft() {
     };
 
     const setResponsive = {
-        dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: -1,
@@ -307,7 +305,7 @@ export function AutoPlayLeft() {
                                 <Text>Cloud Khitchen</Text>
                             </Box>
                         </HStack>
-                        <Text mt={'20px'} fontStyle={'italic'} >Luar biasa deoapp bisa membuat pelanggan saya semakin meningkat dan saya lebih mudah memasarkan produk saya</Text>
+                        <Text mt={'20px'} fontStyle={'italic'} >Luar biasa deoapp bisa membuat pelanggan saya semakin meningkat dan lebih mudah memasarkan produk </Text>
                     </Box>
                 </Box>
                 <Box px={'10px'}>

@@ -45,7 +45,7 @@ function CallToAction() {
   };
 
   return (
-    <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
+    <Box pb={'7%'} bg={{ base: '#21215e', lg: "none" }} bgImage={{ base: "none", lg: "https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" }}>
       {isDesktop ? <></> : <Stack w={'100%'}>
         <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
       </Stack>}
@@ -76,7 +76,7 @@ function CallToAction() {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <ButtonStart/>
+              <ButtonStart />
             </Stack>
           </Stack>
         </Stack>
