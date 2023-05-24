@@ -13,6 +13,8 @@ import {
   IconProps,
   useColorModeValue,
 } from '@chakra-ui/react';
+import ButtonStart from '../../components/Button';
+
 
 function CallToAction() {
   const PlayIcon = createIcon({
@@ -68,23 +70,7 @@ function CallToAction() {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <Button
-                mt={5}
-                rounded={'base'}
-                flexDirection={'column'}
-                px={18}
-                py={9}
-                colorScheme={'red'}
-                bg={'#14C38E'}
-                _hover={{ bg: '#00FFAB' }}>
-                <Text fontSize={'15pt'} fontWeight={'bold'}>
-                  Konsultasi LANGSUNG Yuk!
-
-                </Text>
-                <Text fontSize={'10pt'}>
-                  Via Whatsapp dengan Tim Deoapp
-                </Text>
-              </Button>
+              <ButtonStart/>
             </Stack>
           </Stack>
         </Stack>
