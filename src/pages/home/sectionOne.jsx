@@ -35,7 +35,7 @@ const Card = ({ heading, description, image, bgcolor }) => {
   return (
     <Stack
       bgColor={bgcolor}
-      maxW={{ base: 'full', md: '275px', lg: '400px' }}
+      maxW={{ base: 'full', md: '275px', lg: '360px' }}
       w={'full'}
       align={'center'}
       borderRadius="lg"
@@ -108,19 +108,16 @@ function SectionOne() {
   ]
 
   return (
-    <Stack w={{ base: '100%', lg: '100%' }} m={'auto'}>
+    <Stack w={'90%'} m={'auto'}>
       <Box >
-        <Box w={'100%'}>
-          <Center >
-            <Heading fontSize={'3xl'} mt={3} mb={3}>Deoapp Product</Heading>
-          </Center>
-
+        <Box pt={'3%'}>
+          <Heading fontFamily={'sans-serif'} fontSize={'50px'} mt={3} mb={3}>Deoapp Product</Heading>
         </Box>
       </Box>
 
       <Stack align={'center'}>
         <Container maxW={'7xl'} mt={3}>
-          <Flex flexWrap="wrap" gap={5} justify="left">
+          <Flex flexWrap="wrap" gap={5} justifyContent={'space-between'}>
             {more ?
               <>
                 {prod.map((produk, index) => (

@@ -11,6 +11,8 @@ import {
 } from '@chakra-ui/react';
 import ButtonStart from '../../components/Button';
 
+import bg from '../../assets/background/Rectangle.png'
+
 
 function CallToAction() {
 
@@ -45,19 +47,19 @@ function CallToAction() {
   };
 
   return (
-    <Box pb={'7%'} bg={{ base: '#21215e', lg: "none" }} bgImage={{ base: "none", lg: "https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" }}>
+    <Box bgSize={'cover'} bgImage={bg} >
       {isDesktop ? <></> : <Stack w={'100%'}>
         <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
       </Stack>}
       <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
         <Stack
-          w={'95%'}
+          w={'100%'}
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 20 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 2 }}>
-            <Text color={'white'} fontFamily={'sans-serif'}>
+            <Text color={'black'} fontFamily={'sans-serif'} fontSize={'20px'}>
               Buat kamu para pejuang kesuksesan!
             </Text>
             <Heading
@@ -65,12 +67,12 @@ function CallToAction() {
               fontWeight={500}
               paddingBottom={10}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-              <Text fontSize={'40px'} as={'span'} color={'white'}>
-                Capai Era Kesuksesanmu dengan DeoApp: Platform Kekinian untuk Bos Kreatif, Influencer, dan Profesional Top di Indonesia!
+              <Text fontSize={'40px'} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
+                Wujudkan kesuksesanmu bersama <Text as={'span'} color={'#F83C09'}>Deoapp,</Text> Platform <Text as={'span'} color={'#F83C09'}>Inovatif </Text>untuk Bos Imajinatif, Influencer Kreatif dan Professional <Text as={'span'} color={'#F83C09'}>TOP</Text> di Indonesia
               </Text>
             </Heading>
 
-            <Text color={'white'}>
+            <Text color={'black'} fontWeight={'bold'}>
               DeoApp hadir dengan segudang fitur kece yang akan bikin bisnis dan kariermu naik level! Siap-siap terbang menuju puncak kejayaan! 🚀
             </Text>
             <Stack
@@ -80,8 +82,8 @@ function CallToAction() {
             </Stack>
           </Stack>
         </Stack>
-        {isDesktop ? <Stack w={'100%'}>
-          <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
+        {isDesktop ? <Stack w={'80%'} >
+          <Image w={'100%'} h={'65%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
         </Stack> : <></>}
       </Box>
     </Box>
