@@ -10,6 +10,7 @@ import {
   Image,
   useColorModeValue,
   Center,
+  Link,
 } from '@chakra-ui/react';
 
 import image1 from '../../assets/icons/customer-relationship-management.png'
@@ -25,6 +26,21 @@ import { useState } from 'react';
 function SectionOne() {
 
   const [more, setMore] = useState(false)
+  const [paragraph, setParagraph] = useState(false)
+  const [num, setNum] = useState()
+
+  const handleOff = (produk) => {
+    
+    setNum(produk)
+    console.log(num, 'ini ye')
+    setParagraph(false)
+  }
+  const handleOn = (produk) => {
+  setNum(produk)
+  console.log(num, 'ini loh')
+  setParagraph(true)
+  }
+
   const prod = [
     {
       title: 'CRM',
@@ -102,9 +118,16 @@ function SectionOne() {
                     </Box>
                     <Box mt={1}>
                       <Heading size="md" h={'5vh'}>{produk.title}</Heading>
-                      <Text fontSize={'sm'} noOfLines={3}>
-                      {produk.desc}
-                      </Text>
+                      {paragraph ?
+                      <>
+                      
+                      <Text fontSize={'sm'} >{produk.desc}</Text>
+                      <Link onClick={() => handleOff(index)}>Lebih Sedikit</Link>
+                      </> : <>
+                      <Text fontSize={'sm'} noOfLines={3}>{produk.desc}</Text>
+                      <Link onClick={() => handleOn(index)}>Lihat Selengkapnya</Link>
+                      </>                     
+                      }                      
                     </Box>
                     <Button colorScheme={produk.color} size={'sm'} border={'1px solid black'} textColor={'black'}>
                       Cek Fitur
@@ -132,9 +155,15 @@ function SectionOne() {
                     </Box>
                     <Box mt={1}>
                       <Heading size="md" h={'5vh'}>{produk.title}</Heading>
-                      <Text fontSize={'sm'} noOfLines={3}>
-                        {produk.desc}
-                      </Text>
+                      {paragraph ?
+                      <>
+                      <Text fontSize={'sm'} >{produk.desc}</Text>
+                      <Link onClick={() => handleOff(produk)}>Lebih Sedikit</Link>
+                      </> : <>
+                      <Text fontSize={'sm'} noOfLines={3}>{produk.desc}</Text>
+                      <Link onClick={() => handleOn(produk)}>Lihat Selengkapnya</Link>
+                      </>                     
+                      }
                     </Box>
                     <Button colorScheme={produk.color} size={'sm'} border={'1px solid black'} textColor={'black'}>
                       Cek Fitur

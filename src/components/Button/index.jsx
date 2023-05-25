@@ -4,7 +4,7 @@ export default function ButtonStart () {
   return (
     <Button
                 mt={5}
-                rounded={'base'}
+                w={{base:'100%', lg:'30%'}}
                 flexDirection={'column'}
                 px={30}
                 py={9}

@@ -45,13 +45,13 @@ function CallToAction() {
   };
 
   return (
-    <Box pb={'7%'} bg={{ base: '#21215e', lg: "none" }} bgImage={{ base: "none", lg: "https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" }}>
+    <Box pb={['none','3%','7%']} bg={{ base: '#21215e', lg: "none" }} bgImage={{ base: "none", lg: "https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" }}>
       {isDesktop ? <></> : <Stack w={'100%'}>
         <Image w={'80%'} m={'auto'} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e9249577ab12c5646b9e9.png' />
       </Stack>}
       <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
         <Stack
-          w={'95%'}
+          w={['100%','95%','95%']}
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 20 }}
@@ -63,9 +63,9 @@ function CallToAction() {
             <Heading
               lineHeight={1}
               fontWeight={500}
-              paddingBottom={10}
+              paddingBottom={[5,5,10]}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-              <Text fontSize={'40px'} as={'span'} color={'white'}>
+              <Text fontSize={['30px','35px','40px']} as={'span'} color={'white'}>
                 Capai Era Kesuksesanmu dengan DeoApp: Platform Kekinian untuk Bos Kreatif, Influencer, dan Profesional Top di Indonesia!
               </Text>
             </Heading>
@@ -74,8 +74,8 @@ function CallToAction() {
               DeoApp hadir dengan segudang fitur kece yang akan bikin bisnis dan kariermu naik level! Siap-siap terbang menuju puncak kejayaan! 🚀
             </Text>
             <Stack
-              spacing={{ base: 4, sm: 6 }}
-              direction={{ base: 'column', sm: 'row' }}>
+              direction={{ base: 'column', sm: 'row' }}
+              >
               <ButtonStart />
             </Stack>
           </Stack>
