@@ -11,7 +11,7 @@ export default function SectionSix () {
             </Stack>
             <HStack display={'flex'} flexDirection={{base:'column', lg:'row'}} w={{base: '100%',lg:'90%'}} m={'auto'}>
                 <Box w={{base: '100%',lg: '45%'}}>
-                    <Image w={'80%'} src={gambar}/>
+                    <Image w={{base: '100%', lg:'80%'}} paddingBottom={'5%'} src={gambar}/>
                 </Box>
                 <Box w={{base:'100%', lg:'55%'}}>
                     <HStack gap={2} mb={5}>
