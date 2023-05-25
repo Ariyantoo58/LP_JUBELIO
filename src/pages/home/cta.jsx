@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import ButtonStart from '../../components/Button';
 
-import bg from '../../assets/background/Rectangle.png'
+import bg from '../../assets/background/Rect.png'
 
 
 function CallToAction() {
@@ -67,7 +67,7 @@ function CallToAction() {
               fontWeight={500}
               paddingBottom={10}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-              <Text fontSize={'40px'} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
+              <Text fontSize={{ base: "35px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
                 Wujudkan kesuksesanmu bersama <Text as={'span'} color={'#F83C09'}>Deoapp,</Text> Platform <Text as={'span'} color={'#F83C09'}>Inovatif </Text>untuk Bos Imajinatif, Influencer Kreatif dan Professional <Text as={'span'} color={'#F83C09'}>TOP</Text> di Indonesia
               </Text>
             </Heading>

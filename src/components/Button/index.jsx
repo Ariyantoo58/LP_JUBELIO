@@ -21,3 +21,9 @@ export default function ButtonStart() {
     </Button>
   )
 }
+
+export const ButtonJoinUs = () => {
+  return (
+    <Button _hover={{ bg: "#F83C09" }} fontSize={'20px'} color={'white'} w={{ base: '40%', lg: '25%' }} h={{ base: 10, lg: 50 }} bg={"#24D467"} mt={'20px'}>Join Us</Button>
+  )
+}

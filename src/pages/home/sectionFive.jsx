@@ -77,7 +77,7 @@ export const Portofolio = () => {
               <Center >
                 <Image boxShadow={'lg'} src={item.image} />
               </Center>
-              <Box p={'10px'}>
+              <Box p={'20px'}>
                 <Heading py={'15px'} size={'lg'}>{item.title}</Heading>
                 <Text noOfLines={10}>{item.description}</Text>
               </Box>
@@ -91,7 +91,7 @@ export const Portofolio = () => {
               <Center >
                 <Image boxShadow={'lg'} src={item.image} />
               </Center>
-              <Box p={'10px'}>
+              <Box p={'20px'}>
                 <Heading py={'15px'} size={'lg'}>{item.title}</Heading>
                 <Text noOfLines={10}>{item.description}</Text>
               </Box>

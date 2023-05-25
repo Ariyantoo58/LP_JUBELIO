@@ -96,20 +96,20 @@ function Navbar() {
                                 <>
                                     <IconButton
                                         variant="ghost"
-                                        icon={<FiMenu color="white" fontSize="1.6rem" />}
+                                        icon={<FiMenu color="black" fontSize="1.6rem" />}
                                         aria-label="Open Menu"
                                         _hover={{ bg: "transparent" }}
                                         onClick={onOpen}
                                     />
                                     <Drawer placement={'left'} onClose={onClose} isOpen={isOpen} >
                                         <DrawerOverlay />
-                                        <DrawerContent bg={'#21215e'} >
-                                            <DrawerCloseButton color={'white'} />
+                                        <DrawerContent bg={'white'} >
+                                            <DrawerCloseButton color={'black'} />
                                             <DrawerHeader borderBottomWidth='1px' >
-                                                <Flex justifyContent={'space-around'} py={'10px'}>
+                                                <Flex justifyContent={'space-around'} py={'20px'}>
                                                     <Box>
                                                         <Link href="/">
-                                                            <Image src={"https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e709f9ccfe095e9a58460.png"} alt="DeoApp" width={150} />
+                                                            <Image src={logo} alt="DeoApp" width={150} />
                                                         </Link>
                                                     </Box>
 
