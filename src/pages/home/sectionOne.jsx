@@ -10,17 +10,8 @@ import {
   Image,
   useColorModeValue,
   Center,
+  Link,
 } from '@chakra-ui/react';
-import {
-  FcBusiness,
-  FcCalculator,
-  FcComments,
-  FcFactory,
-  FcMoneyTransfer,
-  FcPicture,
-  FcPuzzle,
-  FcShipped,
-} from 'react-icons/fc';
 
 import image1 from '../../assets/icons/customer-relationship-management.png'
 import image2 from '../../assets/icons/finance (1).png'
@@ -29,39 +20,27 @@ import image5 from '../../assets/icons/marketing-analysis-report.png'
 import image6 from '../../assets/icons/cash-register.png'
 import image7 from '../../assets/icons/project-management (2).png'
 import image8 from '../../assets/icons/social-management.png'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-const Card = ({ heading, description, image, bgcolor }) => {
-  return (
-    <Stack
-      bgColor={bgcolor}
-      maxW={{ base: 'full', md: '275px', lg: '360px' }}
-      w={'full'}
-      align={'center'}
-      borderRadius="lg"
-      overflow="hidden"
-      p={5}>
-      <Stack align={'start'} spacing={2}>
-        <Box w='30%'>
-          <Image src={image} />
-        </Box>
-        <Box mt={1}>
-          <Heading size="md" h={'5vh'}>{heading}</Heading>
-          <Text fontSize={'sm'} h={'70%'} noOfLines={3}>
-            {description}
-          </Text>
-        </Box>
-        <Button colorScheme={bgcolor} size={'sm'} border={'1px solid black'} textColor={'black'}>
-          Cek Fitur
-        </Button>
-      </Stack>
-    </Stack>
-  )
-}
 
 function SectionOne() {
 
   const [more, setMore] = useState(false)
+  const [paragraph, setParagraph] = useState(false)
+  const [num, setNum] = useState()
+
+  const handleOff = (produk) => {
+
+    setNum(produk)
+    console.log(num, 'ini ye')
+    setParagraph(false)
+  }
+  const handleOn = (produk) => {
+    setNum(produk)
+    console.log(num, 'ini loh')
+    setParagraph(true)
+  }
+
   const prod = [
     {
       title: 'CRM',
@@ -117,37 +96,87 @@ function SectionOne() {
 
       <Stack align={'center'}>
         <Container maxW={'7xl'} mt={3}>
-          <Flex flexWrap="wrap" gap={5} justifyContent={'space-between'}>
+          <Flex flexWrap="wrap" gap={3} justifyContent={'center'}>
             {more ?
               <>
                 {prod.map((produk, index) => (
-                  <Card key={index}
-                    heading={produk.title}
-                    description={produk.desc}
-                    image={produk.icon}
-                    bgcolor={produk.color}
-                  />
+                  <Stack
+                    bgColor={produk.color}
+                    maxW={{ base: 'full', md: '275px', lg: '370px' }}
+                    w={'full'}
+                    align={'center'}
+                    borderRadius="lg"
+                    overflow="hidden"
+                    p={5}
+                    key={index}>
+                    <Stack align={'start'} spacing={2}>
+                      <Box w='30%'>
+                        <Image src={produk.icon} />
+                      </Box>
+                      <Box mt={1}>
+                        <Heading size="md" h={'5vh'}>{produk.title}</Heading>
+                        {paragraph ?
+                          <>
+
+                            <Text fontSize={'sm'} >{produk.desc}</Text>
+                            <Link onClick={() => handleOff(index)}>Lebih Sedikit</Link>
+                          </> : <>
+                            <Text fontSize={'sm'} noOfLines={3}>{produk.desc}</Text>
+                            <Link onClick={() => handleOn(index)}>Lihat Selengkapnya</Link>
+                          </>
+                        }
+                      </Box>
+                      <Button colorScheme={produk.color} size={'sm'} border={'1px solid black'} textColor={'black'}>
+                        Cek Fitur
+                      </Button>
+                    </Stack>
+                  </Stack>
 
                 ))}
               </>
               :
               <>
                 {prod.slice(0, 3).map((produk, index) => (
-                  <Card key={index}
-                    heading={produk.title}
-                    description={produk.desc}
-                    image={produk.icon}
-                    bgcolor={produk.color}
-                  />))}
+                  <Stack
+                    bgColor={produk.color}
+                    maxW={{ base: 'full', md: '275px', lg: '370px' }}
+                    w={'full'}
+                    align={'center'}
+                    borderRadius="lg"
+                    overflow="hidden"
+                    p={5}
+                    key={index}>
+                    <Stack align={'start'} spacing={2}>
+                      <Box w='30%'>
+                        <Image src={produk.icon} />
+                      </Box>
+                      <Box mt={1}>
+                        <Heading size="md" h={'5vh'}>{produk.title}</Heading>
+                        {paragraph ?
+                          <>
+                            <Text fontSize={'sm'} >{produk.desc}</Text>
+                            <Link onClick={() => handleOff(produk)}>Lebih Sedikit</Link>
+                          </> : <>
+                            <Text fontSize={'sm'} noOfLines={3}>{produk.desc}</Text>
+                            <Link onClick={() => handleOn(produk)}>Lihat Selengkapnya</Link>
+                          </>
+                        }
+                      </Box>
+                      <Button colorScheme={produk.color} size={'sm'} border={'1px solid black'} textColor={'black'}>
+                        Cek Fitur
+                      </Button>
+                    </Stack>
+                  </Stack>
+                ))}
               </>}
 
           </Flex>
           <Stack align={'center'} mt={5} mb={5}>
             {more ?
               <>
-                <Button onClick={() => setMore(false)}>Tutup</Button>
+                <Button colorScheme='white' textColor={'black'} boxShadow={'rgba(33, 35, 38, 0.1) 0px 10px 10px -10px'} onClick={() => setMore(false)}>Tutup</Button>
               </> : <>
-                <Button onClick={() => setMore(true)}>Selengkapnya</Button>
+                <Button colorScheme='white' textColor={'black'} boxShadow={'rgba(33, 35, 38, 0.1) 0px 10px 10px -10px'} onClick={() => setMore(true)}>Selengkapnya</Button>
               </>
             }
           </Stack >
