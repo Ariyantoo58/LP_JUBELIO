@@ -39,15 +39,15 @@ function Footer() {
               © 2023 Deoapp. All rights reserved
             </Text>
           </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Contact Us</Link>
-            <Link href={'#'}>Service</Link>
+          <Stack color={'black'} align={'flex-start'}>
+            <ListHeader  >Company</ListHeader>
+            <Link href={'#'} color={'grey'} _hover={{ color : 'black'}}>About</Link>
+            <Link href={'#'}color={'grey'} _hover={{ color : 'black'}}>Contact Us</Link>
+            <Link href={'#'}color={'grey'} _hover={{ color : 'black'}}>Service</Link>
           </Stack>
           <Stack align={'flex-start'} w={'100%'}>
-            <ListHeader>Contact Us</ListHeader>
-            <Link href={'#'} w='100%'>
+            <ListHeader color={'black'}>Contact Us</ListHeader>
+            <Link href={'#'} w='100%' color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaPhone />
                 <Text>
@@ -55,7 +55,7 @@ function Footer() {
                 </Text>
               </HStack>
             </Link>
-            <Link href={'#'} w='100%'>
+            <Link href={'#'} w='100%' color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaMailBulk />
                 <Text>
@@ -63,7 +63,7 @@ function Footer() {
                 </Text>
               </HStack>
             </Link>
-            <Link href={'#'} w='100%'>
+            <Link href={'#'} w='100%' color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaMap w={'50%'} justifyContent={'start'} />
                 <Text w='100%'>
@@ -74,29 +74,29 @@ function Footer() {
 
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Social Media Links</ListHeader>
-            <Link href={'#'} w='100%'>
+            <ListHeader color={'black'}>Social Media Links</ListHeader>
+            <Link href={'#'} w='100%'color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaFacebook />
                 <Text>
                   deoappcom
                 </Text>
               </HStack>
-            </Link><Link href={'#'} w='100%'>
+            </Link><Link href={'#'} w='100%'color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaTwitter />
                 <Text>
                   deoappcom
                 </Text>
               </HStack>
-            </Link><Link href={'#'} w='100%'>
+            </Link><Link href={'#'} w='100%'color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaInstagram />
                 <Text>
                   deoappcom
                 </Text>
               </HStack>
-            </Link><Link href={'#'} w='100%'>
+            </Link><Link href={'#'} w='100%'color={'grey'} _hover={{ color : 'black'}}>
               <HStack display={'flex'} gap={'5%'}>
                 <FaLinkedin />
                 <Text>
