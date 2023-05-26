@@ -67,17 +67,17 @@ export const Portofolio = () => {
   ]
   return (
     <VStack w={'90%'} mx={'auto'} >
-      <Center py={'30px'}>
-        <Heading>Client Kami</Heading>
-      </Center>
+      <Box py={'30px'} >
+        <Heading fontFamily={'sans-serif'} fontSize={'50px'}>Client Kami</Heading>
+      </Box>
       {load ?
         <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.slice(0, 3).map((item, index) => (
-            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px">
               <Center >
-                <Image src={item.image} />
+                <Image boxShadow={'lg'} src={item.image} />
               </Center>
-              <Box p={'10px'}>
+              <Box p={'20px'}>
                 <Heading py={'15px'} size={'lg'}>{item.title}</Heading>
                 <Text noOfLines={10}>{item.description}</Text>
               </Box>
@@ -87,11 +87,11 @@ export const Portofolio = () => {
         </Flex> :
         <Flex gap={20} justifyContent={'center'} flexWrap={'wrap'} >
           {menu.map((item, index) => (
-            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow={'md'}>
+            <Box w={{ base: "70%", lg: '23%' }} key={index} boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px">
               <Center >
-                <Image src={item.image} />
+                <Image boxShadow={'lg'} src={item.image} />
               </Center>
-              <Box p={'10px'}>
+              <Box p={'20px'}>
                 <Heading py={'15px'} size={'lg'}>{item.title}</Heading>
                 <Text noOfLines={10}>{item.description}</Text>
               </Box>

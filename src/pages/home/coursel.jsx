@@ -49,7 +49,7 @@ export default function AutoPlayRight() {
     return (
         <Box w={'90%'} mx={'auto'} my={'40px'}>
             <Center my={'40px'}>
-                <Heading>Apa yang dikatakan klien tentang kami</Heading>
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "30px", lg: '50px' }} >Apa yang dikatakan klien tentang kami</Heading>
             </Center>
 
             <Slider {...(isDesktop && settings)} {...(!isDesktop && setResponsive)} >

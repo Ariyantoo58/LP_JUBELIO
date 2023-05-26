@@ -80,12 +80,11 @@ export default function Drawers() {
         }
 
     }
-    console.log(prod, 'ini prod')
 
     return (
         <Box px={'10px'}>
             {Menus.map((item, index) => (
-                <Box color={'white'}>
+                <Box color={'black'}>
                     <Box key={index} py={'15px'} onClick={() => { handleChange(item) }} _hover={{ color: '#f7580a', pb: '4px' }}>
                         <Link> <Heading size={'md'}>{item.title}</Heading>
                         </Link>
@@ -124,7 +123,7 @@ export default function Drawers() {
 
             <Box mt={'50px'}>
                 <Button bg={'#f7580a'} w={'70%'} mb={'20px'} color={'white'}>Coba Gratis</Button>
-                <Button color={'#f7580a'} w={'70%'} onClick={() => navigate('/signin')}>Masuk</Button>
+                <Button color={'#f7580a'} border={'1px solid #f7580a'} bg={'white'} w={'70%'} onClick={() => navigate('/signin')}>Masuk</Button>
             </Box>
 
         </Box>

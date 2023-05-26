@@ -32,7 +32,7 @@ import {
 
 // Deoapp assets
 
-import logo from '../../assets/deoapp/Logo Deoapp Putih.png'
+import logo from '../../assets/deoapp/deoapp colors (4).png'
 
 import image1 from '../../assets/logo Deoapp/Logo Deoapp 1 CRM.png'
 import image2 from '../../assets/logo Deoapp/Logo Deoapp 1 Finance.png'
@@ -70,7 +70,7 @@ function Navbar() {
             left={0}
             right={0}
             zIndex="sticky"
-            bg={'#21215e'}
+            bg={'white'}
 
         >
             <Box as="nav" bg="bg-surface">
@@ -78,6 +78,10 @@ function Navbar() {
                     px={{
                         base: "5",
                         lg: "75",
+                    }}
+                    py={{
+                        base: "6",
+                        lg: "6"
                     }}
 
                     maxW="100%"
@@ -92,20 +96,20 @@ function Navbar() {
                                 <>
                                     <IconButton
                                         variant="ghost"
-                                        icon={<FiMenu color="white" fontSize="1.6rem" />}
+                                        icon={<FiMenu color="black" fontSize="1.6rem" />}
                                         aria-label="Open Menu"
                                         _hover={{ bg: "transparent" }}
                                         onClick={onOpen}
                                     />
                                     <Drawer placement={'left'} onClose={onClose} isOpen={isOpen} >
                                         <DrawerOverlay />
-                                        <DrawerContent bg={'#21215e'} >
-                                            <DrawerCloseButton color={'white'} />
+                                        <DrawerContent bg={'white'} >
+                                            <DrawerCloseButton color={'black'} />
                                             <DrawerHeader borderBottomWidth='1px' >
-                                                <Flex justifyContent={'space-around'} py={'10px'}>
+                                                <Flex justifyContent={'space-around'} py={'20px'}>
                                                     <Box>
                                                         <Link href="/">
-                                                            <Image src={"https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/641e709f9ccfe095e9a58460.png"} alt="DeoApp" width={150} />
+                                                            <Image src={logo} alt="DeoApp" width={150} />
                                                         </Link>
                                                     </Box>
 
@@ -136,7 +140,7 @@ function Navbar() {
                                                     variant="link"
                                                     rightIcon={<PopoverIcon />}
                                                     onClick={() => navigate('/product/katalog')}
-                                                    color={'white'}
+                                                    color={'black'}
                                                 >
                                                     Produk
                                                 </Button>
@@ -172,15 +176,15 @@ function Navbar() {
 
                                             </PopoverContent>
                                         </Popover>
-                                        <Button onClick={() => navigate('/harga')} color={'white'}>Harga</Button>
-                                        <Button onClick={() => navigate('/partner')} color={'white'}>Partner</Button>
+                                        <Button onClick={() => navigate('/harga')} color={'black'}>Harga</Button>
+                                        <Button onClick={() => navigate('/partner')} color={'black'}>Partner</Button>
                                         <Popover trigger={'hover'}>
                                             <PopoverTrigger>
                                                 <Button
                                                     variant="link"
                                                     rightIcon={<PopoverIcon />}
                                                     onClick={() => navigate('/affiliasi/affiliasi')}
-                                                    color={'white'}
+                                                    color={'black'}
 
 
                                                 >
@@ -190,10 +194,10 @@ function Navbar() {
                                             <PopoverContent w={'200px'}>
                                                 <PopoverBody color={'black'}>
                                                     <Box px={'10px'} py={'15px'} borderBottom={'1px solid #f2f2f2'}>
-                                                        <Button onClick={() => navigate('/affiliasi/affiliasi')} bg={'transparent'}>Affiliasi</Button>
+                                                        <Button onClick={() => navigate('/affiliasi/affiliasi')} bg={'transparent'} _hover={{ color: "black" }}>Affiliasi</Button>
                                                     </Box>
                                                     <Box px={'10px'} py={'15px'} >
-                                                        <Button onClick={() => navigate('/affiliasi/ambassador')} bg={'transparent'}>Ambassador</Button>
+                                                        <Button onClick={() => navigate('/affiliasi/ambassador')} bg={'transparent'} _hover={{ color: "black" }}>Ambassador</Button>
                                                     </Box>
 
                                                 </PopoverBody>
@@ -205,7 +209,7 @@ function Navbar() {
                                                 <Button
                                                     variant="link"
                                                     rightIcon={<PopoverIcon />}
-                                                    color={'white'}
+                                                    color={'black'}
 
                                                 >
                                                     Dukungan
@@ -213,11 +217,11 @@ function Navbar() {
                                             </PopoverTrigger>
                                             <PopoverContent w={'200px'}>
                                                 <PopoverBody>
-                                                    <Box px={'10px'} py={'15px'} >
-                                                        <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'}>Integrasi Api</Button>
+                                                    <Box px={'10px'} py={'15px'} borderBottom={'1px solid #f2f2f2'} >
+                                                        <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'} _hover={{ color: "black" }} >Integrasi Api</Button>
                                                     </Box>
                                                     <Box px={'10px'} py={'15px'} >
-                                                        <Button onClick={() => navigate('/dukungan/layanan')} bg={'transparent'}>Layanan Purna Jual</Button>
+                                                        <Button onClick={() => navigate('/dukungan/layanan')} bg={'transparent'} _hover={{ color: "black" }} >Layanan Purna Jual</Button>
                                                     </Box>
                                                 </PopoverBody>
                                             </PopoverContent>
@@ -227,7 +231,7 @@ function Navbar() {
                                 </HStack>
                                 <HStack>
                                     <Button py={'15px'} px={'30px'} bg={'#f7580a'} color={'white'}>Jadwalkan Demo</Button>
-                                    <Button py={'15px'} px={'30px'} color={'#f7580a'} bg={'white'} >Masuk</Button>
+                                    <Button py={'15px'} px={'30px'} color={'#f7580a'} border={'1px solid #f7580a'} bg={'white'} >Masuk</Button>
                                 </HStack>
 
                             </Flex>
