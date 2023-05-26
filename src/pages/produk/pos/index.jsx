@@ -1,7 +1,10 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
+import image1 from "../../../assets/logo Deoapp/Logo Deoapp POS.png"
+import image2 from "../../../assets/thumbnail/point-of-sale (1).png"
+import ButtonStart from "../../../components/Button";
 
-export default function Pos() {
+export default function POS () {
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
@@ -9,29 +12,30 @@ export default function Pos() {
     return (
         <Box>
             {isDesktop ?
-                <Box bg={"#F5FAFF"} >
-                    <HStack w={'90%'} mx={'auto'} py={{ base: 0, lg: '30px' }}>
+                <Box pb={'13%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
+                    <HStack w={'90%'} mx={'auto'}>
                         <Box>
-                            <Image w={'400px'} src={'https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-pos-1536x1536.png'} />
-                            <Heading mb={'30px'}> Platform omnichannel jualan online dan offline terlengkap</Heading>
-                            <Text mb={'30px'} >Senjata rahasia buat kembangkan bisnismu. Kontrol semua operasional dalam satu sistem terintegrasi.</Text>
-                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
+                            <Image w={'55%'} src={image1}/>
+                            <Heading mb={'30px'}>Headline HR Management</Heading>
+                            <Text mb={'30px'} >Caption HR Management</Text>
+                            <ButtonStart/>
                         </Box>
                         <Center>
-                            <Image w={'1000px'} h={'600px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-homepage-1536x1536.png"} />
+                            <Image w={'1000px'} h={'605px'} src={image2} />
                         </Center>
+
                     </HStack>
                 </Box> :
-                <Box bg={"#F5FAFF"} >
+                <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" >
                     <Box w={'90%'} mx={'auto'}>
                         <Center>
-                            <Image w={'350px'} h={'300px'} src={"https://jubelio.com/wp-content/uploads/2023/05/cover-homepage-1536x1536.png"} />
+                            <Image w={'350px'} h={'300px'} src={image2} />
                         </Center>
                         <Box pb={'50px'}>
-                            <Image w={'400px'} src={'https://jubelio.com/wp-content/uploads/2023/05/cover-jubelio-pos-1536x1536.png'} />
-                            <Heading mb={'30px'}>Platform omnichannel jualan online dan offline terlengkap</Heading>
-                            <Text mb={'30px'} >Senjata rahasia buat kembangkan bisnismu. Kontrol semua operasional dalam satu sistem terintegrasi..</Text>
-                            <Button w={'150px'} h={'60px'} color={'white'} bg={'blue'} >Coba Gratis</Button>
+                            <Image w={'55%'} src={image1}/>
+                            <Heading mb={'30px'} color={'white'}>Headline HR Management</Heading>
+                            <Text color={'white'} mb={'30px'} >Caption HR Management</Text>
+                            <ButtonStart/>
                         </Box>
 
 
@@ -43,8 +47,8 @@ export default function Pos() {
                 <Box w={'90%'} mx={'auto'}>
                     <Center >
                         <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Dengan dan Tanpa Jubelio Dalam Bisnismu</Heading>
-                            <Text >Lihat bagaimana Jubelio memudahkan pengelolaan persediaan produkmu.</Text>
+                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
+                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
                             <Center bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
                                 <Button mr={'20px'} bg={'blue'} color={'white'}>
                                     Tanpa Jubelio
@@ -57,21 +61,21 @@ export default function Pos() {
                     </Center>
                     <HStack mt={'40px'}>
                         <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/persediaan-tanpa-jubelio-hesti-1.gif"} />
+                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
 
                         </Center>
                         <Box>
                             <HStack spacing={'15px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih harus update manual stok kamu dari berbagai saluran penjualan?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
                             <HStack spacing={'15px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih perlu banyak karyawan dan sering salah dalam mengelola stok?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
                             <HStack spacing={'15px'}>
                                 <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Masih belum bisa memperkirakan ketersediaan stok kamu kedepannya?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
 
                         </Box>
@@ -80,8 +84,8 @@ export default function Pos() {
                 <Box w={'90%'} mx={'auto'} mb={'50px'}>
                     <Center >
                         <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Dengan dan Tanpa Jubelio Dalam Bisnismu</Heading>
-                            <Text >Lihat bagaimana Jubelio memudahkan pengelolaan persediaan produkmu.</Text>
+                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
+                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
                             <VStack bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
                                 <Button w={'90%'} bg={'blue'} color={'white'}>
                                     Tanpa Jubelio
@@ -94,21 +98,21 @@ export default function Pos() {
                     </Center>
                     <VStack mt={'40px'}>
                         <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/persediaan-tanpa-jubelio-hesti-1.gif"} />
+                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
 
                         </Center>
                         <Box>
                             <HStack spacing={'30px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Masih harus update manual stok kamu dari berbagai saluran penjualan?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
                             <HStack spacing={'30px'} mb={'30px'}>
                                 <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Masih perlu banyak karyawan dan sering salah dalam mengelola stok?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
                             <HStack spacing={'30px'}>
                                 <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Masih belum bisa memperkirakan ketersediaan stok kamu kedepannya?</Text>
+                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
                             </HStack>
 
                         </Box>
@@ -136,7 +140,7 @@ export default function Pos() {
 
 const FiturUnggulan = () => {
     const menu = [
-        "Stok Opname", "Stok Cadangan", "Revaluasi Stok", "Persentase Stok", "Stok Tidak Terbatas", "Toko Prioritas", "Multi Lokasi", "Multi Origin", "Nomor Serial & Batch", "Barang Laku & Tidak Laku", "Barang Habis, Menipis & Minus", "Proyeksi Barang Habis"
+        "Salin Produk", "Import Produk Massal", "Daftar Harga", "Buku Harga", "Import Harga Massal", "Daftar Promo", "Salin Promo", "Promo Bundling"
     ]
 
     const isDesktop = useBreakpointValue({
@@ -147,19 +151,19 @@ const FiturUnggulan = () => {
         <Box p={'10px'} w={'90%'} mx={'auto'}>
             <Box>
                 <VStack spacing={'20px'} mt={'30px'}>
-                    <Heading>Fitur unggulan manajemen persediaan</Heading>
+                    <Heading>Fitur Unggulan Katalog</Heading>
                     <Text>Jelajahi fiturnya yang bisa kamu manfaatkan buat bisnis.</Text>
                 </VStack>
             </Box>
             {isDesktop ?
                 <HStack spacing={'20px'}>
                     <Box>
-                        <Image w={'800px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Penyesuaian-Stok-Terpusat.gif"} />
+                        <Image w={'800px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
                     </Box>
                     <Box>
                         <Box bg={'white'} p={'30px'} mt={'130px'} >
-                            <Text color={'blue'}>Penyesuaian Stok Terpusat </Text>
-                            <Text>Kelola stok lebih mudah untuk berbagai channel penjualan</Text>
+                            <Text color={'blue'}>Daftar Produk</Text>
+                            <Text>Sekali uplod untuk semua channel penjualan.</Text>
                         </Box>
                         <Box>
                             {menu.map((item, index) => (
@@ -173,11 +177,11 @@ const FiturUnggulan = () => {
                 </HStack> :
                 <VStack spacing={'20px'}>
                     <Box bg={'white'} p={'30px'} mt={'30px'} w={'90%'}>
-                        <Text color={'blue'}>Penyesuaian Stok Terpusat </Text>
-                        <Text>Kelola stok lebih mudah untuk berbagai channel penjualan</Text>
+                        <Text color={'blue'}>Daftar Produk</Text>
+                        <Text>Sekali uplod untuk semua channel penjualan.</Text>
                     </Box>
                     <Box>
-                        <Image w={'400px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Penyesuaian-Stok-Terpusat.gif"} />
+                        <Image w={'400px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
                     </Box>
 
                     <Box w={'90%'} >
@@ -211,12 +215,12 @@ const Bisnis = () => {
             {isDesktop ?
                 <HStack mt={'40px'} py={'40px'} spacing={'50px'}>
                     <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-35@2x-1.svg"} />
+                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
 
                     </Center>
                     <Box>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CUIT BABY WEAR</Heading>
-                        <Text mb={'30px'}>Salah satu fitur yang sangat membantu adalah manajemen stok, karena jadi <strong>bisa memaksimalkan potensi dari setiap Toko yang ada tanpa harus menyediakan stok berlebih.</strong></Text>
+                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
+                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
 
                         <Heading size={'sm'}>Yandy Suherman</Heading>
                         <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
@@ -224,12 +228,12 @@ const Bisnis = () => {
                 </HStack> :
                 <Box py={'40px'} spacing={'50px'}>
                     <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-35@2x-1.svg"} />
+                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
 
                     </Center>
                     <Box mt={'20px'} w={"80%"} mx={'auto'}>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CUIT BABY WEAR</Heading>
-                        <Text mb={'30px'}>Salah satu fitur yang sangat membantu adalah manajemen stok, karena jadi <strong>bisa memaksimalkan potensi dari setiap Toko yang ada tanpa harus menyediakan stok berlebih. </strong></Text>
+                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
+                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
 
                         <Heading size={'sm'}>Yandy Suherman</Heading>
                         <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
@@ -246,8 +250,8 @@ const Fitur = () => {
     return (
         <Box w={'90%'} mx={'auto'} p={'40px'}>
             <VStack spacing={'30px'}  >
-                <Heading textAlign={'center'} >Fitur ini yang bisnismu butuhkan?</Heading>
-                <Text fontSize={'20px'} textAlign={'center'} >Stok aman, jualan lancar gak ada lawan!</Text>
+                <Heading textAlign={'center'} >Fitur katalog ini yang bisnismu butuhkan?</Heading>
+                <Text fontSize={'20px'} textAlign={'center'} >Kelola produk, harga, dan promo jadi gampang banget!</Text>
                 <Button p={'30px'} bg={'blue'} color={'white'}>Coba Gratis</Button>
 
             </VStack>

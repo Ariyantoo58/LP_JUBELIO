@@ -13,7 +13,6 @@ export default function ButtonStart() {
       _hover={{ bg: '#00FFAB' }}>
       <Text fontSize={'15pt'} fontWeight={'bold'}>
         Konsultasi LANGSUNG Yuk!
-
       </Text>
       <Text fontSize={'10pt'}>
         Via Whatsapp dengan Tim Deoapp

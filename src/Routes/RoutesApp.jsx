@@ -2,25 +2,15 @@ import Home from "..";
 import Products from "../pages/produk";
 import { Routes, Route } from "react-router-dom";
 import IndexHome from "../pages/home";
-import Katalog from "../pages/produk/katalog";
-import Persediaan from "../pages/produk/persediaan";
-import Pesanan from "../pages/produk/pesanan";
-import Gudang from "../pages/produk/Gudang";
-import IntelegensiBisnis from "../pages/produk/Intelegensibisnis";
-import Pembukuan from "../pages/produk/pembukuaan/pembukuan";
 import Harga from "../pages/harga";
 import Ambassador from "../pages/Ambassador";
 import Affiliasi from "../pages/Affiliasi";
 import IntegrasiAPI from "../pages/dukungan/integrasiAPI";
 import Partner from "../pages/partner";
+import Finance from "../pages/produk/Finance";
 import Signin from "../pages/signin";
 import Signup from "../pages/signup";
-import Platform from "../pages/produk/platform";
-import Pos from "../pages/produk/pos";
-import Store from "../pages/produk/store";
-import Chat from "../pages/produk/chat";
-import Shipment from "../pages/produk/shipment";
-import Layanan from "../pages/dukungan/layanan";
+
 
 export default function RouteApp() {
     return (
@@ -28,25 +18,13 @@ export default function RouteApp() {
             <Route exact path="/" element={<IndexHome />} />
             <Route exact path="/signin" element={<Signin />} />
             <Route exact path="/signup" element={<Signup />} />
-            <Route path="/product/katalog" element={<Katalog />} />
             <Route path="/product" element={<Products />} />
             <Route path="/harga" element={<Harga />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/affiliasi/ambassador" element={<Ambassador />} />
             <Route path="/dukungan/integrasiapi" element={<IntegrasiAPI />} />
-            <Route path="/dukungan/layanan" element={<Layanan />} />
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
-            <Route path="/product/persediaan" element={<Persediaan />} />
-            <Route path="/product/pesanan" element={<Pesanan />} />
-            <Route path="/product/gudang" element={<Gudang />} />
-            <Route path="/product/intelegensi-bisnis" element={<IntelegensiBisnis />} />
-            <Route path="/product/pembukuan" element={<Pembukuan />} />
-            <Route path="/product/platform" element={<Platform />} />
-            <Route path="/product/pos" element={<Pos />} />
-            <Route path="/product/store" element={<Store />} />
-            <Route path="/product/chat" element={<Chat />} />
-            <Route path="/product/shipment" element={<Shipment />} />
-
+            <Route path="/product/finance" element={<Finance />} />
         </Routes>
     );
 }
