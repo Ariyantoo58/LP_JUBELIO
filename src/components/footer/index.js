@@ -13,6 +13,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMailBulk, FaMai
 
 
 import logo from '../../assets/deoapp/deoapp colors (4).png'
+import { FiFacebook } from 'react-icons/fi';
 const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
@@ -77,7 +78,7 @@ function Footer() {
               <ListHeader color={'black'}>Social Media Links</ListHeader>
               <Link href={'#'} w='100%' color={'grey'} _hover={{ color: 'black' }}>
                 <HStack display={'flex'} gap={'5%'}>
-                  <FaFacebook />
+                  <FiFacebook />
                   <Text>
                     deoappcom
                   </Text>

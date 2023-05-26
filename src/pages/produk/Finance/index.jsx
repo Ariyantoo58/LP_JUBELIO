@@ -1,7 +1,7 @@
 import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { FiMinusCircle } from "react-icons/fi";
 import image1 from "../../../assets/logo Deoapp/Logo Deoapp Finance.png"
-import image2 from "../../../assets/thumbnail/finance-monitoring.png"
+import image2 from "../../../assets/thumbnail/Finance.gif"
 import ButtonStart from "../../../components/Button";
 
 export default function Finance() {
