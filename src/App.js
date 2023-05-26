@@ -12,8 +12,8 @@ function App() {
     <ChakraProvider>
       <Navbar />
       <Box mt={{ base: '95px', lg: '95px' }}>
-        {/* <RouteApp /> */}
-        <SocialMedia/>
+        <RouteApp />
+        {/* <SocialMedia/> */}
       </Box>
       <Footer />
     </ChakraProvider>
