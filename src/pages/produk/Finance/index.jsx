@@ -1,49 +1,111 @@
-import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
-import { FiMinusCircle } from "react-icons/fi";
-import image1 from "../../../assets/logo Deoapp/Logo Deoapp Finance.png"
-import image2 from "../../../assets/thumbnail/Finance.gif"
-import ButtonStart from "../../../components/Button";
+import {
+    Stack,
+    Box,
+    Heading,
+    Text,
+    Image,
+    useBreakpointValue,
+    VStack,
+    Flex,
+    Center,
+    HStack,
+    Button,
+} from '@chakra-ui/react';
+
+import ButtonStart from '../../../components/Button';
+import AnimetedFinance from "../../../assets/background/Finance.gif"
+import Bg from "../../../assets/background/bg Lms.jpeg"
+import Logo from '../../../assets/logo/deoapp.png'
+import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
+import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
+import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
+import Logo4 from "../../../assets/logo Deoapp/Logo Deoapp 1 marketing.png"
+import Logo5 from "../../../assets/logo Deoapp/Logo Deoapp 1 POS.png"
+import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.png"
+import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
+import { FiMinusCircle } from 'react-icons/fi';
 
 export default function Finance() {
+
+    return (
+        <Box>
+            <Box>
+                <Main />
+                <Keuntungan/>
+                <Lainnya/>
+            </Box>
+
+        </Box>
+
+    )
+}
+
+
+
+
+export function Main() {
+
     const isDesktop = useBreakpointValue({
         base: false,
         lg: true,
     });
+
+
     return (
-        <Box>
-            {isDesktop ?
-                <Box pb={'13%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
-                    <HStack w={'90%'} mx={'auto'}>
+        <Box bgSize={'cover'} bgImage={Bg} >
+            {isDesktop ? <></> : <Stack w={'100%'}>
+                <Image w={'80%'} m={'auto'} src={AnimetedFinance} />
+            </Stack>}
+            <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
+                <Stack
+                    w={'100%'}
+                    align={'center'}
+                    spacing={{ base: 8, md: 10 }}
+                    py={{ base: 20, md: 20 }}
+                    direction={{ base: 'column', md: 'row' }}>
+                    <Stack flex={1} spacing={{ base: 5, md: 2 }}>
                         <Box>
-                            <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'} color={'white'}>Headline Finance</Heading>
-                            <Text mb={'30px'} color={'white'} >Caption Finance</Text>
-                            <ButtonStart/>
-                        </Box>
-                        <Center>
-                            <Image w={'1000px'} h={'605px'} src={image2} />
-                        </Center>
-
-                    </HStack>
-                </Box> :
-                <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" >
-                    <Box w={'90%'} mx={'auto'}>
-                        <Center>
-                            <Image w={'350px'} h={'300px'} src={image2} />
-                        </Center>
-                        <Box pb={'50px'}>
-                            <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'}>Headline Finance</Heading>
-                            <Text mb={'30px'} >Caption Finance</Text>
-                            <ButtonStart/>
+                            <Image src={Logo} w={200} />
                         </Box>
 
+                        <Heading
+                            lineHeight={1}
+                            fontWeight={500}
+                            paddingBottom={10}
+                            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                            <Text fontSize={{ base: "35px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
+                                “Tingkatkan <Text as={'span'} color={'#F83C09'}>intelegensi</Text> mu dan raih kesuksesan bersama <Text as={'span'} color={'#F83C09'}>DEOAPP LMS, </Text>  Nikmati Kenyamatan dan Kemudahan akses learning bersama mentor terkemuka se- <Text as={'span'} color={'#F83C09'}>Indonesia</Text>”
+                            </Text>
+                        </Heading>
 
-                    </Box>
-                </Box>
-            }
+                        <Text color={'black'} fontWeight={'bold'}>
+                            DeoApp hadir dengan segudang fitur kece yang akan bikin bisnis dan kariermu naik level! Siap-siap terbang menuju puncak kejayaan! 🚀
+                        </Text>
+                        <Stack
+                            spacing={{ base: 4, sm: 6 }}
+                            direction={{ base: 'column', sm: 'row' }}>
+                            <ButtonStart />
+                        </Stack>
+                    </Stack>
+                </Stack>
+                {isDesktop ? <Stack w={'80%'} >
+                    <Image w={'100%'} m={'auto'} src={AnimetedFinance} />
+                </Stack> : <></>}
+            </Box>
+        </Box>
+    )
+}
 
-            {isDesktop ?
+const Keuntungan = () => {
+
+    const isDesktop = useBreakpointValue({
+        base: false,
+        lg: true,
+    });
+
+    return (
+        <>
+        {isDesktop ?
                 <Box w={'90%'} mx={'auto'}>
                     <Center >
                         <VStack mt={'70px'} spacing={'30px'}>
@@ -119,173 +181,14 @@ export default function Finance() {
                     </VStack>
                 </Box>
             }
-
-            <Box bg={"#F5FAFF"}>
-                <FiturUnggulan />
-            </Box>
-            <Box>
-                <Bisnis />
-            </Box>
-            <Box bg={"#e1f0ff"}>
-                <Fitur />
-            </Box>
-            <Box bg={"#F5FAFF"}>
-                <Lainnya />
-            </Box>
-
-        </Box>
-    )
-}
-
-
-const FiturUnggulan = () => {
-    const menu = [
-        "Salin Produk", "Import Produk Massal", "Daftar Harga", "Buku Harga", "Import Harga Massal", "Daftar Promo", "Salin Promo", "Promo Bundling"
-    ]
-
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
-        <Box p={'10px'} w={'90%'} mx={'auto'}>
-            <Box>
-                <VStack spacing={'20px'} mt={'30px'}>
-                    <Heading>Fitur Unggulan Katalog</Heading>
-                    <Text>Jelajahi fiturnya yang bisa kamu manfaatkan buat bisnis.</Text>
-                </VStack>
-            </Box>
-            {isDesktop ?
-                <HStack spacing={'20px'}>
-                    <Box>
-                        <Image w={'800px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
-                    </Box>
-                    <Box>
-                        <Box bg={'white'} p={'30px'} mt={'130px'} >
-                            <Text color={'blue'}>Daftar Produk</Text>
-                            <Text>Sekali uplod untuk semua channel penjualan.</Text>
-                        </Box>
-                        <Box>
-                            {menu.map((item, index) => (
-                                <Box key={index} borderBottom={'1px solid grey'} py={'20px'}>
-                                    <Text> {item}</Text>
-                                </Box>
-                            ))}
-
-                        </Box>
-                    </Box>
-                </HStack> :
-                <VStack spacing={'20px'}>
-                    <Box bg={'white'} p={'30px'} mt={'30px'} w={'90%'}>
-                        <Text color={'blue'}>Daftar Produk</Text>
-                        <Text>Sekali uplod untuk semua channel penjualan.</Text>
-                    </Box>
-                    <Box>
-                        <Image w={'400px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
-                    </Box>
-
-                    <Box w={'90%'} >
-                        {menu.map((item, index) => (
-                            <Box key={index} borderBottom={'1px solid grey'} py={'20px'}>
-                                <Text> {item}</Text>
-                            </Box>
-                        ))}
-
-                    </Box>
-
-                </VStack>
-            }
-        </Box>
-    )
-}
-
-const Bisnis = () => {
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
-
-        <Box w={'90%'} mx={'auto'}>
-            <Center mt={'70px'} spacing={'30px'}  >
-
-                <Heading textAlign={'center'} w={{ base: "95%", lg: '50%' }} >Apa kata pebisnis yang sudah manfaatkan fitur Katalog?</Heading>
-
-            </Center>
-            {isDesktop ?
-                <HStack mt={'40px'} py={'40px'} spacing={'50px'}>
-                    <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
-
-                    </Center>
-                    <Box>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
-                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
-
-                        <Heading size={'sm'}>Yandy Suherman</Heading>
-                        <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
-                    </Box>
-                </HStack> :
-                <Box py={'40px'} spacing={'50px'}>
-                    <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
-
-                    </Center>
-                    <Box mt={'20px'} w={"80%"} mx={'auto'}>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
-                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
-
-                        <Heading size={'sm'}>Yandy Suherman</Heading>
-                        <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
-                    </Box>
-                </Box>
-            }
-
-        </Box>
-
-    )
-}
-
-const Fitur = () => {
-    return (
-        <Box w={'90%'} mx={'auto'} p={'40px'}>
-            <VStack spacing={'30px'}  >
-                <Heading textAlign={'center'} >Fitur katalog ini yang bisnismu butuhkan?</Heading>
-                <Text fontSize={'20px'} textAlign={'center'} >Kelola produk, harga, dan promo jadi gampang banget!</Text>
-                <Button p={'30px'} bg={'blue'} color={'white'}>Coba Gratis</Button>
-
-            </VStack>
-
-        </Box>
-
+        </>
     )
 }
 
 const Lainnya = () => {
 
     const icon = [
-        {
-            title: "Persediaan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-34.svg",
-        },
-        {
-            title: "Pesanan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-35.svg",
-        },
-        {
-            title: "Gudang",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-36.svg",
-        },
-        {
-            title: "Pembukuaan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-37.svg",
-        },
-        {
-            title: "Intelegensi Bisnis",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-38.svg",
-        }
-
-    ]
+        Logo1, Logo2, Logo3, Logo4, Logo5, logo6, logo7 ]
 
     const isDesktop = useBreakpointValue({
         base: false,
@@ -293,18 +196,16 @@ const Lainnya = () => {
     });
     return (
         <Box w={'90%'} mx={'auto'} p={'40px'}>
-            <VStack spacing={'30px'}  >
-                <Heading textAlign={'center'} >Fitur lainnya gak boleh kamu lewatkan</Heading>
-                <Text fontSize={'20px'} textAlign={'center'} >Kenal lebih jauh tiap fiturnya dan sesuaikan dengan kebutuhan bisnismu.</Text>
-
-                <Flex gap={{ base: '10px', lg: '60px' }} justifyContent={'center'} flexWrap={'wrap'}>
+            <VStack spacing={20} >
+                <Heading textAlign={'center'} >Jelajahi Produk Deoapp Lainnya</Heading>
+                <Flex gap={{ base: '10px', lg: '100px' }} justifyContent={'center'} flexWrap={'wrap'}>
                     {icon.map((item, index) => (
-                        <Box key={index} mb={'20px'}>
-                            <Center borderRadius={'10px'} w={'150px'} h={'150px'} bg={'white'} boxShadow={'lg'} _hover={{ pb: "10px" }} >
-                                <Image src={item.image} />
+                        <Box key={index} >
+                            <Center w={'170px'} h={'30px'}  _hover={{ pb: "10px" }} >
+                                <Image src={item} />
 
                             </Center>
-                            <Heading textAlign={'center'} size={'sm'} mt={'10px'}>{item.title}</Heading>
+                            {/* <Heading textAlign={'center'} size={'sm'} mt={'10px'}>{item.title}</Heading> */}
                         </Box>
                     ))}
 
