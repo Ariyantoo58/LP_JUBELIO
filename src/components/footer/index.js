@@ -23,7 +23,6 @@ const ListHeader = ({ children }) => {
 function Footer() {
   return (
     <Box
-      borderTopRadius={'50px'}
       bg={'#21215e'}
       color={'white'}
       paddingLeft={{ base : '3%'}}>
