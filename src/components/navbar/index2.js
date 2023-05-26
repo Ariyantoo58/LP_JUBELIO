@@ -151,7 +151,7 @@ function Navbar() {
                                                         <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
                                                             <Image w={'110px'} src={image1} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/finance')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image2} />
                                                         </Box>
                                                         <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
