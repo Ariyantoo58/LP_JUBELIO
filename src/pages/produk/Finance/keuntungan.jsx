@@ -36,25 +36,25 @@ export default function Keuntungan() {
                             </Center>
                             <Center w={{ base: '100%', lg: '50%' }} >
                                 <Stack spacing={5} px={{ base: 2, lg: 0 }}>
-                                    <HStack spacing={10}>
+                                <HStack spacing={10}>
                                         <Image w={25} src={minus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Pengalaman Belajar yang Interaktif</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Kesulitan dalam Mengelola Konten</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={minus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Fleksibilitas</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Tantangan dalam Pengorganisasian Kursus</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={minus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Bahan Pembelajaran yang Kaya</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Kurangnya Kolaborasi dan Interaksi</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={minus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Dukungan Pengajar yang Profesional</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Tidak Adanya Analisis Data</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={minus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Pembelajaran yang Dipersonalisasi</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Kurangnya Sentralisasi</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={minus} />
@@ -69,25 +69,25 @@ export default function Keuntungan() {
                             </Center>
                             <Center w={{ base: '100%', lg: '50%' }} >
                                 <Stack spacing={{ base: 1, lg: 5 }} px={{ base: 2, lg: 0 }}>
-                                    <HStack spacing={10}>
+                                <HStack spacing={10}>
                                         <Image w={25} src={plus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Kesulitan dalam Mengelola Konten</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Pengalaman Belajar yang Interaktif</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={plus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Tantangan dalam Pengorganisasian Kursus</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Fleksibilitas</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={plus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Kurangnya Kolaborasi dan Interaksi</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Bahan Pembelajaran yang Kaya</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={plus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Tidak Adanya Analisis Data</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Dukungan Pengajar yang Profesional</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={plus} />
-                                        <Text fontSize={25} fontFamily={'inherit'}>Kurangnya Sentralisasi</Text>
+                                        <Text fontSize={25} fontFamily={'inherit'}>Pembelajaran yang Dipersonalisasi</Text>
                                     </HStack>
                                     <HStack spacing={10}>
                                         <Image w={25} src={plus} />
