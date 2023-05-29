@@ -10,6 +10,7 @@ import Partner from "../pages/partner";
 import Finance from "../pages/produk/Finance";
 import Signin from "../pages/signin";
 import Signup from "../pages/signup";
+import LMS from "../pages/produk/LMS";
 
 
 
@@ -26,6 +27,7 @@ export default function RouteApp() {
             <Route path="/dukungan/integrasiapi" element={<IntegrasiAPI />} />
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
             <Route path="/product/finance" element={<Finance />} />
+            <Route path="/product/LMS" element={<LMS />} />
         </Routes>
     );
 }

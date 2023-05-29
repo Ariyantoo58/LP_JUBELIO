@@ -26,8 +26,9 @@ import Logo4 from "../../../assets/logo Deoapp/Logo Deoapp 1 marketing.png"
 import Logo5 from "../../../assets/logo Deoapp/Logo Deoapp 1 POS.png"
 import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.png"
 import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
-import { FiMinusCircle } from 'react-icons/fi';
-
+import image1 from '../../../assets/images/Group 3088.png'
+import { ButtonJoinUs } from "../../../components/Button";
+import Finan from '../../../assets/images/Finance management.png'
 
 export default function Finance() {
 
@@ -36,18 +37,24 @@ export default function Finance() {
             <Box>
                 <Main />
             </Box>
-            {/* <Box>
-                <Bisnis />
-            </Box> */}
+            <Box w={'95%'} mx={'auto'}>
+                <Mengelola />
+            </Box>
             <Box my={{ base: 10, lg: 100 }}>
                 <Keunggulan />
             </Box>
             <Box bg={'#f2f2f2'} >
                 <Keuntungan />
             </Box>
-            {/* <Box bg={"#e1f0ff"}>
-                <Fitur />
-            </Box> */}
+            <VStack>
+                <Heading my={30}>Contoh Video Youtube</Heading>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCnnMiwE3js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </VStack>
+            <Box>
+                <video>
+                    <source src={"https://www.youtube.com/watch?v=7sDY4m8KNLc"} type="video/mp4" />
+                </video>
+            </Box>
             <Box  >
                 <Lainnya />
             </Box>
@@ -56,8 +63,6 @@ export default function Finance() {
 
     )
 }
-
-
 
 
 export function Main() {
@@ -91,7 +96,7 @@ export function Main() {
                             paddingBottom={10}
                             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
                             <Text fontSize={{ base: "25px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
-                                “Tingkatkan <Text as={'span'} color={'#F83C09'}>intelegensi</Text> dan raih kesuksesan bersama <Text as={'span'} color={'#F83C09'}>DEOAPP LMS, </Text>  Nikmati Kenyamatan dan Kemudahan akses learning bersama mentor terkemuka se- <Text as={'span'} color={'#F83C09'}>Indonesia</Text>”
+                                Atur pengelolaan Keuangan bisnismu Menjadi Kesenangan dengan Deoapp <Text as={'span'} color={'#F83C09'}>Finance</Text>: Desain Simpel, Fitur Modern, dan <Text as={'span'} color={'#F83C09'}>Keamanan</Text> Data yang <Text as={'span'} color={'#F83C09'}>Terpercaya</Text>
                             </Text>
                         </Heading>
 
@@ -110,92 +115,28 @@ export function Main() {
     )
 }
 
-const Keuntungann = () => {
-
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-
+// Menegelola 
+const Mengelola = () => {
     return (
-        <>
-            {isDesktop ?
-                <Box w={'90%'} mx={'auto'}>
-                    <Center >
-                        <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
-                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
-                            <Center bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
-                                <Button mr={'20px'} bg={'blue'} color={'white'}>
-                                    Tanpa Jubelio
-                                </Button>
-                                <Button bg={'white'} >
-                                    Dengan Jubelio
-                                </Button>
-                            </Center>
-                        </VStack>
-                    </Center>
-                    <HStack mt={'40px'}>
-                        <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
-
-                        </Center>
-                        <Box>
-                            <HStack spacing={'15px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'15px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'15px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
+        <Box>
+            <Box w="50%" my={20} >
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Siap Mengelola Keuangan dengan Lebih Efisien?</Heading>
+            </Box>
+            <Box my={{ base: '30px', lg: '0' }}>
+                <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
+                    <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "30%" }} mx={'auto'}  >
+                        <Image src={Finan} w={'100%'} />
+                    </Box>
+                    <Center flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}>
+                        <Box  >
+                            <Text fontSize={30}> Deoapp Finance hadir membantumu dalam mengorganisir Keuangan Bisnis menjadi sangat mudah dan praktis dengan sistem yang dirancang khusus sehingga tanpa disadari Keuangan Bisnismu akan Teorganizir layaknya perusahaan ternama di indonesia.
+                            </Text>
 
                         </Box>
-                    </HStack>
-                </Box> :
-                <Box w={'90%'} mx={'auto'} mb={'50px'}>
-                    <Center >
-                        <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
-                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
-                            <VStack bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
-                                <Button w={'90%'} bg={'blue'} color={'white'}>
-                                    Tanpa Jubelio
-                                </Button>
-                                <Button w={'90%'} bg={'white'} >
-                                    Dengan Jubelio
-                                </Button>
-                            </VStack>
-                        </VStack>
                     </Center>
-                    <VStack mt={'40px'}>
-                        <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
-
-                        </Center>
-                        <Box>
-                            <HStack spacing={'30px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'30px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-
-                        </Box>
-                    </VStack>
-                </Box>
-            }
-        </>
+                </Flex>
+            </Box>
+        </Box>
     )
 }
 

@@ -28,7 +28,7 @@ import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.
 import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
 import { FiMinusCircle } from 'react-icons/fi';
 
-export default function CRM() {
+export default function LMS() {
 
     return (
         <Box>
