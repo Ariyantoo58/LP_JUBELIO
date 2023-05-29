@@ -10,6 +10,12 @@ import Partner from "../pages/partner";
 import Finance from "../pages/produk/Finance";
 import Signin from "../pages/signin";
 import Signup from "../pages/signup";
+import HR from "../pages/produk/HR Management";
+import CRM from "../pages/produk/CRM";
+import Project from "../pages/produk/Project Management";
+import Marketing from "../pages/produk/Marketing";
+import POS from "../pages/produk/Pos";
+import SocialMedia from "../pages/produk/Social Media";
 
 
 
@@ -26,6 +32,12 @@ export default function RouteApp() {
             <Route path="/dukungan/integrasiapi" element={<IntegrasiAPI />} />
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
             <Route path="/product/finance" element={<Finance />} />
+            <Route path="/product/hr" element={<HR/>}/>
+            <Route path="/product/crm" element={<CRM/>}/>
+            <Route path="/product/project" element={<Project/>}/>
+            <Route path="/product/marketing" element={<Marketing/>}/>
+            <Route path="/product/pos" element={<POS/>}/>
+            <Route path="/product/socialmedia" element={<SocialMedia/>}/>
         </Routes>
     );
 }

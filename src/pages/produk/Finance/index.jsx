@@ -16,7 +16,7 @@ import Keunggulan from './keunggulan';
 import Keuntungan from './keuntungan';
 
 import ButtonStart from '../../../components/Button';
-import AnimetedFinance from "../../../assets/background/Finance.gif"
+import AnimetedLms from "../../../assets/background/Online learning.gif"
 import Bg from "../../../assets/background/bg Lms.jpeg"
 import Logo from '../../../assets/logo/deoapp.png'
 import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
@@ -71,7 +71,7 @@ export function Main() {
     return (
         <Box bgSize={'cover'} bgImage={Bg} >
             {isDesktop ? <></> : <Stack w={'100%'}>
-                <Image w={'80%'} m={'auto'} src={AnimetedFinance} />
+                <Image w={'80%'} m={'auto'} src={AnimetedLms} />
             </Stack>}
             <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
                 <Stack
@@ -103,7 +103,7 @@ export function Main() {
                     </Stack>
                 </Stack>
                 {isDesktop ? <Stack w={'80%'} >
-                    <Image w={'100%'} m={'auto'} src={AnimetedFinance} />
+                    <Image w={'100%'} m={'auto'} src={AnimetedLms} />
                 </Stack> : <></>}
             </Box>
         </Box>

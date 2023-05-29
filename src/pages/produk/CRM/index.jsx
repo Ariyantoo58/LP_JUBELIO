@@ -1,310 +1,222 @@
-import { Box, Button, HStack, Heading, VStack, Image, Text, Center, Flex, useBreakpointValue } from "@chakra-ui/react";
-import { FiMinusCircle } from "react-icons/fi";
-import image1 from "../../../assets/logo Deoapp/Logo Deoapp CRM.png"
-import image2 from "../../../assets/thumbnail/customer-service.png"
-import ButtonStart from "../../../components/Button";
+import 
+{ Stack,
+Box,
+Heading,
+Text,
+Image,
+useBreakpointValue,
+VStack,
+Flex,
+Center,
+HStack,
+Button,
+} from '@chakra-ui/react';
 
-export default function CRM() {
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
+// import Keunggulan from './keunggulan';
+// import Keuntungan from './keuntungan';
+
+import ButtonStart from '../../../components/Button';
+import AnimetedCRM from "../../../assets/background/Crm Banner.gif"
+import Bg from "../../../assets/background/bg Lms.jpeg"
+import Logo from '../../../assets/logo/deoapp.png'
+import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
+import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
+import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
+import Logo4 from "../../../assets/logo Deoapp/Logo Deoapp 1 marketing.png"
+import Logo5 from "../../../assets/logo Deoapp/Logo Deoapp 1 POS.png"
+import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.png"
+import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
+import { FiMinusCircle } from 'react-icons/fi';
+
+
+export default function HR() {
+
+return (
+    <Box>
         <Box>
-            {isDesktop ?
-                <Box pb={'13%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png">
-                    <HStack w={'90%'} mx={'auto'}>
-                        <Box>
-                            <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'}>Headline Costumer Relationship Management</Heading>
-                            <Text mb={'30px'} >Caption CRM</Text>
-                            <ButtonStart/>
-                        </Box>
-                        <Center>
-                            <Image w={'1000px'} h={'605px'} src={image2} />
-                        </Center>
+            <Main />
+        </Box>
+        {/* <Box>
+            <Bisnis />
+        </Box> */}
+        {/* <Box my={{ base: 10, lg: 100 }}>
+            <Keunggulan />
+        </Box>
+        <Box bg={'#f2f2f2'} >
+            <Keuntungan />
+        </Box> */}
+        {/* <Box bg={"#e1f0ff"}>
+            <Fitur />
+        </Box> */}
+        <Box  >
+            <Lainnya />
+        </Box>
 
-                    </HStack>
-                </Box> :
-                <Box pb={'7%'} bgImage="https://assets.cdn.filesafe.space/UGHgg1ZuG6gBVs7a6Z8g/media/62e7033002b0385f4f8857b0.png" >
-                    <Box w={'90%'} mx={'auto'}>
-                        <Center>
-                            <Image w={'350px'} h={'300px'} src={image2} />
-                        </Center>
-                        <Box pb={'50px'}>
-                            <Image w={'55%'} src={image1}/>
-                            <Heading mb={'30px'} color={'white'}>Headline Costumer Relationship Management</Heading>
-                            <Text color={'white'} mb={'30px'} >Caption CRM</Text>
-                            <ButtonStart/>
-                        </Box>
+    </Box>
+
+)
+}
 
 
+
+
+export function Main() {
+
+const isDesktop = useBreakpointValue({
+    base: false,
+    lg: true,
+});
+
+
+return (
+    <Box bgSize={'cover'} bgImage={Bg} >
+        {isDesktop ? <></> : <Stack w={'100%'}>
+            <Image w={'80%'} m={'auto'} src={AnimetedCRM} />
+        </Stack>}
+        <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
+            <Stack
+                w={'100%'}
+                align={'center'}
+                spacing={{ base: 8, md: 10 }}
+                py={{ base: 5, md: 20 }}
+                direction={{ base: 'column', md: 'row' }}>
+                <Stack flex={1} spacing={{ base: 5, md: 4 }}>
+                    <Box >
+                        <Image src={Logo} w={200} />
                     </Box>
-                </Box>
-            }
 
-            {isDesktop ?
-                <Box w={'90%'} mx={'auto'}>
-                    <Center >
-                        <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
-                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
-                            <Center bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
-                                <Button mr={'20px'} bg={'blue'} color={'white'}>
-                                    Tanpa Jubelio
-                                </Button>
-                                <Button bg={'white'} >
-                                    Dengan Jubelio
-                                </Button>
-                            </Center>
-                        </VStack>
-                    </Center>
-                    <HStack mt={'40px'}>
-                        <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
+                    <Heading
+                        lineHeight={1}
+                        fontWeight={500}
+                        paddingBottom={10}
+                        fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                        <Text fontSize={{ base: "25px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
+                            “Headline <Text as={'span'} color={'#F83C09'}>CRM”
+                        </Text>
+                        </Text>
+                    </Heading>
 
+                    <Stack
+                        spacing={{ base: 0, lg: 6 }}
+                        direction={{ base: 'column', sm: 'row' }}>
+                        <ButtonStart />
+                    </Stack>
+                </Stack>
+            </Stack>
+            {isDesktop ? <Stack w={'80%'} >
+                <Image w={'100%'} m={'auto'} src={AnimetedCRM} />
+            </Stack> : <></>}
+        </Box>
+    </Box>
+)
+}
+
+const Keuntungann = () => {
+
+const isDesktop = useBreakpointValue({
+    base: false,
+    lg: true,
+});
+
+return (
+    <>
+        {isDesktop ?
+            <Box w={'90%'} mx={'auto'}>
+                <Center >
+                    <VStack mt={'70px'} spacing={'30px'}>
+                        <Heading >Apa untungnya pakai fitur Katalog?</Heading>
+                        <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
+                        <Center bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
+                            <Button mr={'20px'} bg={'blue'} color={'white'}>
+                                Tanpa Jubelio
+                            </Button>
+                            <Button bg={'white'} >
+                                Dengan Jubelio
+                            </Button>
                         </Center>
-                        <Box>
-                            <HStack spacing={'15px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'15px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'15px'}>
-                                <FiMinusCircle fontSize={'30px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-
-                        </Box>
-                    </HStack>
-                </Box> :
-                <Box w={'90%'} mx={'auto'} mb={'50px'}>
-                    <Center >
-                        <VStack mt={'70px'} spacing={'30px'}>
-                            <Heading >Apa untungnya pakai fitur Katalog?</Heading>
-                            <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
-                            <VStack bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
-                                <Button w={'90%'} bg={'blue'} color={'white'}>
-                                    Tanpa Jubelio
-                                </Button>
-                                <Button w={'90%'} bg={'white'} >
-                                    Dengan Jubelio
-                                </Button>
-                            </VStack>
-                        </VStack>
-                    </Center>
-                    <VStack mt={'40px'}>
-                        <Center>
-                            <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
-
-                        </Center>
-                        <Box>
-                            <HStack spacing={'30px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'30px'} mb={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-                            <HStack spacing={'30px'}>
-                                <FiMinusCircle fontSize={'50px'} color="red" />
-                                <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
-                            </HStack>
-
-                        </Box>
                     </VStack>
-                </Box>
-            }
-
-            <Box bg={"#F5FAFF"}>
-                <FiturUnggulan />
-            </Box>
-            <Box>
-                <Bisnis />
-            </Box>
-            <Box bg={"#e1f0ff"}>
-                <Fitur />
-            </Box>
-            <Box bg={"#F5FAFF"}>
-                <Lainnya />
-            </Box>
-
-        </Box>
-    )
-}
-
-
-const FiturUnggulan = () => {
-    const menu = [
-        "Salin Produk", "Import Produk Massal", "Daftar Harga", "Buku Harga", "Import Harga Massal", "Daftar Promo", "Salin Promo", "Promo Bundling"
-    ]
-
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
-        <Box p={'10px'} w={'90%'} mx={'auto'}>
-            <Box>
-                <VStack spacing={'20px'} mt={'30px'}>
-                    <Heading>Fitur Unggulan Katalog</Heading>
-                    <Text>Jelajahi fiturnya yang bisa kamu manfaatkan buat bisnis.</Text>
-                </VStack>
-            </Box>
-            {isDesktop ?
-                <HStack spacing={'20px'}>
-                    <Box>
-                        <Image w={'800px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
-                    </Box>
-                    <Box>
-                        <Box bg={'white'} p={'30px'} mt={'130px'} >
-                            <Text color={'blue'}>Daftar Produk</Text>
-                            <Text>Sekali uplod untuk semua channel penjualan.</Text>
-                        </Box>
-                        <Box>
-                            {menu.map((item, index) => (
-                                <Box key={index} borderBottom={'1px solid grey'} py={'20px'}>
-                                    <Text> {item}</Text>
-                                </Box>
-                            ))}
-
-                        </Box>
-                    </Box>
-                </HStack> :
-                <VStack spacing={'20px'}>
-                    <Box bg={'white'} p={'30px'} mt={'30px'} w={'90%'}>
-                        <Text color={'blue'}>Daftar Produk</Text>
-                        <Text>Sekali uplod untuk semua channel penjualan.</Text>
-                    </Box>
-                    <Box>
-                        <Image w={'400px'} src={"https://jubelio.com/wp-content/uploads/2023/03/daftar-produk.gif"} />
-                    </Box>
-
-                    <Box w={'90%'} >
-                        {menu.map((item, index) => (
-                            <Box key={index} borderBottom={'1px solid grey'} py={'20px'}>
-                                <Text> {item}</Text>
-                            </Box>
-                        ))}
-
-                    </Box>
-
-                </VStack>
-            }
-        </Box>
-    )
-}
-
-const Bisnis = () => {
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
-
-        <Box w={'90%'} mx={'auto'}>
-            <Center mt={'70px'} spacing={'30px'}  >
-
-                <Heading textAlign={'center'} w={{ base: "95%", lg: '50%' }} >Apa kata pebisnis yang sudah manfaatkan fitur Katalog?</Heading>
-
-            </Center>
-            {isDesktop ?
-                <HStack mt={'40px'} py={'40px'} spacing={'50px'}>
+                </Center>
+                <HStack mt={'40px'}>
                     <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
+                        <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
 
                     </Center>
                     <Box>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
-                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
+                        <HStack spacing={'15px'} mb={'30px'}>
+                            <FiMinusCircle fontSize={'30px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
+                        <HStack spacing={'15px'} mb={'30px'}>
+                            <FiMinusCircle fontSize={'30px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
+                        <HStack spacing={'15px'}>
+                            <FiMinusCircle fontSize={'30px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
 
-                        <Heading size={'sm'}>Yandy Suherman</Heading>
-                        <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
                     </Box>
-                </HStack> :
-                <Box py={'40px'} spacing={'50px'}>
+                </HStack>
+            </Box> :
+            <Box w={'90%'} mx={'auto'} mb={'50px'}>
+                <Center >
+                    <VStack mt={'70px'} spacing={'30px'}>
+                        <Heading >Apa untungnya pakai fitur Katalog?</Heading>
+                        <Text >Lihat bagaimana kami mudahkan pengelolaan katalog produk.</Text>
+                        <VStack bg={"#BADFFF"} w={'90%'} py={'20px'} borderRadius={'10px'}>
+                            <Button w={'90%'} bg={'blue'} color={'white'}>
+                                Tanpa Jubelio
+                            </Button>
+                            <Button w={'90%'} bg={'white'} >
+                                Dengan Jubelio
+                            </Button>
+                        </VStack>
+                    </VStack>
+                </Center>
+                <VStack mt={'40px'}>
                     <Center>
-                        <Image w={'1000px'} src={"https://jubelio.com/wp-content/uploads/2023/03/Asset-36@2x-1.svg"} />
+                        <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
 
                     </Center>
-                    <Box mt={'20px'} w={"80%"} mx={'auto'}>
-                        <Heading size={'lg'} color={'blue'} mb={'30px'}>CARGLOSS</Heading>
-                        <Text mb={'30px'}><strong>Fitur produk bundling sangat membantu </strong>sekali, karena di Jubelio cukup bundling secara data, tidak perlu langsung secara fisik karena barangnya masih terpisah.</Text>
+                    <Box>
+                        <HStack spacing={'30px'} mb={'30px'}>
+                            <FiMinusCircle fontSize={'50px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
+                        <HStack spacing={'30px'} mb={'30px'}>
+                            <FiMinusCircle fontSize={'50px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
+                        <HStack spacing={'30px'}>
+                            <FiMinusCircle fontSize={'50px'} color="red" />
+                            <Text>Perlu banyak waktu dan karyawan buat kelola ratusan bahkan ribuan produk di banyak channel jualan?</Text>
+                        </HStack>
 
-                        <Heading size={'sm'}>Yandy Suherman</Heading>
-                        <Text fontStyle={'italic'}>Director PT. Panca Prima Murya</Text>
                     </Box>
-                </Box>
-            }
-
-        </Box>
-
-    )
-}
-
-const Fitur = () => {
-    return (
-        <Box w={'90%'} mx={'auto'} p={'40px'}>
-            <VStack spacing={'30px'}  >
-                <Heading textAlign={'center'} >Fitur katalog ini yang bisnismu butuhkan?</Heading>
-                <Text fontSize={'20px'} textAlign={'center'} >Kelola produk, harga, dan promo jadi gampang banget!</Text>
-                <Button p={'30px'} bg={'blue'} color={'white'}>Coba Gratis</Button>
-
-            </VStack>
-
-        </Box>
-
-    )
+                </VStack>
+            </Box>
+        }
+    </>
+)
 }
 
 const Lainnya = () => {
 
-    const icon = [
-        {
-            title: "Persediaan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-34.svg",
-        },
-        {
-            title: "Pesanan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-35.svg",
-        },
-        {
-            title: "Gudang",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-36.svg",
-        },
-        {
-            title: "Pembukuaan",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-37.svg",
-        },
-        {
-            title: "Intelegensi Bisnis",
-            image: "https://jubelio.com/wp-content/uploads/2023/03/Frame-38.svg",
-        }
+const icon = [
+    Logo1, Logo2, Logo3, Logo4, Logo5, logo6, logo7]
+return (
+    <Box my={20}>
 
-    ]
-
-    const isDesktop = useBreakpointValue({
-        base: false,
-        lg: true,
-    });
-    return (
-        <Box w={'90%'} mx={'auto'} p={'40px'}>
-            <VStack spacing={'30px'}  >
-                <Heading textAlign={'center'} >Fitur lainnya gak boleh kamu lewatkan</Heading>
-                <Text fontSize={'20px'} textAlign={'center'} >Kenal lebih jauh tiap fiturnya dan sesuaikan dengan kebutuhan bisnismu.</Text>
-
-                <Flex gap={{ base: '10px', lg: '60px' }} justifyContent={'center'} flexWrap={'wrap'}>
+        <Box w={'90%'} mx={'auto'} px={'40px'} >
+            <VStack spacing={20} >
+                <Heading textAlign={'center'} >Jelajahi Produk Deoapp Lainnya</Heading>
+                <Flex gap={{ base: '50px', lg: '100px' }} justifyContent={'center'} flexWrap={'wrap'}>
                     {icon.map((item, index) => (
-                        <Box key={index} mb={'20px'}>
-                            <Center borderRadius={'10px'} w={'150px'} h={'150px'} bg={'white'} boxShadow={'lg'} _hover={{ pb: "10px" }} >
-                                <Image src={item.image} />
-
+                        <Box key={index} w={{ base: "40%", lg: '15%' }}>
+                            <Center h={'30px'} _hover={{ pb: "10px" }} >
+                                <Image src={item} />
                             </Center>
-                            <Heading textAlign={'center'} size={'sm'} mt={'10px'}>{item.title}</Heading>
+                            {/* <Heading textAlign={'center'} size={'sm'} mt={'10px'}>{item.title}</Heading> */}
                         </Box>
                     ))}
 
@@ -313,6 +225,7 @@ const Lainnya = () => {
             </VStack>
 
         </Box>
+    </Box>
 
-    )
+)
 }

@@ -21,7 +21,7 @@ export default function Drawers() {
             navigate('/product/katalog')
         }
         if (item == platform) {
-            navigate('/product/platform')
+            navigate('/product/hr')
         }
         if (item == pos) {
             navigate('/product/pos')

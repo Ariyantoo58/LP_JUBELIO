@@ -148,25 +148,25 @@ function Navbar() {
                                             <PopoverContent w={'200px'}>
                                                 <PopoverBody color={'black'} >
                                                     <Box px={'10px'} py={'10px'} >
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/crm')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
                                                             <Image w={'110px'} src={image1} />
                                                         </Box>
                                                         <Box as={'button'} px={'15px'} onClick={() => navigate('/product/finance')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image2} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/hr')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image3} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/marketing')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image4} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/pos')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image6} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/project')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image7} />
                                                         </Box>
-                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/platform')} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                                                        <Box as={'button'} px={'15px'} onClick={() => navigate('/product/socialmedia')} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
                                                             <Image w={'110px'} src={image8} />
                                                         </Box>
 
