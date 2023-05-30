@@ -139,7 +139,6 @@ function Navbar() {
                                                 <Button
                                                     variant="link"
                                                     rightIcon={<PopoverIcon />}
-                                                    onClick={() => navigate('/product/katalog')}
                                                     color={'black'}
                                                 >
                                                     Produk

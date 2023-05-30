@@ -91,7 +91,7 @@ return (
                         paddingBottom={10}
                         fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
                         <Text fontSize={{ base: "25px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
-                            “Headline <Text as={'span'} color={'#F83C09'}>HR Management”
+                            “Headline <Text as={'span'} color={'#F83C09'}>Social Media Management”
                         </Text>
                         </Text>
                     </Heading>
