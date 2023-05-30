@@ -33,7 +33,7 @@ export default function RouteApp() {
             <Route path="/affiliasi/affiliasi" element={<Affiliasi />} />
             <Route path="/product/finance" element={<Finance />} />
             <Route path="/product/hr" element={<HR />} />
-            <Route path="/product/projectmanagament" element={<PM />} />
+            <Route path="/product/PROJECT MANAGEMENT" element={<PM />} />
             <Route path="/product/marketing" element={<Marketing />} />
             <Route path="/product/LMS" element={<LMS />} />
             <Route path="/product/CRM" element={<CRM />} />

@@ -49,6 +49,12 @@ import { useState } from "react";
 import { PopoverIcon } from "./PopoverIcon";
 import Drawers from "./Drawer";
 
+const Menus = [
+    "LMS", "CRM", "HR", "FINANCE", "MARKETING", "PROJECT MANAGEMENT"
+]
+
+
+
 
 
 function Navbar() {
@@ -58,6 +64,12 @@ function Navbar() {
         lg: true,
     });
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const [click, setClick] = useState()
+
+    const handleClick = (item) => {
+        setClick(item)
+        navigate(`/product/${item}`)
+    }
 
 
     return (
@@ -172,16 +184,22 @@ function Navbar() {
 
                                             </PopoverContent>
                                         </Popover> */}
+                                        {Menus.map((item, index) => (
+                                            <Button
+                                                key={index}
+                                                _hover={{ borderBottom: "2px solid black" }}
+                                                onClick={() => handleClick(item)}
+                                                color={'black'}
+                                                borderRadius={'none'}
+                                                fontWeight={'bold'}
+                                                py={2}
+                                                borderBottom={click == item ? '2px solid black' : 'none'}
+                                            >
+                                                {item}
+                                            </Button>
+                                        ))}
 
-                                        <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/LMS')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            LMS
-                                        </Button>
-                                        <Button
+                                        {/* <Button
                                             variant="link"
                                             onClick={() => navigate('/product/CRM')}
                                             color={'black'}
@@ -220,7 +238,7 @@ function Navbar() {
                                             fontWeight={'bold'}
                                         >
                                             PROJECT MANAGEMENT
-                                        </Button>
+                                        </Button> */}
 
 
                                     </ButtonGroup>
