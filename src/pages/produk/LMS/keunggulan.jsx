@@ -8,7 +8,7 @@ export default function Keunggulan() {
     return (
         <VStack w={'90%'} mx={'auto'} spacing={50} >
             <Box w="100%" >
-                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Kenapa memilih Deoapp LMS?</Heading>
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Dengan keunggulan yang dimiliki oleh deoapp LMS kamu  akan memperoleh : </Heading>
             </Box>
             <Box my={{ base: '30px', lg: '0' }}>
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
@@ -16,8 +16,8 @@ export default function Keunggulan() {
                         <Image src={image1} w={'100%'} />
                     </Box>
                     <Box flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }} >
-                        <Heading>Akses yang sangat terjangkau dimanapun dan kapanpun</Heading>
-                        <Text mt={'20px'} >Akses learning kami dirancang se-fleksibel mungkin untuk mengikuti gaya hidup modern dan waktu sibuk mu dengan fleksibilitas waktu dan akses online yang mudah, Anda dapat mengakses di mana saja, kapan saja, dan dari perangkat apa pun yang kamu miliki. Ini adalah kesempatan sempurna untuk mengembangkan dirimu tanpa harus meninggalkan kenyamanan mu</Text>
+                        <Heading>Dukungan pembuatan materi</Heading>
+                        <Text mt={'20px'} >Kami akan membantu mengurus seluruh proses produksi materi sehingga kamu hanya perlu mempersiapkan materi apa yang ingin kamu buat, untuk persiapan dan eksekusinya akan dibantu oleh tim professional kami</Text>
                         <ButtonJoinUs />
                     </Box>
                 </Flex>
@@ -26,8 +26,8 @@ export default function Keunggulan() {
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={"wrap"} flexDir={{ base: 'column-reverse', lg: 'row' }}>
 
                     <Box flex={1} py={{ base: '10px', lg: '3%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}  >
-                        <Heading>Konten yang sa edukatif dan dirancang se ekslusif mungkin</Heading>
-                        <Text mt={'20px'}>kami menghadirkan pengalaman learning  interaktif dengan video edukasi menarik dan materi yang terstruktur. Anda akan memperoleh edukasi dengan kecepatan Anda sendiri mulai dari produk knowlegde, mengelola SDM, memasarkan produk dan banyak lagi yang mampu mengembangkan potensimu dalam berbisnis</Text>
+                        <Heading>Dukungan proses produksi hingga distribusi</Heading>
+                        <Text mt={'20px'}>Deoapp LMS hadir memberikan bantuan penuh mulai dari produksi hingga distribusi materimu. Kami akan memastikan semua tahap proses berjalan lancar dan efisien. Dengan Team yang professional kami akan mengelola dan mengoptimalkan video mu</Text>
                         <ButtonJoinUs />
                     </Box>
                     <Box flex={1} w={{ base: "90%", lg: "100%" }} mx={'auto'}  >
@@ -41,8 +41,8 @@ export default function Keunggulan() {
                         <Image src={image3} w={'100%'} />
                     </Box>
                     <Box flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '3%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }} >
-                        <Heading>Mentor yang professional dan terkemuka se indonesia</Heading>
-                        <Text mt={'20px'}>Kami sangat bangga bahwa Course kami didukung oleh para public figure terkemuka se Indonesia yang penuh gairah dan profesionalisme. Mereka siap membimbingmu dengan panduan, umpan balik konstruktif, dan wawasan berharga berdasarkan pengalaman lapangan mereka. Dengan keahlian mereka sebagai sumber inspirasi, Anda akan merasa didukung sepenuhnya dalam mencapai kemajuan yang signifikan menuju kesuksesan</Text>
+                        <Heading>Reporting Hasil Penjualan Produk dan Data Statistik di yang up todate</Heading>
+                        <Text mt={'20px'}>Kami akan menyajikan laporan penjualan produk dan data statistik terbaru sehingga kamu dapat dengan mudah melacak performa produk Anda Dengan akses ke data yang akurat dan terbaru, Anda dapat mengidentifikasi tren pasar, menyesuaikan strategi, dan membuat keputusan yang lebih cerdas</Text>
                         <ButtonJoinUs />
                     </Box>
                 </Flex>

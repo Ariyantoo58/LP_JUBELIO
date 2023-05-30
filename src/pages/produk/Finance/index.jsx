@@ -16,9 +16,9 @@ import Keunggulan from './keunggulan';
 import Keuntungan from './keuntungan';
 
 import ButtonStart from '../../../components/Button';
-import AnimetedLms from "../../../assets/background/Online learning.gif"
-import Bg from "../../../assets/background/bg Lms.jpeg"
-import Logo from '../../../assets/logo/deoapp.png'
+import AnimetedFinance from "../../../assets/background/Finance.gif"
+import Bg from "../../../assets/Backgroundd/bg- FINANCE.png"
+import Logo from '../../../assets/logo/Finance.png'
 import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
 import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
 import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
@@ -29,6 +29,9 @@ import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
 import image1 from '../../../assets/images/Group 3088.png'
 import { ButtonJoinUs } from "../../../components/Button";
 import Finan from '../../../assets/images/Finance management.png'
+import Pricing from '../../pricing';
+import Rating from '../../home/Rating';
+import AutoPlayRight, { AutoPlayLeft } from '../../home/coursel';
 
 export default function Finance() {
 
@@ -43,20 +46,15 @@ export default function Finance() {
             <Box my={{ base: 10, lg: 100 }}>
                 <Keunggulan />
             </Box>
-            <Box bg={'#f2f2f2'} >
-                <Keuntungan />
-            </Box>
-            <VStack>
-                <Heading my={30}>Contoh Video Youtube</Heading>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCnnMiwE3js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </VStack>
+
+
             <Box>
-                <video>
-                    <source src={"https://www.youtube.com/watch?v=7sDY4m8KNLc"} type="video/mp4" />
-                </video>
+                <AutoPlayRight />
+                <AutoPlayLeft />
+
             </Box>
-            <Box  >
-                <Lainnya />
+            <Box>
+                <Pricing />
             </Box>
 
         </Box>
@@ -76,7 +74,7 @@ export function Main() {
     return (
         <Box bgSize={'cover'} bgImage={Bg} >
             {isDesktop ? <></> : <Stack w={'100%'}>
-                <Image w={'80%'} m={'auto'} src={AnimetedLms} />
+                <Image w={'80%'} m={'auto'} src={AnimetedFinance} />
             </Stack>}
             <Box maxW={'90%'} display={'flex'} flexDirection={['column-reverse', 'row', 'row']} m={'auto'} gap={10}>
                 <Stack
@@ -96,7 +94,7 @@ export function Main() {
                             paddingBottom={10}
                             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
                             <Text fontSize={{ base: "25px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
-                                Atur pengelolaan Keuangan bisnismu Menjadi Kesenangan dengan Deoapp <Text as={'span'} color={'#F83C09'}>Finance</Text>: Desain Simpel, Fitur Modern, dan <Text as={'span'} color={'#F83C09'}>Keamanan</Text> Data yang <Text as={'span'} color={'#F83C09'}>Terpercaya</Text>
+                                Atur pengelolaan Keuangan bisnismu Menjadi Menyenangkan dengan Deoapp <Text as={'span'} color={'#F83C09'}>Finance</Text>: Desain Simpel, Fitur Modern, dan <Text as={'span'} color={'#F83C09'}>Keamanan</Text> Data yang <Text as={'span'} color={'#F83C09'}>Terpercaya</Text>
                             </Text>
                         </Heading>
 
@@ -108,7 +106,7 @@ export function Main() {
                     </Stack>
                 </Stack>
                 {isDesktop ? <Stack w={'80%'} >
-                    <Image w={'100%'} m={'auto'} src={AnimetedLms} />
+                    <Image w={'100%'} m={'auto'} src={AnimetedFinance} />
                 </Stack> : <></>}
             </Box>
         </Box>
@@ -119,15 +117,16 @@ export function Main() {
 const Mengelola = () => {
     return (
         <Box>
-            <Box w="50%" my={20} >
-                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Siap Mengelola Keuangan dengan Lebih Efisien?</Heading>
+            <Box w="95%" my={10} mx={'auto'} >
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Siap Mengelola</Heading>
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Keuangan dengan Lebih Efisien?</Heading>
             </Box>
             <Box my={{ base: '30px', lg: '0' }}>
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
                     <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "30%" }} mx={'auto'}  >
                         <Image src={Finan} w={'100%'} />
                     </Box>
-                    <Center flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}>
+                    <Center flex={{ base: "none", lg: 2 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}>
                         <Box  >
                             <Text fontSize={30}> Deoapp Finance hadir membantumu dalam mengorganisir Keuangan Bisnis menjadi sangat mudah dan praktis dengan sistem yang dirancang khusus sehingga tanpa disadari Keuangan Bisnismu akan Teorganizir layaknya perusahaan ternama di indonesia.
                             </Text>
@@ -137,35 +136,5 @@ const Mengelola = () => {
                 </Flex>
             </Box>
         </Box>
-    )
-}
-
-const Lainnya = () => {
-
-    const icon = [
-        Logo1, Logo2, Logo3, Logo4, Logo5, logo6, logo7]
-    return (
-        <Box my={20}>
-
-            <Box w={'90%'} mx={'auto'} px={'40px'} >
-                <VStack spacing={20} >
-                    <Heading textAlign={'center'} >Jelajahi Produk Deoapp Lainnya</Heading>
-                    <Flex gap={{ base: '50px', lg: '100px' }} justifyContent={'center'} flexWrap={'wrap'}>
-                        {icon.map((item, index) => (
-                            <Box key={index} w={{ base: "40%", lg: '15%' }}>
-                                <Center h={'30px'} _hover={{ pb: "10px" }} >
-                                    <Image src={item} />
-                                </Center>
-                                {/* <Heading textAlign={'center'} size={'sm'} mt={'10px'}>{item.title}</Heading> */}
-                            </Box>
-                        ))}
-
-                    </Flex>
-
-                </VStack>
-
-            </Box>
-        </Box>
-
     )
 }

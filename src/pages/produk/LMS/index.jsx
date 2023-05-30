@@ -16,9 +16,9 @@ import Keunggulan from './keunggulan';
 import Keuntungan from './keuntungan';
 
 import ButtonStart from '../../../components/Button';
-import AnimetedFinance from "../../../assets/background/Finance.gif"
-import Bg from "../../../assets/background/bg Lms.jpeg"
-import Logo from '../../../assets/logo/deoapp.png'
+import AnimetedFinance from "../../../assets/background/Online learning.gif"
+import Bg from "../../../assets/Backgroundd/bg- LMS.png"
+import Logo from '../../../assets/logo/HR M.png'
 import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
 import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
 import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
@@ -27,6 +27,9 @@ import Logo5 from "../../../assets/logo Deoapp/Logo Deoapp 1 POS.png"
 import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.png"
 import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
 import { FiMinusCircle } from 'react-icons/fi';
+import Pricing from '../../pricing';
+import Rating from '../../home/Rating';
+import AutoPlayRight, { AutoPlayLeft } from '../../home/coursel';
 
 export default function LMS() {
 
@@ -44,17 +47,14 @@ export default function LMS() {
             <Box bg={'#f2f2f2'} >
                 <Keuntungan />
             </Box>
-            <VStack>
-                <Heading my={30}>Contoh Video Youtube</Heading>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCnnMiwE3js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </VStack>
+
             <Box>
-                <video>
-                    <source src={"https://www.youtube.com/watch?v=7sDY4m8KNLc"} type="video/mp4" />
-                </video>
+                <AutoPlayRight />
+                <AutoPlayLeft />
+
             </Box>
-            <Box  >
-                <Lainnya />
+            <Box>
+                <Pricing />
             </Box>
 
         </Box>
@@ -94,7 +94,7 @@ export function Main() {
                             paddingBottom={10}
                             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
                             <Text fontSize={{ base: "25px", lg: '40px' }} as={'span'} color={'black'} fontFamily={'sans-serif'} fontWeight={'bold'}>
-                                “Tingkatkan <Text as={'span'} color={'#F83C09'}>intelegensi</Text> dan raih kesuksesan bersama <Text as={'span'} color={'#F83C09'}>DEOAPP LMS, </Text>  Nikmati Kenyamatan dan Kemudahan akses learning bersama mentor terkemuka se- <Text as={'span'} color={'#F83C09'}>Indonesia</Text>”
+                                Pengalaman dan <Text as={'span'} color={'#F83C09'}>Pengetahuan</Text> Kamu <Text as={'span'} color={'#F83C09'}>Berharga</Text> bagi JUTAAN Orang di Indonesia!
                             </Text>
                         </Heading>
 

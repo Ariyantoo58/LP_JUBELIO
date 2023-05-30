@@ -1,14 +1,16 @@
 import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import image1 from '../../../assets/images/Group 3088.png'
-import image2 from '../../../assets/images/Group 3087 .png'
-import image3 from '../../../assets/images/Group 3086.png'
+import image1 from '../../../assets/thumbnail/Group 3104.png'
+import image2 from '../../../assets/thumbnail/Group 3103.png'
+import image3 from '../../../assets/thumbnail/Group 3102.png'
+import image4 from '../../../assets/thumbnail/Group 3101.png'
+import image5 from '../../../assets/thumbnail/Group 3100.png'
 import { ButtonJoinUs } from "../../../components/Button";
 
 export default function Keunggulan() {
     return (
         <VStack w={'90%'} mx={'auto'} spacing={50} >
-            <Box w="95%" >
-                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '50px' }} >Deoapp Finance dirancang sedemikian rupa dengan teknologi mutahir dan berbagai macam keistimewaan seperti:</Heading>
+            <Box >
+                <Heading fontFamily={'sans-serif'} fontSize={{ base: "35px", lg: '40px' }} >Deoapp Finance dirancang sedemikian rupa dengan teknologi mutahir dan berbagai macam keistimewaan seperti:</Heading>
             </Box>
             <Box my={{ base: '30px', lg: '0' }}>
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
@@ -56,14 +58,14 @@ export default function Keunggulan() {
                         <ButtonJoinUs />
                     </Box>
                     <Box flex={1} w={{ base: "90%", lg: "100%" }} mx={'auto'}  >
-                        <Image src={image2} w={'100%'} />
+                        <Image src={image4} w={'100%'} />
                     </Box>
                 </Flex>
             </Box>
             <Box my={{ base: '60px', lg: '0' }}>
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
                     <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "100%" }} mx={'auto'}>
-                        <Image src={image3} w={'100%'} />
+                        <Image src={image5} w={'100%'} />
                     </Box>
                     <Box flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '3%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }} >
                         <Heading>Akses mudah dan fleksibel</Heading>
