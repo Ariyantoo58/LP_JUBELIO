@@ -72,11 +72,11 @@ export default function AutoPlayRight() {
 
                                 </HStack>
 
-                                <Text>Wearing Klamby</Text>
+                                <Text></Text>
                             </Box>
 
                         </HStack>
-                        <Text mt={'20px'} fontStyle={'italic'} >Wahhhhhhh deoapp sangat membantu scaleup bisnis saya sehingga sekarang bisnis saya semakin meningkat</Text>
+                        <Text mt={'20px'} fontStyle={'italic'} >Wahhhhhhh deoapp sangat membantu scaleup sehingga bisnis saya semakin meningkat</Text>
                     </Box>
                 </Box>
                 <Box px={'10px'}>
@@ -233,7 +233,7 @@ export function AutoPlayLeft() {
                                 <Text>Affiliate</Text>
                             </Box>
                         </HStack>
-                        <Text mt={'20px'} fontStyle={'italic'} >Terimakasih deoapp telah berhasil membuat usaha saya sangat berkembang pesat, berharap bisa berjumpa </Text>
+                        <Text mt={'20px'} fontStyle={'italic'} >Terimakasih deoapp telah berhasil membuat usaha saya sangat berkembang pesat </Text>
                     </Box>
                 </Box>
                 <Box px={'10px'}>

@@ -76,7 +76,7 @@ export function SimpleCard() {
 
         >
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6} w={{ base: "95%", lg: '60%' }}>
-                <Stack align={'center'}>
+                <Stack>
                     <Heading fontSize={'3xl'}>Jadwalkan Demo Sekarang!</Heading>
                     <Text fontSize={'lg'} color={'gray.600'}>
                         Isi form dibawah ini ya 🙂
