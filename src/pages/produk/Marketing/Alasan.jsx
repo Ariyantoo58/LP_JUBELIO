@@ -1,5 +1,5 @@
 import { Box, HStack, Heading, Image, Stack, Text } from "@chakra-ui/react";
-import gambar from '../../../assets/images/confused-woman.png'
+import gambar from '../../../assets/icon baru/marketing-analysis.png'
 import { FaCheckCircle } from "react-icons/fa";
 import check from '../../../assets/images/check.png'
 

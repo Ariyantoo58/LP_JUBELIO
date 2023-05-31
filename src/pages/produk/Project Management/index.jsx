@@ -28,7 +28,7 @@ import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.
 import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
 import image1 from '../../../assets/images/Group 3088.png'
 import { ButtonJoinUs } from "../../../components/Button";
-import Finan from '../../../assets/images/Finance management.png'
+import Finan from '../../../assets/icon baru/project-management (4).png'
 import Pricing from '../../pricing';
 import Rating from '../../home/Rating';
 import AutoPlayRight, { AutoPlayLeft } from '../../home/coursel';
