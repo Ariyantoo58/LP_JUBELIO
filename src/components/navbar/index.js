@@ -1,334 +1,222 @@
-
+import { useNavigate } from "react-router-dom";
+// ** Chakra UI
 import {
   Box,
-  Flex,
-  Text,
-  Image,
-  IconButton,
   Button,
-  Stack,
-  Collapse,
-  Icon,
+  ButtonGroup,
+  Container,
+  Divider,
+  Flex,
+  HStack,
+  IconButton,
+  useBreakpointValue,
+  useDisclosure,
   Link,
+  Image,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+} from '@chakra-ui/react'
+
+import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  useColorModeValue,
-  useDisclosure,
-} from '@chakra-ui/react';
+  PopoverBody,
+} from '@chakra-ui/react'
 
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from '@chakra-ui/icons';
+// Deoapp assets
+
+import logo from '../../assets/deoapp/deoapp colors (4).png'
+
+import image1 from '../../assets/logo/LMS.png'
+import image2 from '../../assets/logo/CRM.png'
+import image3 from '../../assets/logo/HR M.png'
+import image4 from '../../assets/logo/Finance.png'
+import image5 from '../../assets/logo/Marketing.png'
+import image6 from '../../assets/logo/PJ.png'
+
+// ** React Icons
+import { FiMenu } from "react-icons/fi";
+
+// ** Image
+import { useState } from "react";
+import { PopoverIcon } from "./PopoverIcon";
+import Drawers from "./Drawer";
 
 
 
 function Navbar() {
+  const navigate = useNavigate()
+  const isDesktop = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const { isOpen, onToggle } = useDisclosure();
-  const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
-    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-
-    return (
-      <Stack direction={'row'} spacing={4}>
-        {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label}>
-            <Popover trigger={'hover'} placement={'bottom-start'}>
-              <PopoverTrigger>
-                <Link
-                  p={2}
-                  href={navItem.href ?? '#'}
-                  fontSize={'sm'}
-                  fontWeight={500}
-                  color={linkColor}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: linkHoverColor,
-                  }}>
-                  {navItem.label}
-                </Link>
-              </PopoverTrigger>
-
-              {navItem.children && (
-                <PopoverContent
-                  border={0}
-                  boxShadow={'xl'}
-                  bg={popoverContentBgColor}
-                  p={4}
-                  rounded={'xl'}
-                  minW={'sm'}>
-                  <Stack>
-                    {navItem.children.map((child) => (
-                      <DesktopSubNav key={child.label} {...child} />
-                    ))}
-                  </Stack>
-                </PopoverContent>
-              )}
-            </Popover>
-          </Box>
-        ))}
-      </Stack>
-    );
-  }
-
-  const DesktopSubNav = ({ label, href, subLabel }) => {
-    return (
-      <Link
-        href={href}
-        role={'group'}
-        display={'block'}
-        p={2} x
-        rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
-        <Stack direction={'row'} align={'center'}>
-          <Box>
-            <Text
-              transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
-              fontWeight={500}>
-              {label}
-            </Text>
-            <Text fontSize={'sm'}>{subLabel}</Text>
-          </Box>
-          <Flex
-            transition={'all .3s ease'}
-            transform={'translateX(-10px)'}
-            opacity={0}
-            _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-            justify={'flex-end'}
-            align={'center'}
-            flex={1}>
-            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
-        </Stack>
-      </Link>
-    );
-  }
-
-  const MobileNav = () => {
-    return (
-      <Stack
-        bg={useColorModeValue('white', 'gray.800')}
-        p={4}
-        display={{ md: 'none' }}>
-        {NAV_ITEMS.map((navItem) => (
-          <MobileNavItem key={navItem.label} {...navItem} />
-        ))}
-      </Stack>
-    );
-  }
-
-  const MobileNavItem = ({ label, children, href }) => {
-    const { isOpen, onToggle } = useDisclosure();
-
-    return (
-      <Stack spacing={4} onClick={children && onToggle}>
-        <Flex
-          py={2}
-          as={Link}
-          href={href ?? '#'}
-          justify={'space-between'}
-          align={'center'}
-          _hover={{
-            textDecoration: 'none',
-          }}>
-          <Text
-            fontWeight={600}
-            color={useColorModeValue('gray.600', 'gray.200')}>
-            {label}
-          </Text>
-          {children && (
-            <Icon
-              as={ChevronDownIcon}
-              transition={'all .25s ease-in-out'}
-              transform={isOpen ? 'rotate(180deg)' : ''}
-              w={6}
-              h={6}
-            />
-          )}
-        </Flex>
-
-        <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-          <Stack
-            mt={2}
-            pl={4}
-            borderLeft={1}
-            borderStyle={'solid'}
-            borderColor={useColorModeValue('gray.200', 'gray.700')}
-            align={'start'}>
-            {children &&
-              children.map((child) => (
-                <Link key={child.label} py={2} href={child.href}>
-                  {child.label}
-                </Link>
-              ))}
-          </Stack>
-        </Collapse>
-      </Stack>
-    );
-  }
-
-  const NAV_ITEMS = [
-    {
-      label: 'Produk',
-      children: [
-        {
-          label: 'Katalog',
-          href: '#',
-        },
-        {
-          label: 'Persediaan',
-          href: '#',
-        },
-        {
-          label: 'Pesanan',
-          href: '#',
-        },
-        {
-          label: 'Gudang (WMS)',
-          href: '#',
-        },
-        {
-          label: 'Inteligensi Bisnis',
-          href: '#',
-        },
-        {
-          label: 'Pembukuan',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Harga',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          href: '#',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Partner',
-      href: '#',
-    },
-    {
-      label: 'Affiliasi',
-      children: [
-        {
-          label: 'Affiliasi',
-          href: '#',
-        },
-        {
-          label: 'Ambasador',
-          href: '#',
-        },
-
-      ]
-    },
-    {
-      label: 'Dukungan',
-      children: [
-        {
-          label: 'Layanan Purna Jual',
-          href: '#',
-        },
-        {
-          label: 'Integrasi API',
-          href: '#',
-        },
-        {
-          label: 'Kelas Onine',
-          href: '#',
-        },
-      ]
-    },
-  ]
 
   return (
-    <>
-      <Box>
-        <Flex
-          bg={useColorModeValue('white', 'gray.800')}
-          color={useColorModeValue('gray.600', 'white')}
-          minH={'60px'}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
-          borderBottom={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}
+    <Box
+      as="section"
+      boxShadow="md"
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      zIndex="sticky"
+      bg={'white'}
+
+    >
+      <Box as="nav" bg="bg-surface">
+        <Container
+          px={{
+            base: "5",
+            lg: "75",
+          }}
+          py={{
+            base: "6",
+            lg: "6"
+          }}
+
+          maxW="100%"
+          color={'white'}
+
         >
-          <Flex
-            flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+
+          <HStack spacing="10" justify="space-between">
+            <HStack>
+              {isDesktop ?
+                <></> :
+                <>
+                  <IconButton
+                    variant="ghost"
+                    icon={<FiMenu color="black" fontSize="1.6rem" />}
+                    aria-label="Open Menu"
+                    _hover={{ bg: "transparent" }}
+                    onClick={onOpen}
+                  />
+                  <Drawer placement={'left'} onClose={onClose} isOpen={isOpen} >
+                    <DrawerOverlay />
+                    <DrawerContent bg={'white'} >
+                      <DrawerCloseButton color={'black'} />
+                      <DrawerHeader borderBottomWidth='1px' >
+                        <Flex justifyContent={'space-around'} py={'20px'}>
+                          <Box>
+                            <Link href="/">
+                              <Image src={logo} alt="DeoApp" width={150} />
+                            </Link>
+                          </Box>
+
+                        </Flex>
+                      </DrawerHeader>
+                      <DrawerBody>
+                        <Drawers />
+                      </DrawerBody>
+                    </DrawerContent>
+                  </Drawer>
+                </>
               }
-              variant={'ghost'}
-              aria-label={'Toggle Navigation'}
-            />
-          </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Image w={['100%', '30%', '10%']} src='https://assets.cdn.filesafe.space/g5ixcUwLF94aB6ka3IVG/media/64174d501639e03e287e2160.png' />
 
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-              <DesktopNav />
-            </Flex>
-          </Flex>
+              <Link href="/">
+                <Image src={logo} alt="DeoApp" width={170} />
+              </Link>
+            </HStack>
 
-          <Stack
-            flex={{ base: 1, md: 0 }}
-            justify={'flex-end'}
-            direction={'row'}
-            spacing={6}
-          >
-            <Button
-              as={'a'}
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}
-            >
-              Demo
-            </Button>
-            <Button
-              as={'a'}
-              // display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'#14C38E'}
-              href={'#'}
-              _hover={{
-                bg: '#00FFAB',
-              }}
-            >
-              Masuk
-            </Button>
-          </Stack>
-        </Flex>
 
-        <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
-        </Collapse>
+            {isDesktop ? (
+              <Flex justify="space-between" flex="1" >
+
+                <HStack spacing={10}>
+                  <ButtonGroup variant="link" spacing="8">
+                    <Popover trigger="hover">
+                      <PopoverTrigger>
+                        <Button
+                          variant="link"
+                          rightIcon={<PopoverIcon />}
+                          onClick={() => navigate('/product/katalog')}
+                          color={'black'}
+                        >
+                          Produk
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent w={'200px'}>
+                        <PopoverBody color={'black'} >
+                          <Box px={'10px'} py={'10px'} >
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/LMS')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
+                              <Image w={'110px'} src={image1} />
+                            </Box>
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/CRM')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                              <Image w={'110px'} src={image2} />
+                            </Box>
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/hr')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                              <Image w={'110px'} src={image3} />
+                            </Box>
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/finance')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                              <Image w={'110px'} src={image4} />
+                            </Box>
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/marketing')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                              <Image w={'110px'} src={image5} />
+                            </Box>
+                            <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/projectmanagament')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
+                              <Image w={'110px'} src={image6} />
+                            </Box>
+
+
+                          </Box>
+
+                        </PopoverBody>
+
+                      </PopoverContent>
+                    </Popover>
+                    <Button onClick={() => navigate('/harga')} color={'black'}>Harga</Button>
+                    <Button onClick={() => navigate('/partner')} color={'black'}>Partner</Button>
+
+
+                    <Popover trigger="hover">
+                      <PopoverTrigger>
+                        <Button
+                          variant="link"
+                          rightIcon={<PopoverIcon />}
+                          color={'black'}
+
+                        >
+                          Dukungan
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent w={'200px'}>
+                        <PopoverBody>
+                          <Box px={'10px'} py={'15px'} borderBottom={'1px solid #f2f2f2'} >
+                            <Button onClick={() => navigate('/dukungan/integrasiapi')} bg={'transparent'} _hover={{ color: "black" }} >Integrasi Api</Button>
+                          </Box>
+                          <Box px={'10px'} py={'15px'} >
+                            <Button onClick={() => navigate('/dukungan/layanan')} bg={'transparent'} _hover={{ color: "black" }} >Layanan Purna Jual</Button>
+                          </Box>
+                        </PopoverBody>
+                      </PopoverContent>
+                    </Popover>
+
+                  </ButtonGroup>
+                </HStack>
+                <HStack>
+                  <Button py={'15px'} px={'30px'} bg={'#f7580a'} color={'white'}>Jadwalkan Demo</Button>
+                  <Button py={'15px'} px={'30px'} color={'#f7580a'} border={'1px solid #f7580a'} bg={'white'} >Masuk</Button>
+                </HStack>
+
+              </Flex>
+            ) : (
+              <></>
+            )}
+          </HStack>
+        </Container>
+        <Divider />
       </Box>
-    </>
-  )
+    </Box>
+  );
 }
 
-export default Navbar
+export default Navbar;
