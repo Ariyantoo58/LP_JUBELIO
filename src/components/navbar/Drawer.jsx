@@ -15,83 +15,22 @@ export default function Drawers() {
     const navigate = useNavigate()
     const [prod, setProd] = useState()
     const handleChange = (item) => {
-        console.log(item, 'ini item')
-
-        if (item == "katalog") {
-            navigate('/product/katalog')
-        }
-        if (item == platform) {
-            navigate('/product/hr')
-        }
-        if (item == pos) {
-            navigate('/product/pos')
-        }
-        if (item == store) {
-            navigate('/product/store')
-        }
-        if (item == shipment) {
-            navigate('/product/shipment')
-        }
-        if (item == chat) {
-            navigate('/product/chat')
-        }
-
-        if (item == "Persediaan") {
-            navigate('/product/persediaan')
-        }
-        if (item == "Pesanan") {
-            navigate('/product/pesanan')
-        }
-        if (item == "Gudang (WMS)") {
-            navigate('/product/gudang')
-        }
-        if (item == "Intelegensi Bisnis") {
-            navigate('/product/intelegensi-bisnis')
-        }
-        if (item.title == "Pembukuan") {
-            navigate('/product/pembukuan')
-        }
-        if (item.title == "Produk") {
-            onToggle()
-            setProd(item)
-        }
-        if (item.title == "Harga") {
-            navigate('/harga')
-        }
-        if (item.title == "Partner") {
-            navigate('/partner')
-        }
-        if (item.title == "Affiliasi") {
-            onToggle()
-            setProd(item)
-        }
-        if (item == "Affiliasi") {
-            navigate('/affiliasi/affiliasi')
-        }
-        if (item == "Ambassador") {
-            navigate('/affiliasi/ambassador')
-        }
-        if (item.title == "Dukungan") {
-            onToggle()
-            setProd(item)
-        }
-        if (item == "Integrasi Api") {
-            navigate('/dukungan/integrasiapi')
-        }
+        setProd(item)
+        navigate(`/product/${item}`)
 
     }
 
     return (
-        <Box px={'10px'}>
+        <Box >
             {Menus.map((item, index) => (
-                <Box color={'black'}>
-                    <Box key={index} py={'15px'} onClick={() => { handleChange(item) }} _hover={{ color: '#f7580a', pb: '4px' }}>
-                        <Link> <Heading size={'md'}>{item.title}</Heading>
-                        </Link>
+                <Box key={index} >
+                    <Box py={3} onClick={() => { handleChange(item) }} >
+                        <Link> <Heading _hover={{ color: '#f7580a' }} color={prod == item ? '#f7580a' : 'black'} size={'md'}>{item}</Heading> </Link>
 
                     </Box>
 
-                    {prod == item && prod !== undefined ?
+
+                    {/* {prod == item && prod !== undefined ?
                         <Collapse in={isOpen} animateOpacity>
                             <Box
                                 px='10px'
@@ -114,7 +53,7 @@ export default function Drawers() {
                                 </Box>
                             </Box>
                         </Collapse> : <></>
-                    }
+                    } */}
 
                 </Box>
 
@@ -122,8 +61,7 @@ export default function Drawers() {
             ))}
 
             <Box mt={'50px'}>
-                <Button bg={'#f7580a'} w={'70%'} mb={'20px'} color={'white'}>Coba Gratis</Button>
-                <Button color={'#f7580a'} border={'1px solid #f7580a'} bg={'white'} w={'70%'} onClick={() => navigate('/signin')}>Masuk</Button>
+                <Button bg={'#f7580a'} w={'70%'} mb={'20px'} color={'white'}>Jadwalkan Demo</Button>
             </Box>
 
         </Box>
