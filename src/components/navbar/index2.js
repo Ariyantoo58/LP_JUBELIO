@@ -48,14 +48,7 @@ import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { PopoverIcon } from "./PopoverIcon";
 import Drawers from "./Drawer";
-
-const Menus = [
-    "LMS", "CRM", "HR", "FINANCE", "MARKETING", "PROJECT MANAGEMENT"
-]
-
-
-
-
+import { Menus } from "./utils";
 
 function Navbar() {
     const navigate = useNavigate()
@@ -145,45 +138,6 @@ function Navbar() {
 
                                 <HStack spacing={10}>
                                     <ButtonGroup variant="link" spacing="8">
-                                        {/* <Popover trigger="hover">
-                                            <PopoverTrigger>
-                                                <Button
-                                                    variant="link"
-                                                    rightIcon={<PopoverIcon />}
-                                                    color={'black'}
-                                                >
-                                                    Produk
-                                                </Button>
-                                            </PopoverTrigger>
-                                            <PopoverContent w={'200px'}>
-                                                <PopoverBody color={'black'} >
-                                                    <Box px={'10px'} py={'10px'} >
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/LMS')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }} >
-                                                            <Image w={'110px'} src={image1} />
-                                                        </Box>
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/CRM')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
-                                                            <Image w={'110px'} src={image2} />
-                                                        </Box>
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/hr')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
-                                                            <Image w={'110px'} src={image3} />
-                                                        </Box>
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/finance')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
-                                                            <Image w={'110px'} src={image4} />
-                                                        </Box>
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/marketing')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
-                                                            <Image w={'110px'} src={image5} />
-                                                        </Box>
-                                                        <Box py={3} as={'button'} px={'15px'} onClick={() => navigate('/product/projectmanagament')} borderBottom={'1px solid #f2f2f2'} _hover={{ borderBottom: "3px solid grey", px: '20px' }}>
-                                                            <Image w={'110px'} src={image6} />
-                                                        </Box>
-
-
-                                                    </Box>
-
-                                                </PopoverBody>
-
-                                            </PopoverContent>
-                                        </Popover> */}
                                         {Menus.map((item, index) => (
                                             <Button
                                                 key={index}
@@ -198,47 +152,6 @@ function Navbar() {
                                                 {item}
                                             </Button>
                                         ))}
-
-                                        {/* <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/CRM')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            CRM
-                                        </Button>
-                                        <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/hr')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            HR
-                                        </Button>
-                                        <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/finance')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            FINANCE
-                                        </Button>
-                                        <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/marketing')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            MARKETING
-                                        </Button>
-                                        <Button
-                                            variant="link"
-                                            onClick={() => navigate('/product/projectmanagament')}
-                                            color={'black'}
-                                            fontWeight={'bold'}
-                                        >
-                                            PROJECT MANAGEMENT
-                                        </Button> */}
 
 
                                     </ButtonGroup>
