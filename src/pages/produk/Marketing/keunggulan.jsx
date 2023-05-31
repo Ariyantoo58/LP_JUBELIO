@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import image1 from '../../../assets/images/Group 3088.png'
-import image2 from '../../../assets/images/Group 3087 .png'
-import image3 from '../../../assets/images/Group 3086.png'
+import image1 from '../../../assets/thumbnail/Group 3135.png'
+import image2 from '../../../assets/thumbnail/Group 3136.png'
+import image3 from '../../../assets/thumbnail/Group 3137.png'
 import { ButtonJoinUs } from "../../../components/Button";
 
 export default function Keunggulan() {

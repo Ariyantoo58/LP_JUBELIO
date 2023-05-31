@@ -157,7 +157,9 @@ function Navbar() {
                                     </ButtonGroup>
                                 </HStack>
                                 <HStack>
-                                    <Button py={'15px'} px={'30px'} bg={'#f7580a'} color={'white'}>Jadwalkan Demo</Button>
+                                    <Link href="https://wa.me/082211429125">
+                                        <Button py={'15px'} px={'30px'} bg={'#f7580a'} color={'white'}>Jadwalkan Demo</Button>
+                                    </Link>
                                 </HStack>
 
                             </Flex>

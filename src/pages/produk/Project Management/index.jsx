@@ -18,7 +18,7 @@ import Keuntungan from './keuntungan';
 import ButtonStart from '../../../components/Button';
 import AnimetedFinance from "../../../assets/background/Project management tools.gif"
 import Bg from "../../../assets/Backgroundd/bg- PM.png"
-import Logo from '../../../assets/logo/deoapp.png'
+import Logo from '../../../assets/logo/PJ.png'
 import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
 import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
 import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
@@ -28,7 +28,7 @@ import logo6 from "../../../assets/logo Deoapp/Logo Deoapp 1 Project Management.
 import logo7 from "../../../assets/logo Deoapp/Logo Deoapp 1 social media.png"
 import image1 from '../../../assets/images/Group 3088.png'
 import { ButtonJoinUs } from "../../../components/Button";
-import Finan from '../../../assets/images/Finance management.png'
+import Finan from '../../../assets/thumbnail/HRM.png'
 import Pricing from '../../pricing';
 import Rating from '../../home/Rating';
 import AutoPlayRight, { AutoPlayLeft } from '../../home/coursel';
@@ -123,10 +123,10 @@ const Mengelola = () => {
                 </Box>
                 <Box my={{ base: '30px', lg: '0' }}>
                     <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
-                        <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "30%" }} mx={'auto'}  >
+                        <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "35%" }} mx={'auto'}  >
                             <Image src={Finan} w={'100%'} />
                         </Box>
-                        <Center flex={{ base: "none", lg: 2 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}>
+                        <Center flex={{ base: "none", lg: 2 }} py={{ base: '10px', lg: '1%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "40%" }}>
                             <Box  >
                                 <Text fontSize={30}> Dengan sistem yang terkemuka, platfotm kami dirancang untuk memastikan kamu dapat mengelola proyek secara terstruktur dan terorganizir namun mudah dan efisien
                                     mudah dan efisien.

@@ -14,11 +14,10 @@ import {
 
 import Keunggulan from './keunggulan';
 import Keuntungan from './keuntungan';
-
 import ButtonStart from '../../../components/Button';
 import AnimetedFinance from "../../../assets/background/Online learning.gif"
 import Bg from "../../../assets/Backgroundd/bg- LMS.png"
-import Logo from '../../../assets/logo/HR M.png'
+import Logo from '../../../assets/logo/LMS1.png'
 import Logo1 from "../../../assets/logo Deoapp/Logo Deoapp 1 CRM.png"
 import Logo2 from "../../../assets/logo Deoapp/Logo Deoapp 1 Finance.png"
 import Logo3 from "../../../assets/logo Deoapp/Logo Deoapp 1 HR Management.png"
@@ -69,7 +68,6 @@ export function Main() {
         base: false,
         lg: true,
     });
-
 
     return (
         <Box bgSize={'cover'} bgImage={Bg} >
@@ -178,7 +176,6 @@ const Keuntungann = () => {
                     <VStack mt={'40px'}>
                         <Center>
                             <Image src={"https://jubelio.com/wp-content/uploads/2023/03/katalog-tanpa-jubelio-1.gif"} />
-
                         </Center>
                         <Box>
                             <HStack spacing={'30px'} mb={'30px'}>

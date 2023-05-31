@@ -32,7 +32,7 @@ function Pricing() {
     <Box py={12} w={'70%'} m={'auto'} >
       <VStack spacing={2} textAlign="center">
         <Heading as="h1" fontSize="4xl">
-          Sudah siap kerja sama pengan kami?
+          Sudah siap kerja sama dengan kami?
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
           Sesuaikan dengan kebutuhan mu

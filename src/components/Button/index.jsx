@@ -1,5 +1,6 @@
 import { Button, Text } from "@chakra-ui/react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
 
 export default function ButtonStart() {
   const navigate = useNavigate()
@@ -29,7 +30,8 @@ export default function ButtonStart() {
 export const ButtonJoinUs = () => {
   const navigate = useNavigate()
   return (
-    <Link href={'https://wa.me/082211429125'}>
+    <Link href="https://wa.me/082211429125"
+      target="_blank">
       <Button _hover={{ bg: "#F83C09" }} fontSize={'20px'} color={'white'} w={{ base: '40%', lg: '25%' }} h={{ base: 10, lg: 50 }} bg={"#24D467"} mt={'20px'}>Join Us</Button>
     </Link >
   )

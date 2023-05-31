@@ -1,8 +1,9 @@
 import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import image1 from '../../../assets/thumbnail/Group 3110.png'
-import image2 from '../../../assets/thumbnail/Group 3111.png'
-import image3 from '../../../assets/thumbnail/Group 3112.png'
-import image4 from '../../../assets/thumbnail/Group 3113.png'
+import image2 from '../../../assets/thumbnail/Group 3112.png'
+import image3 from '../../../assets/thumbnail/Group 3118.png'
+import image4 from '../../../assets/thumbnail/Group 3117.png'
+import image5 from '../../../assets/thumbnail/Group 3115.png'
 import { ButtonJoinUs } from "../../../components/Button";
 
 export default function Keunggulan() {
@@ -66,7 +67,7 @@ export default function Keunggulan() {
             <Box my={{ base: '60px', lg: '0' }}>
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={'wrap'} >
                     <Box flex={{ base: "none", lg: 1 }} w={{ base: "90%", lg: "100%" }} mx={'auto'}>
-                        <Image src={image1} w={'100%'} />
+                        <Image src={image5} w={'100%'} />
                     </Box>
                     <Box flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '3%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }} >
                         <Heading>Aksebilitas yang mudah dan cepat </Heading>
@@ -77,6 +78,7 @@ export default function Keunggulan() {
                     </Box>
                 </Flex>
             </Box>
+
         </VStack >
     )
 }

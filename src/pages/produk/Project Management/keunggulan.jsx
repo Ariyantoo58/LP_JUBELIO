@@ -1,7 +1,8 @@
 import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import image1 from '../../../assets/images/Group 3088.png'
-import image2 from '../../../assets/images/Group 3087 .png'
-import image3 from '../../../assets/images/Group 3086.png'
+import image1 from '../../../assets/thumbnail/Group 3144.png'
+import image2 from '../../../assets/thumbnail/Group 3145.png'
+import image3 from '../../../assets/thumbnail/Group 3146.png'
+import image4 from '../../../assets/thumbnail/Group 3147.png'
 import { ButtonJoinUs } from "../../../components/Button";
 
 export default function Keunggulan() {
@@ -56,7 +57,7 @@ export default function Keunggulan() {
                         <ButtonJoinUs />
                     </Box>
                     <Box flex={1} w={{ base: "90%", lg: "100%" }} mx={'auto'}  >
-                        <Image src={image2} w={'100%'} />
+                        <Image src={image4} w={'100%'} />
                     </Box>
                 </Flex>
             </Box>
