@@ -42,8 +42,8 @@ export default function Keunggulan() {
                         <Image src={image3} w={'100%'} />
                     </Box>
                     <Box flex={{ base: "none", lg: 1 }} py={{ base: '10px', lg: '5%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }} >
-                        <Heading> Pengalaman Pengguna yang Ramah</Heading>
-                        <Text mt={'20px'}>Desain antarmuka yang intuitif dan mudah digunakan, sehingga kamu bisa fokus pada pertumbuhan bisnis atau kariermu tanpa hambatan.</Text>
+                        <Heading> Solusi Kekinian untuk Sukses dalam Bidangmu</Heading>
+                        <Text mt={'20px'}>Dengan fitur lengkap yang mencakup keuangan, HR, media sosial, pemasaran, manajemen pelanggan, dan program masterclass, DeoApp memberikan solusi yang terpadu untuk kesuksesanmu.</Text>
                         <ButtonJoinUs />
                     </Box>
                 </Flex>
@@ -52,7 +52,7 @@ export default function Keunggulan() {
                 <Flex gap={{ base: '10px', lg: '50px' }} flexWrap={"wrap"} flexDir={{ base: 'column-reverse', lg: 'row' }}>
 
                     <Box flex={1} py={{ base: '10px', lg: '4%' }} px={{ base: "20px", lg: '0' }} w={{ base: "100%", lg: "45%" }}  >
-                        <Heading>Dukungan Pelanggan yang Responsif</Heading>
+                        <Heading>Customer Service yang Responsif</Heading>
                         <Text mt={'20px'}>Tim support kami siap membantu dan menjawab pertanyaanmu sepanjang waktu. Kami berkomitmen untuk memberikan pelayanan terbaik kepada pengguna DeoApp.</Text>
                         <ButtonJoinUs />
                     </Box>
